@@ -1,0 +1,221 @@
+speech_act: Question
+domain: Meta
+examples:
+- text: Comment tu sais, pour les légumes ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Pourquoi t'as dit ça comme ça ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Pourquoi t'as fait ça?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Tu te souviens quand je t'ai peint nu?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Tu te souviens d'avant ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: comment tu fais ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Tu te souviens de ce que j'ai subi ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Comment tu fais ça?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Comment tu fais pour savoir ça ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Tu m'aimes toujours ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Comment tu sais?
+  bio_tags:
+  - O
+  - O
+  - O
+- text: T'es qui toi ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Tu m'aimes toujours
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Comment tu sais tout ça ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Pourquoi t'as fait ça ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Tu m'écoutes jouer de la harpe ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Comment tu sais ça toi ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Pourquoi t'as dit oui alors?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Tu te rappelles comment ça a clashé ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Comment tu sais ça, toi... ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Tu te souviens ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: tu te souviens de ce que j'ai dit
+  bio_tags: [O, O, O, O, O, O, O, O]
+- text: comment tu fais pour savoir ça
+  bio_tags: [O, O, O, O, O, O]
+- text: pourquoi tu as répondu ça
+  bio_tags: [O, O, O, O, O]
+- text: tu me comprends quand je parle
+  bio_tags: [O, O, O, O, O, O]
+- text: tu sais ce que j'aime
+  bio_tags: [O, O, O, O, O]
+- text: est-ce que tu apprends
+  bio_tags: [O, O, O, O]
+- text: tu te rappelles mon prénom
+  bio_tags: [O, O, O, O, O]
+- text: pourquoi tu dis ça
+  bio_tags: [O, O, O, O]
+- text: comment tu fonctionnes
+  bio_tags: [O, O, O]
+- text: t'es qui exactement
+  bio_tags: [O, O, O]
+- text: tu peux m'expliquer comment tu raisonnes
+  bio_tags: [O, O, O, O, O, O]
+- text: est-ce que tu te souviens de notre conversation
+  bio_tags: [O, O, O, O, O, O, O, O]
+- text: pourquoi tu as changé d'avis
+  bio_tags: [O, O, O, O, O]
+- text: tu comprends le français
+  bio_tags: [O, O, O, O]
+- text: comment tu fais pour tout retenir
+  bio_tags: [O, O, O, O, O, O]
+- text: tu sais de quoi on parlait
+  bio_tags: [O, O, O, O, O, O]
+- text: est-ce que tu mens parfois
+  bio_tags: [O, O, O, O, O]
+- text: pourquoi tu me poses cette question
+  bio_tags: [O, O, O, O, O, O]
+- text: tu connais mes habitudes
+  bio_tags: [O, O, O, O]
+- text: est-ce que tu m'écoutes vraiment
+  bio_tags: [O, O, O, O, O]
+- text: tu fais quoi exactement
+  bio_tags: [O, O, O, O]
+- text: t'as une mémoire
+  bio_tags: [O, O, O]
+- text: comment tu sais ce que je veux
+  bio_tags: [O, O, O, O, O, O, O]
+- text: tu peux te tromper
+  bio_tags: [O, O, O, O]
+- text: est-ce que tu comprends les émotions
+  bio_tags: [O, O, O, O, O, O]
+- text: tu te souviens de hier
+  bio_tags: [O, O, O, O, O]
+- text: pourquoi tu répètes toujours la même chose
+  bio_tags: [O, O, O, O, O, O, O]
+- text: c'est quoi ton rôle
+  bio_tags: [O, O, O, O]
+- text: tu penses quoi de moi
+  bio_tags: [O, O, O, O, O]
+- text: comment tu choisis quoi répondre
+  bio_tags: [O, O, O, O, O]

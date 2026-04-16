@@ -1,0 +1,172 @@
+speech_act: PositiveFeedback
+domain: Social
+examples:
+- text: Bravo, mon grand
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Merci de les avoir choisies
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Merci, tu es très jolie aussi
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Merci. Je le ferai
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Merci. On se voit plus tard
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Merci d'avoir écouté, cependant
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Merci beaucoup, Gaïus
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Bravo, ma fille
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Merci de ta confiance
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Merci. J'ai l'épaule démise
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Merci d'être venus
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Merci. Tes sourcils sont bizarres
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Merci jeune moldue
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Merci, bonhomme
+  bio_tags:
+  - O
+  - O
+- text: Merci, on vous sonnera
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Bravo, tu l'as dit ma vieille
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Merci Penny
+  bio_tags:
+  - O
+  - O
+- text: merci Jennifer
+  bio_tags:
+  - O
+  - O
+- text: Merci. C'est très généreux
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Merci petit
+  bio_tags:
+  - O
+  - O
+- text: Merci d'aller dans notre sens
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Merci Isolde. Quant au dîner
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Merci David
+  bio_tags:
+  - O
+  - O
+- text: Merci. C'est très charmant ici
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Bravo Simon
+  bio_tags:
+  - O
+  - O
+- text: Merci Hum pas mal
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Merci Grand-père
+  bio_tags:
+  - O
+  - O
+- text: Merci, tout va bien
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Bravo pour moi
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Merci Lancelot
+  bio_tags:
+  - O
+  - O

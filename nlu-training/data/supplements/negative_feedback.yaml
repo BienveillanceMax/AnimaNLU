@@ -1,0 +1,283 @@
+speech_act: NegativeFeedback
+domain: Social
+examples:
+- text: c'est nul
+  bio_tags:
+  - O
+  - O
+- text: ça marche pas
+  bio_tags:
+  - O
+  - O
+  - O
+- text: c'est pas ça
+  bio_tags:
+  - O
+  - O
+  - O
+- text: n'importe quoi
+  bio_tags:
+  - O
+  - O
+- text: t'es nul
+  bio_tags:
+  - O
+  - O
+- text: c'est de la merde
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: ça me plaît pas
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: c'est pourri
+  bio_tags:
+  - O
+  - O
+- text: j'aime pas du tout
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: ça va pas ça
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: t'as rien compris
+  bio_tags:
+  - O
+  - O
+  - O
+- text: c'est pas bon
+  bio_tags:
+  - O
+  - O
+  - O
+- text: c'est vraiment nul
+  bio_tags:
+  - O
+  - O
+  - O
+- text: t'es pas doué
+  bio_tags:
+  - O
+  - O
+  - O
+- text: zéro
+  bio_tags:
+  - O
+- text: bof
+  bio_tags:
+  - O
+- text: mouais pas terrible
+  bio_tags:
+  - O
+  - O
+  - O
+- text: j'attendais mieux
+  bio_tags:
+  - O
+  - O
+- text: c'est pas terrible
+  bio_tags:
+  - O
+  - O
+  - O
+- text: tu fais n'importe quoi
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: c'est complètement faux
+  bio_tags:
+  - O
+  - O
+  - O
+- text: recommence
+  bio_tags:
+  - O
+- text: ça me convient pas du tout
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: c'est pas ce que je voulais
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non, c'est vraiment pas bon
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: j'attendais beaucoup mieux que ça
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: c'est décevant
+  bio_tags:
+  - O
+  - O
+- text: là, t'as raté
+  bio_tags:
+  - O
+  - O
+  - O
+- text: pas du tout ce que j'avais en tête
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: ça craint
+  bio_tags:
+  - O
+  - O
+- text: c'est moyen quand même
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: non, ça le fait pas
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: t'as encore foiré
+  bio_tags:
+  - O
+  - O
+  - O
+- text: c'est raté
+  bio_tags:
+  - O
+  - O
+- text: sérieusement c'est nul
+  bio_tags:
+  - O
+  - O
+  - O
+- text: pfff n'importe quoi
+  bio_tags:
+  - O
+  - O
+  - O
+- text: j'en attendais plus de toi
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: c'est un peu décevant là
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: ça laisse à désirer
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: pas terrible du tout
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: mais non, c'est pas ça du tout
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: c'est n'importe quoi
+  bio_tags:
+  - O
+  - O
+  - O
+- text: ça m'aide pas du tout
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu m'as pas compris
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: c'est loin du compte
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: bof, franchement bof
+  bio_tags:
+  - O
+  - O
+  - O
+- text: non mais t'es sérieux là
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: ça va pas du tout ça
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: j'espérais mieux
+  bio_tags:
+  - O
+  - O
+- text: c'est à côté de la plaque
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O

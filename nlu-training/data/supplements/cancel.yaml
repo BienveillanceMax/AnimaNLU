@@ -1,0 +1,267 @@
+speech_act: Cancel
+domain: System
+examples:
+- text: annule
+  bio_tags:
+  - O
+- text: annule ça
+  bio_tags:
+  - O
+  - O
+- text: laisse tomber
+  bio_tags:
+  - O
+  - O
+- text: oublie
+  bio_tags:
+  - O
+- text: oublie ça
+  bio_tags:
+  - O
+  - O
+- text: laisse
+  bio_tags:
+  - O
+- text: laisse béton
+  bio_tags:
+  - O
+  - O
+- text: arrête
+  bio_tags:
+  - O
+- text: arrête tout
+  bio_tags:
+  - O
+  - O
+- text: non rien
+  bio_tags:
+  - O
+  - O
+- text: tant pis
+  bio_tags:
+  - O
+  - O
+- text: c'est pas grave laisse
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: non finalement laisse tomber
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: j'ai changé d'avis
+  bio_tags:
+  - O
+  - O
+  - O
+- text: non oublie ce que j'ai dit
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: annule la commande
+  bio_tags:
+  - O
+  - O
+  - O
+- text: j'en veux plus
+  bio_tags:
+  - O
+  - O
+  - O
+- text: c'est bon annule
+  bio_tags:
+  - O
+  - O
+  - O
+- text: pas la peine finalement
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: rien du tout laisse
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: non c'est bon oublie
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: en fait non
+  bio_tags:
+  - O
+  - O
+  - O
+- text: tu peux annuler
+  bio_tags:
+  - O
+  - O
+  - O
+- text: coupe tout
+  bio_tags:
+  - O
+  - O
+- text: finalement non
+  bio_tags:
+  - O
+  - O
+- text: j'ai plus besoin
+  bio_tags:
+  - O
+  - O
+  - O
+- text: on oublie tout
+  bio_tags:
+  - O
+  - O
+  - O
+- text: efface ça
+  bio_tags:
+  - O
+  - O
+- text: laisse tomber j'ai plus envie
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non rien oublie ce que j'ai dit
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: finalement c'est pas la peine
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: j'annule tout
+  bio_tags:
+  - O
+  - O
+- text: annule ce que je viens de demander
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non laisse ça
+  bio_tags:
+  - O
+  - O
+  - O
+- text: abandonne
+  bio_tags:
+  - O
+- text: oublie ma demande
+  bio_tags:
+  - O
+  - O
+  - O
+- text: c'est plus la peine
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: non en fait laisse
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: j'ai changé d'avis annule
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: retire ce que j'ai dit
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non, rien
+  bio_tags:
+  - O
+  - O
+- text: non, finalement laisse tomber
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: non, oublie ce que j'ai dit
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non, c'est bon oublie
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: en fait, non
+  bio_tags:
+  - O
+  - O
+  - O
+- text: finalement, non
+  bio_tags:
+  - O
+  - O
+- text: non, rien oublie ce que j'ai dit
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: finalement, c'est pas la peine
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non, laisse ça
+  bio_tags:
+  - O
+  - O
+  - O
+- text: non, en fait laisse
+  bio_tags:
+  - O
+  - O
+  - O
+  - O

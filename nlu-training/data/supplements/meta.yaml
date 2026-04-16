@@ -1,0 +1,816 @@
+speech_act: Question
+domain: Meta
+examples:
+- text: tu te souviens de ce que j'ai dit
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu te rappelles de moi
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu te souviens de hier
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-date_value
+- text: depuis quand tu me connais
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu sais ce que j'aime
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu te rappelles mon prénom
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu sais qui est ma femme
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-person_name
+- text: tu te souviens de ce qu'on a fait hier
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-date_value
+- text: tu retiens tout ce que je te dis
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: qu'est-ce que tu sais sur moi
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu connais mes goûts musicaux
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu sais ce que j'aime comme musique
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu te rappelles de la dernière fois
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu as retenu mon nom
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu sais où j'habite
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: comment tu fonctionnes
+  bio_tags:
+  - O
+  - O
+  - O
+- text: c'est quoi tes capacités
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: t'es une intelligence artificielle
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: t'es qui toi
+  bio_tags:
+  - O
+  - O
+  - O
+- text: c'est quoi ton nom
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: tu comprends vraiment ce que je dis
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: est-ce que tu apprends de nos échanges
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: comment tu fais pour te souvenir de tout
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: t'es intelligent
+  bio_tags:
+  - O
+  - O
+- text: tu penses vraiment ou tu fais semblant
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: c'est quoi ton but
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: tu dors la nuit
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: t'as des sentiments
+  bio_tags:
+  - O
+  - O
+  - O
+- text: tu peux te tromper
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: c'est quoi ta version
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: pourquoi t'as fait ça
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: pourquoi tu as répondu ça
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: pourquoi tu m'as dit ça
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: pourquoi t'as choisi cette réponse
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: pourquoi tu me poses cette question
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: t'as appris ça comment
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: comment tu sais ça
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: tu peux m'expliquer ton raisonnement
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: pourquoi tu penses ça
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: qu'est-ce qui te fait dire ça
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu fais quoi quand je suis pas là
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: qu'est-ce que t'aimes
+  bio_tags:
+  - O
+  - O
+  - O
+- text: tu préfères quoi
+  bio_tags:
+  - O
+  - O
+  - O
+- text: c'est quoi ton avis
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: tu m'écoutes là
+  bio_tags:
+  - O
+  - O
+  - O
+- text: t'es encore là
+  bio_tags:
+  - O
+  - O
+  - O
+- text: tu me juges
+  bio_tags:
+  - O
+  - O
+  - O
+- text: tu penses quoi de moi
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: on est amis
+  bio_tags:
+  - O
+  - O
+  - O
+- text: tu m'aimes bien
+  bio_tags:
+  - O
+  - O
+  - O
+- text: qu'est-ce que tu retiens de nos conversations
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu changeras un jour
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: tu mens parfois
+  bio_tags:
+  - O
+  - O
+  - O
+- text: est-ce que tu peux avoir tort
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu t'améliores avec le temps
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu te souviens de ce que j'ai dit ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu te rappelles de moi ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu te souviens de hier ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-date_value
+  - O
+- text: depuis quand tu me connais ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu sais ce que j'aime ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu te rappelles mon prénom ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu sais qui est ma femme ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-person_name
+  - O
+- text: tu te souviens de ce qu'on a fait hier ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-date_value
+  - O
+- text: tu retiens tout ce que je te dis ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: qu'est-ce que tu sais sur moi ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu connais mes goûts musicaux ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu sais ce que j'aime comme musique ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu te rappelles de la dernière fois ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu as retenu mon nom ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu sais où j'habite ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: comment tu fonctionnes ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: c'est quoi tes capacités ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: t'es une intelligence artificielle ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: t'es qui toi ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: c'est quoi ton nom ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu comprends vraiment ce que je dis ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: est-ce que tu apprends de nos échanges ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: comment tu fais pour te souvenir de tout ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: t'es intelligent ?
+  bio_tags:
+  - O
+  - O
+  - O
+- text: tu penses vraiment ou tu fais semblant ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: c'est quoi ton but ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu dors la nuit ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: t'as des sentiments ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: tu peux te tromper ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: c'est quoi ta version ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: pourquoi t'as fait ça ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: pourquoi tu as répondu ça ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: pourquoi tu m'as dit ça ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: pourquoi t'as choisi cette réponse ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: pourquoi tu me poses cette question ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: t'as appris ça comment ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: comment tu sais ça ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu peux m'expliquer ton raisonnement ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: pourquoi tu penses ça ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: qu'est-ce qui te fait dire ça ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu fais quoi quand je suis pas là ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: qu'est-ce que t'aimes ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: tu préfères quoi ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: c'est quoi ton avis ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu m'écoutes là ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: t'es encore là ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: tu me juges ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: tu penses quoi de moi ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: on est amis ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: tu m'aimes bien ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: qu'est-ce que tu retiens de nos conversations ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu changeras un jour ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu mens parfois ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: est-ce que tu peux avoir tort ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu t'améliores avec le temps ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O

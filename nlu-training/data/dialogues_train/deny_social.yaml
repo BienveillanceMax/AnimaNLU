@@ -1,0 +1,557 @@
+speech_act: Deny
+domain: Social
+examples:
+- text: Non, non ! C'est moi
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non non laisse ça me fait plaisir
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, non c'est bon je suis là, hello
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, merci . J'attends Joey Tribbiani
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, non j'ai pas soif. Essaie encore
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non jamais
+  bio_tags:
+  - O
+  - O
+- text: Non, non c'est, c'est, je
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non merci peut-être plus tard
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non, non on reste encore
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non non non, pas comme Aroun et Tanvir
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non non
+  bio_tags:
+  - O
+  - O
+- text: Non, jamais t'aurais fais la même chose
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non non non, sa ne va pas du tout
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, jamais je ne serai comme elle
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non non non non. Salut
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, merci à toi
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Non non c'est pas ça
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, non non, surtout-
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Non c'est faux
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Non, non tu peux y'aller
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, non il s'en sortira
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non non c'est moi
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Non non mais j'apprendrai
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Non, c'est pas vrai
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Non, non et non
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Non merci ça ira comme ça
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, pas question que je sorte
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, non
+  bio_tags:
+  - O
+  - O
+- text: Non
+  bio_tags:
+  - O
+- text: Non non non, non
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Non non non monsieur Brodrique
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, non laisse
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Non, non et re-non
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Non, non maman
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Non non ! Non
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Non, merci à vous
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Non, non notre copain s'appelle Micro
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, non ... Non. Finissons de manger
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, non le orange
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Non merci Merci
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Non non non ! C'est pas pour moi
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, non! Pas elles! Prends-moi
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non non non ! C'est sensuel
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non non non ! Non... non
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, non Lucas, t'en vas pas
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, non non non
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Non, non bien sur que non
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non non non
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Non, non attends
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Non non non ! Mais attends
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, jamais
+  bio_tags:
+  - O
+  - O
+- text: Non non non c'est important
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non non bien sûr
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Non non ça craint
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Pas du tout
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Non non non non ! C'était une blague
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, non c'est moi
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Non, merci à toi... Merci
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non, non je suis pressée
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, jamais fait ça non plus
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, non vous n'êtes pas cinglé
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non non non non
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Non, non ne m'abandonne pas
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non merci j'attends Ted Bundy
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, non on y va
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, non je veux dire
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, non j'étais juste
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Non, non ! Donne-le moi
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, non ! Il faut que nous en parlions
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Hors de question
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Non non non. Ca m'est égal
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, non! Attendez
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Non non va y, je réfléchie
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non non non ! J'adore "Dumbo"
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, non ! On l'a décidé ensemble
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, non! Non
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Non non et non ! Au revoir Dawson
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, non ... Non
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Non, non je ne pars pas. Il
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, merci
+  bio_tags:
+  - O
+  - O

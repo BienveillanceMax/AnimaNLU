@@ -1,0 +1,262 @@
+speech_act: Correction
+domain: Media
+examples:
+- text: non, de la soul pas du funk
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-genre_type
+  - O
+  - O
+  - B-genre_type
+- text: je parlais du podcast, pas de la radio
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non c'est l'album d'avant
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: pas ce podcast, celui sur la philo
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-topic
+- text: je voulais dire baisser le son, pas monter
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non, l'épisode d'après
+  bio_tags:
+  - O
+  - O
+  - O
+- text: non, pas du metal, du soft rock
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-genre_type
+  - O
+  - B-genre_type
+  - I-genre_type
+- text: c'est pas la bonne playlist, je voulais celle pour dormir
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non je voulais la chanson d'avant
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: pas cet artiste, l'autre
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: non, j'ai dit du piano pas de la guitare
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: je parlais de france musique
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-media_item
+  - I-media_item
+- text: non, c'est la playlist sport que je veux
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-media_item
+  - O
+  - O
+  - O
+- text: pas couper la musique, juste baisser
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non, reviens en arrière
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: non pas rtl, france info
+  bio_tags:
+  - O
+  - O
+  - B-media_item
+  - B-media_item
+  - I-media_item
+- text: c'est pas le bon genre, je voulais du blues
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-genre_type
+- text: non, mets en pause, j'ai pas dit stop
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: je parlais du livre audio pas du podcast
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non, j'ai dit gainsbourg pas brassens
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: pas la playlist du matin, celle du soir
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non, du rap français, pas américain
+  bio_tags:
+  - O
+  - O
+  - B-genre_type
+  - I-genre_type
+  - O
+  - O
+- text: je voulais dire mettre en favoris, pas supprimer
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: c'est pas le bon album de stromae
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-artist_name
+- text: non, le dernier épisode pas le premier
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: pas ce morceau, le suivant
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: j'ai dit de la variété, pas de la pop
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-genre_type
+  - O
+  - O
+  - O
+  - B-genre_type
+- text: non, c'est l'autre station
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: je voulais dire plus fort, pas plus faible
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non le truc de yesterday
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-media_item

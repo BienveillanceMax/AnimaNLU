@@ -1,0 +1,43 @@
+speech_act: Request
+domain: Home
+examples:
+- text: tu pourrais allumer la lumière
+  bio_tags: [O, O, O, O, B-device_type]
+- text: est-ce que tu peux baisser le chauffage
+  bio_tags: [O, O, O, O, O, O, B-device_type]
+- text: j'aimerais que tu fermes les volets
+  bio_tags: [O, O, O, O, O, B-device_type]
+- text: tu pourrais mettre le chauffage dans la chambre
+  bio_tags: [O, O, O, O, B-device_type, O, O, B-room]
+- text: tu veux bien éteindre le salon
+  bio_tags: [O, O, O, O, O, B-room]
+- text: tu pourrais ouvrir les stores
+  bio_tags: [O, O, O, O, B-device_type]
+- text: est-ce que tu peux mettre la clim
+  bio_tags: [O, O, O, O, O, O, B-device_type]
+- text: j'aimerais un peu plus de lumière
+  bio_tags: [O, O, O, O, O, B-device_type]
+- text: tu pourrais monter la température
+  bio_tags: [O, O, O, O, B-setting_type]
+- text: tu peux baisser les lumières du salon
+  bio_tags: [O, O, O, O, B-device_type, O, B-room]
+- text: tu pourrais fermer la porte du garage
+  bio_tags: [O, O, O, O, O, O, B-room]
+- text: j'aimerais que tu allumes dans l'entrée
+  bio_tags: [O, O, O, O, O, B-room]
+- text: tu peux mettre le ventilateur en marche
+  bio_tags: [O, O, O, O, B-device_type, O, O]
+- text: tu pourrais baisser un peu le son
+  bio_tags: [O, O, O, O, O, O, O]
+- text: tu veux bien fermer les volets du salon
+  bio_tags: [O, O, O, O, O, B-device_type, O, B-room]
+- text: est-ce que tu peux allumer la veilleuse
+  bio_tags: [O, O, O, O, O, O, B-device_type]
+- text: j'aimerais qu'il fasse plus chaud
+  bio_tags: [O, O, O, O, O]
+- text: tu pourrais mettre la lumière en mode nuit
+  bio_tags: [O, O, O, O, B-device_type, O, B-scene_name, I-scene_name]
+- text: tu pourrais régler le thermostat
+  bio_tags: [O, O, O, O, B-device_type]
+- text: tu peux mettre la température à vingt degrés
+  bio_tags: [O, O, O, O, B-setting_type, O, B-setting_value, I-setting_value]

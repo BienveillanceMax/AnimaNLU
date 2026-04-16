@@ -1,0 +1,18 @@
+[project]
+name = "anima-nlu-training"
+version = "0.1.0"
+description = "NLU training pipeline for Anima Phase 1 — CamemBERTav2 multi-head (speech act + domain + slots)"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.2",
+    "transformers>=4.40",
+    "accelerate>=0.26.0",
+    "datasets",
+    "seqeval",
+    "onnx",
+    "onnxruntime",
+    "scikit-learn",
+    "pyyaml",
+    "numpy",
+    "pytorch-crf>=0.7.2",
+]

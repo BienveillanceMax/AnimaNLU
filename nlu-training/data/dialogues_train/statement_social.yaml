@@ -1,0 +1,432 @@
+speech_act: Statement
+domain: Social
+examples:
+- text: Il fait chaud ici
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: J'aime les goûts épicés, mais là c'est un peu exagéré
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'aime pas jouer les bonnes élèves
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'adore les cicatrices
+  bio_tags:
+  - O
+  - O
+  - O
+- text: J'aime les séducteurs
+  bio_tags:
+  - O
+  - O
+  - O
+- text: J'aime pas rester assise trop longtemps
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'ai soif
+  bio_tags:
+  - O
+  - O
+- text: Je déteste les journalistes
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Je déteste les surprises
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: J'aime pas comment il lance
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Je déteste les clowns tristes
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'aime les deux pareil
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: J'aime pas monter avec lui, c'est un danger public
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Je préfère le chat. Il déteste le lundi, comme tout un chacun
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'aime pas te voir comme ça. A plus tard
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Il pleut
+  bio_tags:
+  - O
+  - O
+- text: J'aime les vaches
+  bio_tags:
+  - O
+  - O
+  - O
+- text: J'adore les surprises
+  bio_tags:
+  - O
+  - O
+  - O
+- text: J'adore les jeux
+  bio_tags:
+  - O
+  - O
+  - O
+- text: J'aime le danger
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Il fait froid dehors
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: J'adore le rôti. Au revoir
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: j'adore le chocolat. J'en avalerai des kilos
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'adore les maisons hantées
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: J'adore le brie
+  bio_tags:
+  - O
+  - O
+  - O
+- text: J'aime pas les westerns
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: J'adore le poulet à la mandarine, quand c'est du poulet à la mandarine
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'adore les Kings of Convenience. J'écoute l'album en boucle. Il est génial
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'adore les artistes torturés mais n'en ajoute pas. C'est super
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'aime pas trop
+  bio_tags:
+  - O
+  - O
+  - O
+- text: J'aime les armes, mais j'ai peur de m'exploser la tête
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Je déteste les clowns
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Je déteste les sous titres. Si c'est pour lire je préfère prendre un livre
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Je préfère le crépuscule. Il apporte avec lui le cortège des souvenirs
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'adore les bijoux et les fleurs
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'adore les histoires
+  bio_tags:
+  - O
+  - O
+  - O
+- text: J'aime pas ça
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Je déteste les embouteillages
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Il fait froid surtout
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: J'ai froid
+  bio_tags:
+  - O
+  - O
+- text: J'aime bien les habitants de cette ville. Très coopératifs
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'aime pas les voir ensemble
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'aime les glaces, j'aime les glaces, tout comme toi
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'adore les gaufres
+  bio_tags:
+  - O
+  - O
+  - O
+- text: J'aime les cartes de crédit
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'adore le chocolat
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Je déteste le gâchis
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: J'adore les fajitas
+  bio_tags:
+  - O
+  - O
+  - O
+- text: J'aime les baleines. Elles mangent les calamars
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'adore les fermes
+  bio_tags:
+  - O
+  - O
+  - O
+- text: J'aime pas cette fille
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: J'adore le jambon de Bayonne
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'aime les bébés. Accordé
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Je déteste les mensonges
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: J'aime les chevaux
+  bio_tags:
+  - O
+  - O
+  - O
+- text: J'adore les contes mais le temps presse
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'aime pas trop les peaux-rouges, ni les fils de pute
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O

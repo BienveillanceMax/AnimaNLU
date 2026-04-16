@@ -1,0 +1,219 @@
+speech_act: NegativeFeedback
+domain: Social
+examples:
+- text: C'est nul, rends-la lui
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Ça craint vraiment
+  bio_tags:
+  - O
+  - O
+  - O
+- text: C'est nul ! On regarde autre chose
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: ça craint
+  bio_tags:
+  - O
+  - O
+- text: C'est nul, Haley
+  bio_tags:
+  - O
+  - O
+  - O
+- text: c'est ridicule, non
+  bio_tags:
+  - O
+  - O
+  - O
+- text: C'est nul les farces des cookies
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: c'est ridicule comme excuse
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: C'est nul, y a rien là dedans
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: C'est ridicule
+  bio_tags:
+  - O
+  - O
+- text: C'est nul de ne pas leur avoir dit
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: N'importe quoi
+  bio_tags:
+  - O
+  - O
+- text: Ça marche pas
+  bio_tags:
+  - O
+  - O
+  - O
+- text: C'est ridicule, elle va détester
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: c'est n'importe quoi
+  bio_tags:
+  - O
+  - O
+  - O
+- text: C'est nul
+  bio_tags:
+  - O
+  - O
+- text: c'est ridicule ce que tu dis
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: N'importe quoi c'est pas
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: T'es nul
+  bio_tags:
+  - O
+  - O
+- text: C'est nul, votre plan
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: C'est nul, je gagnais par ce score
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: C'est nul ce sport
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: C'est lamentable
+  bio_tags:
+  - O
+  - O
+- text: Ça craint ça, je crois
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: C'est nul, il n'y a pas de photos
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: c'est pas ce que je voulais
+  bio_tags: [O, O, O, O, O, O]
+- text: t'es pas doué
+  bio_tags: [O, O, O]
+- text: c'est pas terrible
+  bio_tags: [O, O, O]
+- text: ça me plaît pas du tout
+  bio_tags: [O, O, O, O, O, O]
+- text: c'est vraiment pas top
+  bio_tags: [O, O, O, O]
+- text: t'as rien compris
+  bio_tags: [O, O, O]
+- text: c'est pas ça du tout
+  bio_tags: [O, O, O, O, O]
+- text: non c'est pas bon
+  bio_tags: [O, O, O, O]
+- text: tu fais n'importe quoi
+  bio_tags: [O, O, O, O]
+- text: c'est décevant
+  bio_tags: [O, O]
+- text: ça me convient pas
+  bio_tags: [O, O, O, O]
+- text: c'est pas ouf
+  bio_tags: [O, O, O]
+- text: bof c'est moyen
+  bio_tags: [O, O, O]
+- text: c'est pas génial
+  bio_tags: [O, O, O]
+- text: franchement c'est mauvais
+  bio_tags: [O, O, O]
+- text: t'es à côté de la plaque
+  bio_tags: [O, O, O, O, O, O]
+- text: c'est la catastrophe
+  bio_tags: [O, O, O]
+- text: ça va pas du tout
+  bio_tags: [O, O, O, O, O]
+- text: c'est raté
+  bio_tags: [O, O]
+- text: j'en suis pas content
+  bio_tags: [O, O, O, O]
+- text: c'est pas ce que j'attendais
+  bio_tags: [O, O, O, O, O]
+- text: non c'est nul
+  bio_tags: [O, O, O]
+- text: t'as tout faux
+  bio_tags: [O, O, O]
+- text: ça m'aide pas du tout
+  bio_tags: [O, O, O, O, O]
+- text: c'est pire qu'avant
+  bio_tags: [O, O, O]
+- text: c'est pas terrible ce que tu fais
+  bio_tags: [O, O, O, O, O, O, O]
+- text: c'est minable
+  bio_tags: [O, O]
+- text: j'en ai marre de tes erreurs
+  bio_tags: [O, O, O, O, O, O]
+- text: ça craint ce que tu dis
+  bio_tags: [O, O, O, O, O, O]
+- text: c'est pas la bonne réponse
+  bio_tags: [O, O, O, O, O]

@@ -1,0 +1,454 @@
+speech_act: ExpressEmotion
+domain: Social
+examples:
+- text: j'ai eu une journée de merde
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-emotion
+- text: je suis crevé
+  bio_tags:
+  - O
+  - O
+  - B-emotion
+- text: j'en ai marre
+  bio_tags:
+  - O
+  - O
+  - O
+- text: je suis trop fatigué
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-emotion
+- text: ça me soûle
+  bio_tags:
+  - O
+  - O
+  - O
+- text: j'en peux plus
+  bio_tags:
+  - O
+  - O
+  - O
+- text: je suis stressé par le boulot
+  bio_tags:
+  - O
+  - O
+  - B-emotion
+  - O
+  - O
+  - B-topic
+- text: je me sens seul
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-emotion
+- text: ça va pas du tout aujourd'hui
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: je suis dégoûté
+  bio_tags:
+  - O
+  - O
+  - B-emotion
+- text: ça m'énerve
+  bio_tags:
+  - O
+  - O
+- text: je suis en colère
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-emotion
+- text: je me sens nul
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-emotion
+- text: ça me rend triste
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-emotion
+- text: je suis épuisé
+  bio_tags:
+  - O
+  - O
+  - B-emotion
+- text: je suis déprimé en ce moment
+  bio_tags:
+  - O
+  - O
+  - B-emotion
+  - O
+  - O
+  - O
+- text: je suis inquiet pour demain
+  bio_tags:
+  - O
+  - O
+  - B-emotion
+  - O
+  - B-date_value
+- text: je suis triste
+  bio_tags:
+  - O
+  - O
+  - B-emotion
+- text: je suis anxieux
+  bio_tags:
+  - O
+  - O
+  - B-emotion
+- text: ça me prend la tête
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: je suis au bout du rouleau
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: j'arrive plus à dormir
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: je suis à bout
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: j'ai envie de pleurer
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: je suis tellement frustré
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-emotion
+- text: tout me saoule en ce moment
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: j'ai le moral dans les chaussettes
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: ça me fait chier
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: je suis trop énervé là
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-emotion
+  - O
+- text: j'arrive pas à me concentrer
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: je dors super mal en ce moment
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: ça me stresse
+  bio_tags:
+  - O
+  - O
+  - B-emotion
+- text: j'ai un mauvais pressentiment
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-emotion
+- text: je suis déçu
+  bio_tags:
+  - O
+  - O
+  - B-emotion
+- text: je me sens pas bien
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: ça va moyen
+  bio_tags:
+  - O
+  - O
+  - O
+- text: bof ça pourrait aller mieux
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: j'ai le blues
+  bio_tags:
+  - O
+  - O
+  - O
+- text: la journée a été longue
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: je suis découragé
+  bio_tags:
+  - O
+  - O
+  - B-emotion
+- text: je suis trop content
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-emotion
+- text: je suis de bonne humeur
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-emotion
+- text: je suis excité pour ce soir
+  bio_tags:
+  - O
+  - O
+  - B-emotion
+  - O
+  - O
+  - O
+- text: ça va super bien
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: je suis fier de moi
+  bio_tags:
+  - O
+  - O
+  - B-emotion
+  - O
+  - O
+- text: on a gagné
+  bio_tags:
+  - O
+  - O
+  - O
+- text: je me sens bien aujourd'hui
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-emotion
+  - O
+- text: je suis soulagé
+  bio_tags:
+  - O
+  - O
+  - B-emotion
+- text: ça me rend heureux
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-emotion
+- text: je suis aux anges
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: je suis tellement heureux
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-emotion
+- text: j'ai le sourire
+  bio_tags:
+  - O
+  - O
+  - O
+- text: je suis sur un petit nuage
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: je pète la forme
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: j'ai une pêche d'enfer
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: la vie est belle aujourd'hui
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: je suis tellement reconnaissant
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-emotion
+- text: je me sens léger
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-emotion
+- text: ça me fait du bien de te parler
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: je suis enfin détendu
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-emotion
+- text: je suis perplexe
+  bio_tags:
+  - O
+  - O
+  - B-emotion
+- text: je sais pas quoi penser
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: je suis un peu perdu
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-emotion
+- text: c'est bizarre ce que je ressens
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: je suis partagé
+  bio_tags:
+  - O
+  - O
+  - B-emotion
+- text: je suis nostalgique
+  bio_tags:
+  - O
+  - O
+  - B-emotion
+- text: j'ai des sentiments mitigés
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-emotion
+- text: je suis un peu chamboulé
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-emotion
+- text: c'est compliqué dans ma tête
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: je sais pas comment je me sens
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: bof, ça pourrait aller mieux
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O

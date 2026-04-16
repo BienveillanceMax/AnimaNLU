@@ -1,0 +1,15 @@
+Home
+Media
+Communication
+Calendar
+Reminder
+Weather
+News
+Knowledge
+Cooking
+Shopping
+Transport
+DateTime
+Social
+System
+Meta

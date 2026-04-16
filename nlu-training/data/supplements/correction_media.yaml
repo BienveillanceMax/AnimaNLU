@@ -1,0 +1,392 @@
+speech_act: Correction
+domain: Media
+examples:
+- text: non pas du jazz du rock
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-genre_type
+  - O
+  - B-genre_type
+- text: non je voulais dire brel
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-artist_name
+- text: non pas cette chanson l'autre
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non la playlist d'avant
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: je parlais de la radio pas de la musique
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non monter le son pas le baisser
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non l'autre podcast
+  bio_tags:
+  - O
+  - O
+  - O
+- text: non c'est pas cet artiste
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: je voulais dire orelsan
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-artist_name
+- text: non pas celui-là le suivant
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non pas du classique de l'électro
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: je voulais la radio pas le podcast
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non pas cette playlist l'autre
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non je parlais de stromae
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-artist_name
+- text: c'est pas le bon morceau
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non j'ai dit du rap
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-genre_type
+- text: pas cette station l'autre
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: non baisser le son pas le monter
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non c'est de la pop que je voulais
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-genre_type
+  - O
+  - O
+  - O
+- text: j'ai dit france culture pas france inter
+  bio_tags:
+  - O
+  - O
+  - B-media_item
+  - I-media_item
+  - O
+  - B-media_item
+  - I-media_item
+- text: non, pas du jazz du rock
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-genre_type
+  - O
+  - B-genre_type
+- text: non, je voulais dire brel
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-artist_name
+- text: non, pas cette chanson l'autre
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non, la playlist d'avant
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: non, monter le son pas le baisser
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non, l'autre podcast
+  bio_tags:
+  - O
+  - O
+  - O
+- text: non, c'est pas cet artiste
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non, pas celui-là le suivant
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non, pas du classique de l'électro
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non, pas cette playlist l'autre
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non, je parlais de stromae
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-artist_name
+- text: non, j'ai dit du rap
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-genre_type
+- text: non, baisser le son pas le monter
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non, c'est de la pop que je voulais
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-genre_type
+  - O
+  - O
+  - O
+- text: non, je voulais pas du rock mais du jazz
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: c'est pas le bon artiste
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non, pas cette radio, l'autre
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: je parlais de la playlist détente pas celle-là
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non, c'est du hip-hop que je voulais
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: j'ai dit france info, pas france inter
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non, c'est pas le bon podcast
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non, monte le volume pas baisse
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: je parlais du dernier album, pas l'ancien
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non, mets la chanson d'après
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: pas celui-là, le podcast de science
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non, j'ai dit du reggae
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: c'est pas la bonne station de radio
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: je voulais dire le morceau d'avant
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non, pas pause, suivant
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: c'est pas ça, je voulais de la variété
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O

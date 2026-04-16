@@ -1,0 +1,292 @@
+speech_act: Deny
+domain: Social
+examples:
+- text: non
+  bio_tags:
+  - O
+- text: non non
+  bio_tags:
+  - O
+  - O
+- text: nan
+  bio_tags:
+  - O
+- text: pas du tout
+  bio_tags:
+  - O
+  - O
+  - O
+- text: absolument pas
+  bio_tags:
+  - O
+  - O
+- text: non merci
+  bio_tags:
+  - O
+  - O
+- text: surtout pas
+  bio_tags:
+  - O
+  - O
+- text: jamais de la vie
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: non c'est pas ça
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: non je veux pas
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: c'est pas ce que j'ai demandé
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non laisse
+  bio_tags:
+  - O
+  - O
+- text: je veux pas
+  bio_tags:
+  - O
+  - O
+  - O
+- text: hors de question
+  bio_tags:
+  - O
+  - O
+  - O
+- text: même pas en rêve
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: certainement pas
+  bio_tags:
+  - O
+  - O
+- text: non pas maintenant
+  bio_tags:
+  - O
+  - O
+  - O
+- text: c'est non
+  bio_tags:
+  - O
+  - O
+- text: j'ai dit non
+  bio_tags:
+  - O
+  - O
+  - O
+- text: négatif
+  bio_tags:
+  - O
+- text: ça m'intéresse pas
+  bio_tags:
+  - O
+  - O
+  - O
+- text: j'en veux pas
+  bio_tags:
+  - O
+  - O
+  - O
+- text: non c'est bon
+  bio_tags:
+  - O
+  - O
+  - O
+- text: pas la peine
+  bio_tags:
+  - O
+  - O
+  - O
+- text: non pas ça
+  bio_tags:
+  - O
+  - O
+  - O
+- text: non c'est faux
+  bio_tags:
+  - O
+  - O
+  - O
+- text: non c'est pas correct
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: non tu te trompes
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: non c'est l'inverse
+  bio_tags:
+  - O
+  - O
+  - O
+- text: pas exactement
+  bio_tags:
+  - O
+  - O
+- text: c'est pas vraiment ça
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: non j'ai jamais dit ça
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non c'est pas ce que je pense
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: pas vraiment non
+  bio_tags:
+  - O
+  - O
+  - O
+- text: bah non
+  bio_tags:
+  - O
+  - O
+- text: nan nan
+  bio_tags:
+  - O
+  - O
+- text: non j'ai pas dit ça
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: je crois pas non
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: j'en doute
+  bio_tags:
+  - O
+  - O
+- text: non, non
+  bio_tags:
+  - O
+  - O
+- text: non, merci
+  bio_tags:
+  - O
+  - O
+- text: non, c'est pas ça
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: non, je veux pas
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: non, laisse
+  bio_tags:
+  - O
+  - O
+- text: non, pas maintenant
+  bio_tags:
+  - O
+  - O
+  - O
+- text: non, c'est bon
+  bio_tags:
+  - O
+  - O
+  - O
+- text: non, pas ça
+  bio_tags:
+  - O
+  - O
+  - O
+- text: non, c'est faux
+  bio_tags:
+  - O
+  - O
+  - O
+- text: non, c'est pas correct
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: non, tu te trompes
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: non, c'est l'inverse
+  bio_tags:
+  - O
+  - O
+  - O
+- text: non, j'ai jamais dit ça
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non, c'est pas ce que je pense
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: bah, non
+  bio_tags:
+  - O
+  - O
+- text: euh, non
+  bio_tags:
+  - O
+  - O
+- text: non, j'ai pas dit ça
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O

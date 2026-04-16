@@ -1,0 +1,346 @@
+speech_act: Greeting
+domain: Social
+examples:
+- text: Bonjour Vivi
+  bio_tags:
+  - O
+  - O
+- text: Salut fiston
+  bio_tags:
+  - O
+  - O
+- text: Salut, Haley
+  bio_tags:
+  - O
+  - O
+- text: Bonjour mon Colonel
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Salut Dr Burke
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Bonjour les garçons
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Salut, Marcus
+  bio_tags:
+  - O
+  - O
+- text: bonsoir Ira
+  bio_tags:
+  - O
+  - O
+- text: Salut, toi
+  bio_tags:
+  - O
+  - O
+- text: Salut petite soeur
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Salut Marvin
+  bio_tags:
+  - O
+  - O
+- text: Bonjour, mon trésor
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Salut, mon coeur
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Bonjour Tilly
+  bio_tags:
+  - O
+  - O
+- text: Salut Max
+  bio_tags:
+  - O
+  - O
+- text: Salut! Racontez-moi
+  bio_tags:
+  - O
+  - O
+- text: Salut Phoebe
+  bio_tags:
+  - O
+  - O
+- text: Bonjour, Ripper
+  bio_tags:
+  - O
+  - O
+- text: Hello
+  bio_tags:
+  - O
+- text: Bonjour Matthew
+  bio_tags:
+  - O
+  - O
+- text: bonsoir Gail
+  bio_tags:
+  - O
+  - O
+- text: Salut, coloc'
+  bio_tags:
+  - O
+  - O
+- text: Salut ! Encore nous
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Salut, maman
+  bio_tags:
+  - O
+  - O
+- text: Salut Jake
+  bio_tags:
+  - O
+  - O
+- text: Salut petit
+  bio_tags:
+  - O
+  - O
+- text: Bonjour Merlin
+  bio_tags:
+  - O
+  - O
+- text: Bonjour Lucas
+  bio_tags:
+  - O
+  - O
+- text: Bonsoir maman
+  bio_tags:
+  - O
+  - O
+- text: Salut, bon courage
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Salut Tim
+  bio_tags:
+  - O
+  - O
+- text: Bonjour, chéri
+  bio_tags:
+  - O
+  - O
+- text: Salut, bonne chance
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Salut, Christopher
+  bio_tags:
+  - O
+  - O
+- text: Salut. Oh, non
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Salut, momi-moo
+  bio_tags:
+  - O
+  - O
+- text: Bonjour Renée
+  bio_tags:
+  - O
+  - O
+- text: Bonjour Daniel
+  bio_tags:
+  - O
+  - O
+- text: Bonjour Stéphane
+  bio_tags:
+  - O
+  - O
+- text: Salut Angel
+  bio_tags:
+  - O
+  - O
+- text: Bonjour Gail
+  bio_tags:
+  - O
+  - O
+- text: Salut Bart-abac
+  bio_tags:
+  - O
+  - O
+- text: Salut, Gigi
+  bio_tags:
+  - O
+  - O
+- text: Salut Cynda
+  bio_tags:
+  - O
+  - O
+- text: Bonjour Louise
+  bio_tags:
+  - O
+  - O
+- text: Bonjour, c'est nous
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Salut Mona
+  bio_tags:
+  - O
+  - O
+- text: Bonjour, vous
+  bio_tags:
+  - O
+  - O
+- text: Bonjour Lya
+  bio_tags:
+  - O
+  - O
+- text: Bonsoir à nouveau
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Salut, poil au c
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Salut les gosses
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Salut voisins
+  bio_tags:
+  - O
+  - O
+- text: Bonjour, Millie
+  bio_tags:
+  - O
+  - O
+- text: Salut, Julie
+  bio_tags:
+  - O
+  - O
+- text: Salut Tobey
+  bio_tags:
+  - O
+  - O
+- text: Bonsoir M... Bing
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Bonjour Yvette
+  bio_tags:
+  - O
+  - O
+- text: Bonjour Boris
+  bio_tags:
+  - O
+  - O
+- text: Salut, Sheldon
+  bio_tags:
+  - O
+  - O
+- text: Bonjour chère soeur
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Bonjour Dean
+  bio_tags:
+  - O
+  - O
+- text: Salut mon amour
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Salut miss Sawyer
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Salut mon pote
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Salut Janice
+  bio_tags:
+  - O
+  - O
+- text: Salut maman
+  bio_tags:
+  - O
+  - O
+- text: Bonjour, Arthur
+  bio_tags:
+  - O
+  - O
+- text: Salut, Grâce
+  bio_tags:
+  - O
+  - O
+- text: Salut Jess
+  bio_tags:
+  - O
+  - O
+- text: Bonjour, papa
+  bio_tags:
+  - O
+  - O
+- text: Bonjour Ripper
+  bio_tags:
+  - O
+  - O
+- text: bonjour, mon ami
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Bonjour, Jack
+  bio_tags:
+  - O
+  - O
+- text: Salut! Salut Maman
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Salut Léo
+  bio_tags:
+  - O
+  - O
+- text: Salut Docteur Nick
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Salut, Andy
+  bio_tags:
+  - O
+  - O
+- text: Salut Willow
+  bio_tags:
+  - O
+  - O
+- text: bonjour Hébron
+  bio_tags:
+  - O
+  - O

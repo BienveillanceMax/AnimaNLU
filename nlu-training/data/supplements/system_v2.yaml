@@ -1,0 +1,33 @@
+speech_act: Command
+domain: System
+examples:
+  - {text: "moins fort s'il te plaît", bio_tags: [O, O, O, O, O]}
+  - {text: "plus fort j'entends rien", bio_tags: [O, O, O, O]}
+  - {text: "ta voix est trop forte, baisse", bio_tags: [O, O, O, O, O, O]}
+  - {text: "je t'entends à peine, parle plus fort", bio_tags: [O, O, O, O, O, O, O]}
+  - {text: "coupe le micro", bio_tags: [O, O, O]}
+  - {text: "mets-toi en pause cinq minutes", bio_tags: [O, O, O, B-duration, I-duration]}
+  - {text: "reviens dans une heure", bio_tags: [O, O, B-duration, I-duration]}
+  - {text: "ne dis plus rien", bio_tags: [O, O, O, O]}
+  - {text: "laisse-moi tranquille", bio_tags: [O, O]}
+  - {text: "sois discret ce soir", bio_tags: [O, O, O, O]}
+  - {text: "ne fais pas de bruit", bio_tags: [O, O, O, O, O]}
+  - {text: "dis rien pendant dix minutes", bio_tags: [O, O, O, B-duration, I-duration]}
+  - {text: "mets le mode avion", bio_tags: [O, O, O, O]}
+  - {text: "active le mode ne pas déranger", bio_tags: [O, O, O, O, O, O]}
+  - {text: "réveille-moi à six heures demain", bio_tags: [O, O, B-time_value, I-time_value, B-date_value]}
+  - {text: "rappelle-moi dans dix minutes", bio_tags: [O, O, B-duration, I-duration]}
+  - {text: "dis-moi quand il sera huit heures", bio_tags: [O, O, O, O, B-time_value, I-time_value]}
+  - {text: "préviens-moi quand c'est prêt", bio_tags: [O, O, O, O]}
+  - {text: "mets un minuteur de quinze minutes", bio_tags: [O, O, O, O, B-duration, I-duration]}
+  - {text: "parle-moi en chuchotant", bio_tags: [O, O, O]}
+  - {text: "sois moins bavard", bio_tags: [O, O, O]}
+  - {text: "arrête de me couper la parole", bio_tags: [O, O, O, O, O, O]}
+  - {text: "fais une pause", bio_tags: [O, O, O]}
+  - {text: "ferme-la deux secondes", bio_tags: [O, O, O]}
+  - {text: "chuuut", bio_tags: [O]}
+  - {text: "oh la ferme", bio_tags: [O, O, O]}
+  - {text: "stop stop stop", bio_tags: [O, O, O]}
+  - {text: "tais-toi maintenant", bio_tags: [O, O]}
+  - {text: "pas un mot de plus", bio_tags: [O, O, O, O, O]}
+  - {text: "on se retrouve demain matin", bio_tags: [O, O, O, B-date_value, I-date_value]}

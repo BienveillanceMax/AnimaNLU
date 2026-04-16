@@ -1,0 +1,264 @@
+speech_act: Question
+domain: Meta
+examples:
+- text: Comment tu fais ça ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: T'es qui toi, salope ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Comment tu sais ça, Dawson ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Comment tu sais ça ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Tu te souviens même de ça
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: C'est quoi ton problème ? File-moi ça
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Comment tu sais ça?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Tu te souviens quand on les a eus?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Tu te rappelles quand ça a clashé ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Comment tu fais pour abimer un pénis ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Tu te souviens même de mon nom ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Tu te souviens qui ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Comment tu sais???
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Tu te souviens pas ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: T'es qui toi?
+  bio_tags:
+  - O
+  - O
+  - O
+- text: C'est quoi ton problème? Casse-toi
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: C'est quoi ton problème, mon pote?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Tu te rappelles la date ? Ca me touche
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Tu te rappelles pas du marionettiste???
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Tu te souviens quand c'est arrivé ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: C'est quoi ton nom ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Comment tu sais qu'il était surpris ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Comment tu fais sans argent ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Comment tu sais qu'il est de lui ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: C'est quoi ton problème, à toi ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Tu m'aimes ?
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Tu m'écoutes ? J'ai besoin de toi
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: C'est quoi ton problème ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Comment tu sais ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Pourquoi t'as dit "Aussi" ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Comment tu fais pour tout retenir ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Tu m'aimes toujours, dis ?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Comment tu fais pour être aussi forte?
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O

@@ -1,0 +1,468 @@
+speech_act: PositiveFeedback
+domain: Social
+examples:
+- text: merci président ashvan
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Merci, je le pense aussi
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Merci major
+  bio_tags:
+  - O
+  - O
+- text: Merci. Elle sort
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Merci, Gaius
+  bio_tags:
+  - O
+  - O
+- text: Merci. Dean
+  bio_tags:
+  - O
+  - O
+- text: Merci Sheldon, je te revaudrai ça
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Merci. Bonjour, voisine
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Merci les amis
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Merci, ça me rassure
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Bravo petit ! Bravo
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Merci. Je l'appelle le Clooney
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Merci, toi aussi tu es très
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Merci mais sans façon
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Merci de cette intervention
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Bravo, Phoebe
+  bio_tags:
+  - O
+  - O
+- text: merci, vous finirait plus tard
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Merci Marie
+  bio_tags:
+  - O
+  - O
+- text: Merci, les gars
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Merci quand même
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Merci, Wyatt. Je suis un gardien
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Merci pour ce que tu fais pour moi
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Merci . J'ai bientôt mon poney
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Merci d'être venue, Mme Cooper
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Merci pour cette soirée
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Merci d' avoir rapporté les restes
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Merci. Bonne nuit chérie
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Merci de m'avoir couvert
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Bien joué Georges
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Merci beaucoup, Artie
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Merci, cher ami
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Merci pour le dîner, hier soir
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Merci. C'est magnifique
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Merci. Merci, mesdames
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Merci, Melanie
+  bio_tags:
+  - O
+  - O
+- text: Merci, c'est très gentil
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Merci, là je me sens mieux
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Merci d'être venue
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Merci capitaine, euh major
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Merci de votre aide
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: C'est super
+  bio_tags:
+  - O
+  - O
+- text: Bravo. Tout faux
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Merci l'odorat
+  bio_tags:
+  - O
+  - O
+- text: Bravo, tu as bien travaillé
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Bien joué ! C'était très mature
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Merci ! Merci
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Merci, M. Jane
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Merci, Joey
+  bio_tags:
+  - O
+  - O
+- text: Merci pour le dîner
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Merci mon colonel
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Bien joué Jane
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Merci, c'est gentil
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Merci pour la permission
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Merci chéri
+  bio_tags:
+  - O
+  - O
+- text: Merci mon chéri
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Merci. Bien joué
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Merci, sire
+  bio_tags:
+  - O
+  - O
+- text: Merci on passe à toi maintenant
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Merci mais faut que je rentre
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Merci Dawson
+  bio_tags:
+  - O
+  - O
+- text: Merci Dr Sheperd
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Merci, Moe
+  bio_tags:
+  - O
+  - O
+- text: Merci, je sais
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Merci. Relevez-vous
+  bio_tags:
+  - O
+  - O
+- text: Bravo, Lisa, bravo
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Merci de m'avoir parlé
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Merci, ça me portera chance
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Merci, on se voit à la fête
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Merci pour les fringues
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Merci. Ça me touche beaucoup
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Merci Chandler
+  bio_tags:
+  - O
+  - O
+- text: merci. Toi aussi, je t'adore, Joey
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Merci d'être aussi compréhensif
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Bien joué
+  bio_tags:
+  - O
+  - O
+- text: Merci. Voilà qui est étrange
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Merci, Dr Freud
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Merci. Bonjour messieurs
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Merci, je sais ! ça va aller
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Merci. Merci mon général
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: merci de te soucier de moi
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O

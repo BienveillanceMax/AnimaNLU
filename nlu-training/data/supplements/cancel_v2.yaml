@@ -1,0 +1,220 @@
+speech_act: Cancel
+domain: System
+examples:
+- text: non, laisse c'est pas grave
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: nan oublie j'ai plus besoin
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: c'est bon, j'ai trouvé tout seul
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non finalement c'est bon
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: j'en ai plus besoin merci
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: nan, c'est pas la peine finalement
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: laisse, je vais le faire moi-même
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: oublie ce que j'ai demandé
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: c'est plus nécessaire
+  bio_tags:
+  - O
+  - O
+  - O
+- text: j'ai changé d'avis, annule tout
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non non, c'est bon
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: bon, tant pis on verra plus tard
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: en fait j'en ai pas besoin
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: j'annule, c'est pas la peine
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non, laisse tomber c'est pas important
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: c'est bon j'ai trouvé
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: tu peux oublier ce que j'ai dit
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: stop, c'est bon merci
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: c'est plus utile, oublie
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: nan c'est bon, j'en ai plus besoin
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: retire ce que je viens de dire
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: ignore ma dernière demande
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: finalement, j'en veux plus
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: c'est pas grave, on oublie
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non merci, j'ai trouvé
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: en fait non, c'est pas ce que je voulais
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: bon, annule et on en parle plus
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non rien, oublie
+  bio_tags:
+  - O
+  - O
+  - O
+- text: j'ai plus besoin de ça, merci
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: laisse tomber, c'est réglé
+  bio_tags:
+  - O
+  - O
+  - O
+  - O

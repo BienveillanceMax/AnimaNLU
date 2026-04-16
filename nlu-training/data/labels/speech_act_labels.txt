@@ -1,0 +1,13 @@
+Command
+Request
+Question
+Statement
+ExpressEmotion
+Greeting
+Farewell
+Confirm
+Deny
+Correction
+PositiveFeedback
+NegativeFeedback
+Cancel

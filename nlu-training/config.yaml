@@ -1,0 +1,40 @@
+seed: 42
+
+model:
+  name: "almanach/camembertav2-base"
+  max_seq_length: 64
+  use_crf: true
+  head_hidden_dim: 256
+
+training:
+  learning_rate: 0.00002
+  per_device_batch_size: 64
+  gradient_accumulation_steps: 1
+  num_epochs: 40
+  early_stopping_patience: 7
+  early_stopping_metric: "eval_composite_acc"
+  warmup_ratio: 0.06
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  lr_scheduler_type: "cosine"
+  layer_lr_decay: 0.9
+
+loss:
+  weights:
+    speech_act: 1.0
+    domain: 1.0
+    slots: 2.0
+  focal_gamma: 1.0
+  smoothing: 0.05
+
+supplement_upsample_factor: 3
+
+sonnet_social_cap: 2000
+
+balancing:
+  max_per_combo: 3500
+  min_per_combo: 40
+
+paths:
+  data_dir: "data"
+  output_dir: "outputs"

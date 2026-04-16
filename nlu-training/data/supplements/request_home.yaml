@@ -1,0 +1,489 @@
+speech_act: Request
+domain: Home
+examples:
+- text: tu pourrais allumer la lumière du salon
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-device_type
+  - O
+  - B-room
+- text: tu pourrais éteindre le chauffage
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-device_type
+- text: est-ce que tu peux fermer les volets
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-device_type
+- text: j'aimerais que tu allumes la lampe de la chambre
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-device_type
+  - O
+  - O
+  - B-room
+- text: ce serait bien de baisser le chauffage
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-device_type
+- text: tu peux mettre le salon à vingt-deux degrés
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-room
+  - O
+  - B-setting_value
+  - I-setting_value
+- text: s'il te plaît allume la cuisine
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-room
+- text: j'aimerais un peu plus de lumière
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-device_type
+- text: tu pourrais ouvrir les volets du garage
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-device_type
+  - O
+  - B-room
+- text: ce serait possible de monter le chauffage
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-device_type
+- text: tu veux bien éteindre la lumière s'il te plaît
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-device_type
+  - O
+  - O
+  - O
+- text: est-ce que tu pourrais baisser la lumière
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-device_type
+- text: s'il te plaît mets le salon en mode nuit
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-room
+  - O
+  - O
+  - B-scene_name
+- text: tu peux allumer la prise du bureau
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-device_type
+  - O
+  - B-room
+- text: j'aimerais qu'il fasse plus chaud
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu pourrais fermer la porte du garage
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-device_type
+  - O
+  - B-room
+- text: est-ce que tu peux mettre la lumière en rouge
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-device_type
+  - O
+  - B-setting_value
+- text: ce serait bien de baisser un peu
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu pourrais mettre la température à dix-huit
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-setting_type
+  - O
+  - B-setting_value
+- text: s'il te plaît ferme les stores de la chambre
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-device_type
+  - O
+  - O
+  - B-room
+- text: j'aimerais allumer le couloir
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-room
+- text: tu peux éteindre la salle de bain
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-room
+  - I-room
+  - I-room
+- text: tu veux bien ouvrir les volets
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-device_type
+- text: j'aimerais que ça soit un peu plus lumineux
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu peux régler le thermostat sur vingt degrés
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-device_type
+  - O
+  - B-setting_value
+  - I-setting_value
+- text: tu veux bien éteindre la lumière, s'il te plaît
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-device_type
+  - O
+  - O
+  - O
+- text: ça serait possible de baisser la lumière
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu voudrais bien fermer les volets du salon
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: est-ce qu'on pourrait avoir un peu plus de lumière
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: j'aurais aimé que tu montes le chauffage
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: s'il te plaît, baisse un peu la température
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu pourrais allumer la lumière de l'entrée
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: ce serait cool de mettre le salon en ambiance tamisée
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: est-ce que tu pourrais ouvrir les stores
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu veux bien baisser le radiateur
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: j'aimerais bien qu'il fasse un peu plus frais
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: s'il te plaît, ouvre la fenêtre de la chambre
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: ce serait possible de couper le chauffage du bureau
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu pourrais mettre la lumière un peu plus forte
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: j'aimerais bien que tu fermes la porte du garage
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: s'il te plaît, éteins tout dans la cuisine
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu veux bien allumer dans le couloir
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: est-ce que tu pourrais mettre le chauffage dans la chambre
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: ce serait bien de tamiser la lumière du salon
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: j'aurais voulu un peu plus de chaleur ici
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu pourrais régler la clim s'il te plaît
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: s'il te plaît, mets la lumière en bleu dans la chambre
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: j'aimerais bien que le salon soit plus éclairé
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu veux bien couper la lumière de l'escalier
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: est-ce que tu peux baisser les stores du bureau
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O

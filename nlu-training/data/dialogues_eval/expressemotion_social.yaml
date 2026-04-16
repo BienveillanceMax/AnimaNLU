@@ -1,0 +1,184 @@
+speech_act: ExpressEmotion
+domain: Social
+examples:
+- text: Je me sens mal
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Je me sens bien, tu sais
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Je suis heureux en ménage
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Je suis content
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Je suis heureux de vous revoir
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Je suis triste moi aussi
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'ai honte
+  bio_tags:
+  - O
+  - O
+- text: Je me sens bien
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Je suis trop fatigué
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Je suis content pour toi
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Je suis aux anges
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Je suis énervé
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Je suis content de toi
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Je suis heureux de vous retrouver
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'ai la trouille
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Je suis fatigué
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Ça va pas, non ? C'est mon tee-shirt favori
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'en ai marre
+  bio_tags:
+  - O
+  - O
+  - O
+- text: je suis fier de toi Pacey
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Je suis heureux
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Je suis heureux de te l'entendre dire
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Ça va mal se finir
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Je suis fier de toi, tu t'es bien comportée
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Je suis fier de toi, Homer
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Je suis heureux d'avoir partagé leur joie
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Je suis heureux de te voir
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O

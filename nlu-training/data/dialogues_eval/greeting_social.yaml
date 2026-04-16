@@ -1,0 +1,126 @@
+speech_act: Greeting
+domain: Social
+examples:
+- text: Salut. Monsieur
+  bio_tags:
+  - O
+  - O
+- text: Bonjour, Jean
+  bio_tags:
+  - O
+  - O
+- text: Salut, Charlie
+  bio_tags:
+  - O
+  - O
+- text: Bonjour Janet
+  bio_tags:
+  - O
+  - O
+- text: Salut, Leslie
+  bio_tags:
+  - O
+  - O
+- text: Salut Richard
+  bio_tags:
+  - O
+  - O
+- text: Salut, Willow
+  bio_tags:
+  - O
+  - O
+- text: Bonsoir Buffy
+  bio_tags:
+  - O
+  - O
+- text: Salut mari adoré
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Salut Daniel
+  bio_tags:
+  - O
+  - O
+- text: salut coach
+  bio_tags:
+  - O
+  - O
+- text: Salut, Parker
+  bio_tags:
+  - O
+  - O
+- text: Bonjour, Dom Juan
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Bonsoir, toi
+  bio_tags:
+  - O
+  - O
+- text: Salut, porc
+  bio_tags:
+  - O
+  - O
+- text: Salut Callie
+  bio_tags:
+  - O
+  - O
+- text: Salut, vieux
+  bio_tags:
+  - O
+  - O
+- text: Bonjour Sam
+  bio_tags:
+  - O
+  - O
+- text: Salut, Marge
+  bio_tags:
+  - O
+  - O
+- text: Salut, Martin
+  bio_tags:
+  - O
+  - O
+- text: bonjour Nyan
+  bio_tags:
+  - O
+  - O
+- text: Salut, c'est Mike
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Salut Keith
+  bio_tags:
+  - O
+  - O
+- text: Bonjour Arthur
+  bio_tags:
+  - O
+  - O
+- text: Bonjour Audrey
+  bio_tags:
+  - O
+  - O
+- text: Bonjour Chandler
+  bio_tags:
+  - O
+  - O
+- text: Salut Jessica
+  bio_tags:
+  - O
+  - O
+- text: Bonjour Bart
+  bio_tags:
+  - O
+  - O
+- text: Salut, Jake
+  bio_tags:
+  - O
+  - O
+- text: Salut Fred
+  bio_tags:
+  - O
+  - O

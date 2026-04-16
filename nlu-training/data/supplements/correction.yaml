@@ -1,0 +1,368 @@
+speech_act: Correction
+domain: Home
+examples:
+- text: non je voulais dire le salon
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-room
+- text: non pas la chambre le salon
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-room
+  - O
+  - B-room
+- text: non l'autre lumière
+  bio_tags:
+  - O
+  - O
+  - B-device_type
+- text: pas celle-là l'autre
+  bio_tags:
+  - O
+  - O
+  - O
+- text: je parlais de la cuisine
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-room
+- text: non pas le chauffage les volets
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-device_type
+  - O
+  - B-device_type
+- text: je voulais dire éteindre pas allumer
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non le garage pas le salon
+  bio_tags:
+  - O
+  - O
+  - B-room
+  - O
+  - O
+  - B-room
+- text: non c'est la chambre
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-room
+- text: pas vingt degrés dix-huit
+  bio_tags:
+  - O
+  - B-setting_value
+  - I-setting_value
+  - B-setting_value
+- text: non je voulais la lumière du bureau
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-device_type
+  - O
+  - B-room
+- text: non pas ça la prise
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-device_type
+- text: j'ai dit la chambre pas le salon
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-room
+  - O
+  - O
+  - B-room
+- text: non la salle de bain
+  bio_tags:
+  - O
+  - O
+  - B-room
+  - I-room
+  - I-room
+- text: je parlais du radiateur
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-device_type
+- text: non c'est pas le salon la cuisine
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-room
+  - O
+  - B-room
+- text: je voulais le bureau pas la chambre
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-room
+  - O
+  - O
+  - B-room
+- text: non c'est les volets pas la lumière
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-device_type
+  - O
+  - O
+  - B-device_type
+- text: non pas ouvrir fermer
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: le garage j'ai dit pas le couloir
+  bio_tags:
+  - O
+  - B-room
+  - O
+  - O
+  - O
+  - O
+  - B-room
+- text: non je parlais de la terrasse
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-room
+- text: c'est pas ça j'ai dit la cuisine
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-room
+- text: non la lampe pas le plafonnier
+  bio_tags:
+  - O
+  - O
+  - B-device_type
+  - O
+  - O
+  - B-device_type
+- text: non pas vingt-deux vingt degrés
+  bio_tags:
+  - O
+  - O
+  - B-setting_value
+  - B-setting_value
+  - I-setting_value
+- text: non l'entrée pas la sortie
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: pas la prise la lampe
+  bio_tags:
+  - O
+  - O
+  - B-device_type
+  - O
+  - B-device_type
+- text: non j'ai dit le couloir
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-room
+- text: non allumer pas éteindre
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: pas cette pièce l'autre
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: non c'est le store pas le volet
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-device_type
+  - O
+  - O
+  - B-device_type
+- text: non, je voulais dire le salon
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-room
+- text: non, pas la chambre le salon
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-room
+  - O
+  - B-room
+- text: non, l'autre lumière
+  bio_tags:
+  - O
+  - O
+  - B-device_type
+- text: non, pas le chauffage les volets
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-device_type
+  - O
+  - B-device_type
+- text: non, le garage pas le salon
+  bio_tags:
+  - O
+  - O
+  - B-room
+  - O
+  - O
+  - B-room
+- text: non, c'est la chambre
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-room
+- text: non, je voulais la lumière du bureau
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-device_type
+  - O
+  - B-room
+- text: non, pas ça la prise
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-device_type
+- text: non, la salle de bain
+  bio_tags:
+  - O
+  - O
+  - B-room
+  - I-room
+  - I-room
+- text: non, c'est pas le salon la cuisine
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-room
+  - O
+  - B-room
+- text: non, c'est les volets pas la lumière
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-device_type
+  - O
+  - O
+  - B-device_type
+- text: non, pas ouvrir fermer
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: non, je parlais de la terrasse
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-room
+- text: non, la lampe pas le plafonnier
+  bio_tags:
+  - O
+  - O
+  - B-device_type
+  - O
+  - O
+  - B-device_type
+- text: non, pas vingt-deux vingt degrés
+  bio_tags:
+  - O
+  - O
+  - B-setting_value
+  - B-setting_value
+  - I-setting_value
+- text: non, l'entrée pas la sortie
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non, j'ai dit le couloir
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-room
+- text: non, allumer pas éteindre
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: non, c'est le store pas le volet
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-device_type
+  - O
+  - O
+  - B-device_type

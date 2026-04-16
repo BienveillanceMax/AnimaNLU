@@ -1,0 +1,250 @@
+speech_act: Statement
+domain: Social
+examples:
+- text: J'aime les bandes annonces. Les bonbons
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Je préfère le terme de
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'aime pas du tout quand tu prends cette voix
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Je déteste le yaourt, c'est gluant et il y a des morceaux
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'aime pas trop la compagnie
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'aime pas marchander
+  bio_tags:
+  - O
+  - O
+  - O
+- text: J'aime les filles décidées mais celle-là, c'est un vrai bulldozer
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'aime les immenses poches sur les shorts. Les enfants devraient porter leurs
+    propres couches
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'adore les missions
+  bio_tags:
+  - O
+  - O
+  - O
+- text: J'aime bien le gisement de fossiles
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'aime pas beaucoup tes "Peut-être, ou peut-être pas", et tu le sais
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Il neige
+  bio_tags:
+  - O
+  - O
+- text: J'aime les yeux globuleux et les petits mecs
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'aime pas ça du tout
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'adore les vannes de Peyton
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'aime le bordeaux. Ça fait plus digne
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'ai faim
+  bio_tags:
+  - O
+  - O
+- text: J'aime les grandes causes
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: J'aime bien le thème Sylvestre
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'adore les fleurs, je vends des fruits et des légumes
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'aime pas être obligé de mentir au Dr Bailey
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'aime pas cet endroit. C'est glauque
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'aime pas du tout Brad Pitt
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'adore le jeu des plaques d'immatriculation
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'ai chaud
+  bio_tags:
+  - O
+  - O
+- text: J'adore les romantiques
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Je déteste les trains
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: J'adore les mariages. La parfaite occasion pour des retrouvailles
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Je déteste les au revoirs
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: J'adore les probabilités
+  bio_tags:
+  - O
+  - O
+  - O

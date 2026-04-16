@@ -1,0 +1,364 @@
+speech_act: Request
+domain: Media
+examples:
+- text: tu pourrais mettre de la musique
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: est-ce que tu peux mettre du jazz
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-genre_type
+- text: j'aimerais écouter de la musique
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu pourrais mettre un peu de musique s'il te plaît
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: ce serait bien d'avoir de la musique
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu peux changer de chanson
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: j'aimerais écouter du rock
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-genre_type
+- text: tu pourrais monter le son
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu peux baisser un peu le volume
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: est-ce que tu peux mettre la radio
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: j'aimerais écouter france inter
+  bio_tags:
+  - O
+  - O
+  - B-media_item
+  - I-media_item
+- text: tu pourrais mettre un podcast
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: s'il te plaît mets du brel
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-artist_name
+- text: tu veux bien mettre la playlist chill
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-media_item
+- text: tu peux mettre quelque chose de calme
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: j'aimerais un truc un peu plus rythmé
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu pourrais couper la musique
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: est-ce qu'on peut écouter les infos
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: j'aimerais écouter un audiobook
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: tu peux passer au morceau suivant
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: j'aimerais bien écouter quelque chose de doux
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu pourrais me mettre un podcast sur l'histoire
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-topic
+- text: est-ce qu'on pourrait avoir un peu de musique
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: j'aimerais bien qu'on écoute de la soul
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-genre_type
+- text: tu voudrais bien mettre du classique
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-genre_type
+- text: ce serait cool de mettre un fond musical
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: j'aimerais une ambiance un peu plus chill
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu pourrais me mettre un truc de orelsan
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-artist_name
+- text: est-ce que tu peux trouver une playlist pour dormir
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: j'aurais bien aimé un peu de musique de fond
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu peux me mettre de la variété française
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-genre_type
+  - I-genre_type
+- text: ça te dérangerait de mettre un peu de musique
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: j'aimerais écouter les nouvelles à la radio
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu pourrais me trouver quelque chose de jazzy
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: est-ce que tu aurais de la musique relaxante
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: j'aimerais bien un podcast sur la science
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-topic
+- text: tu pourrais chercher un album de stromae
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-artist_name
+- text: ce serait possible d'écouter france culture
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-media_item
+  - I-media_item
+- text: j'aimerais bien qu'on mette de l'électro
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu voudrais bien passer le morceau
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu pourrais mettre un peu de musique, s'il te plaît
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O

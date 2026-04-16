@@ -1,0 +1,71 @@
+speech_act: Request
+domain: Media
+examples:
+- text: tu pourrais mettre de la musique
+  bio_tags: [O, O, O, O, O, O]
+- text: est-ce que tu peux changer de chanson
+  bio_tags: [O, O, O, O, O, O, O]
+- text: j'aimerais écouter du jazz
+  bio_tags: [O, O, O, B-genre_type]
+- text: tu pourrais mettre la radio
+  bio_tags: [O, O, O, O, B-media_item]
+- text: tu veux bien baisser le volume
+  bio_tags: [O, O, O, O, O, O]
+- text: tu pourrais jouer quelque chose de calme
+  bio_tags: [O, O, O, O, O, O, O]
+- text: est-ce que tu peux mettre un podcast
+  bio_tags: [O, O, O, O, O, O, B-media_item]
+- text: j'aimerais écouter les informations
+  bio_tags: [O, O, O, O]
+- text: tu pourrais passer la chanson suivante
+  bio_tags: [O, O, O, O, O, O]
+- text: tu peux mettre de la musique classique
+  bio_tags: [O, O, O, O, O, O, B-genre_type]
+- text: j'aimerais qu'on écoute du rock
+  bio_tags: [O, O, O, O, B-genre_type]
+- text: tu pourrais monter un peu le son
+  bio_tags: [O, O, O, O, O, O, O]
+- text: est-ce que tu peux jouer du Mozart
+  bio_tags: [O, O, O, O, O, O, B-artist_name]
+- text: tu pourrais mettre ma playlist préférée
+  bio_tags: [O, O, O, O, B-media_item, I-media_item]
+- text: j'aimerais regarder un film ce soir
+  bio_tags: [O, O, O, O, O, B-time_value]
+- text: tu veux bien mettre la musique en pause
+  bio_tags: [O, O, O, O, O, O, O, O]
+- text: tu pourrais lancer un livre audio
+  bio_tags: [O, O, O, O, B-media_item, I-media_item]
+- text: est-ce que tu peux mettre de la musique douce
+  bio_tags: [O, O, O, O, O, O, O, O, O]
+- text: tu pourrais mettre la chaîne d'info
+  bio_tags: [O, O, O, O, B-media_item, I-media_item]
+- text: j'aimerais écouter quelque chose en fond
+  bio_tags: [O, O, O, O, O, O]
+- text: tu pourrais remettre la chanson d'avant
+  bio_tags: [O, O, O, O, O, O]
+- text: j'aimerais bien un truc plus dynamique
+  bio_tags: [O, O, O, O, O, O]
+- text: est-ce que tu peux me trouver un podcast sympa
+  bio_tags: [O, O, O, O, O, O, O, O, B-media_item]
+- text: tu veux bien mettre la télé
+  bio_tags: [O, O, O, O, O, O]
+- text: tu pourrais me jouer du Brassens
+  bio_tags: [O, O, O, O, O, B-artist_name]
+- text: j'aimerais qu'on écoute de la variété française
+  bio_tags: [O, O, O, O, O, O, B-genre_type]
+- text: tu peux me mettre une playlist pour dormir
+  bio_tags: [O, O, O, O, O, B-media_item, O, O]
+- text: est-ce que tu pourrais chercher un documentaire
+  bio_tags: [O, O, O, O, O, O, B-media_item]
+- text: tu veux bien augmenter le volume un peu
+  bio_tags: [O, O, O, O, O, O, O, O]
+- text: j'aimerais écouter les nouvelles à la radio
+  bio_tags: [O, O, O, O, O, O, B-media_item]
+- text: tu pourrais me passer un morceau de Stromae
+  bio_tags: [O, O, O, O, O, O, O, B-artist_name]
+- text: tu pourrais mettre quelque chose pour les enfants
+  bio_tags: [O, O, O, O, O, O, O, O]
+- text: j'aimerais écouter du piano
+  bio_tags: [O, O, O, B-genre_type]
+- text: tu peux me jouer un truc joyeux
+  bio_tags: [O, O, O, O, O, O, O]

@@ -1,0 +1,232 @@
+speech_act: Farewell
+domain: Social
+examples:
+- text: à demain
+  bio_tags:
+  - O
+  - O
+- text: à plus
+  bio_tags:
+  - O
+  - O
+- text: à plus tard
+  bio_tags:
+  - O
+  - O
+  - O
+- text: à tout à l'heure
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: ciao
+  bio_tags:
+  - O
+- text: au revoir
+  bio_tags:
+  - O
+  - O
+- text: bonsoir
+  bio_tags:
+  - O
+- text: je vais dormir
+  bio_tags:
+  - O
+  - O
+  - O
+- text: allez bonne nuit
+  bio_tags:
+  - O
+  - O
+  - O
+- text: je m'en vais
+  bio_tags:
+  - O
+  - O
+  - O
+- text: je pars
+  bio_tags:
+  - O
+  - O
+- text: à la prochaine
+  bio_tags:
+  - O
+  - O
+  - O
+- text: je te laisse
+  bio_tags:
+  - O
+  - O
+  - O
+- text: je te dis à demain
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: on se dit à demain
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: allez j'y vais
+  bio_tags:
+  - O
+  - O
+  - O
+- text: je file
+  bio_tags:
+  - O
+  - O
+- text: tchao
+  bio_tags:
+  - O
+- text: à bientôt
+  bio_tags:
+  - O
+  - O
+- text: passe une bonne nuit
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: je vais me coucher
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: allez je vais au lit
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: à la revoyure
+  bio_tags:
+  - O
+  - O
+  - O
+- text: je te dis à plus
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: allez salut
+  bio_tags:
+  - O
+  - O
+- text: je vais y aller
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: bon allez je te laisse
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: c'est l'heure de dormir
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: on se voit demain
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-date_value
+- text: je décroche pour ce soir
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: allez bonne soirée
+  bio_tags:
+  - O
+  - O
+  - O
+- text: je coupe pour ce soir
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: je vais me reposer
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: on se reparle demain
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-date_value
+- text: bisous bonne nuit
+  bio_tags:
+  - O
+  - O
+  - O
+- text: dors bien
+  bio_tags:
+  - O
+  - O
+- text: je vais pioncer
+  bio_tags:
+  - O
+  - O
+  - O
+- text: adieu
+  bio_tags:
+  - O
+- text: allez, bonne nuit
+  bio_tags:
+  - O
+  - O
+  - O
+- text: allez, j'y vais
+  bio_tags:
+  - O
+  - O
+  - O
+- text: allez, je vais au lit
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: allez, salut
+  bio_tags:
+  - O
+  - O
+- text: bon, allez je te laisse
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: allez, bonne soirée
+  bio_tags:
+  - O
+  - O
+  - O

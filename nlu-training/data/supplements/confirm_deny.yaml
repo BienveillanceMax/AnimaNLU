@@ -1,0 +1,312 @@
+speech_act: Confirm
+domain: Social
+examples:
+- text: oui
+  bio_tags:
+  - O
+- text: oui oui
+  bio_tags:
+  - O
+  - O
+- text: ouais
+  bio_tags:
+  - O
+- text: ouais ouais
+  bio_tags:
+  - O
+  - O
+- text: d'accord
+  bio_tags:
+  - O
+- text: ok
+  bio_tags:
+  - O
+- text: ok d'accord
+  bio_tags:
+  - O
+  - O
+- text: exactement
+  bio_tags:
+  - O
+- text: tout à fait
+  bio_tags:
+  - O
+  - O
+  - O
+- text: c'est ça
+  bio_tags:
+  - O
+  - O
+- text: voilà
+  bio_tags:
+  - O
+- text: absolument
+  bio_tags:
+  - O
+- text: bien sûr
+  bio_tags:
+  - O
+  - O
+- text: oui c'est bon
+  bio_tags:
+  - O
+  - O
+  - O
+- text: oui vas-y
+  bio_tags:
+  - O
+  - O
+- text: oui fais-le
+  bio_tags:
+  - O
+  - O
+- text: c'est correct
+  bio_tags:
+  - O
+  - O
+- text: affirmatif
+  bio_tags:
+  - O
+- text: yep
+  bio_tags:
+  - O
+- text: ça marche
+  bio_tags:
+  - O
+  - O
+- text: parfait vas-y
+  bio_tags:
+  - O
+  - O
+- text: oui s'il te plaît
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: je confirme
+  bio_tags:
+  - O
+  - O
+- text: oui c'est ça
+  bio_tags:
+  - O
+  - O
+  - O
+- text: c'est bien ça
+  bio_tags:
+  - O
+  - O
+  - O
+- text: carrément
+  bio_tags:
+  - O
+- text: grave
+  bio_tags:
+  - O
+- text: ok nickel
+  bio_tags:
+  - O
+  - O
+- text: entendu
+  bio_tags:
+  - O
+- text: très bien
+  bio_tags:
+  - O
+  - O
+- text: oui c'est exactement ça
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: oui tout à fait
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: c'est bien ce que je voulais
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: oui je confirme
+  bio_tags:
+  - O
+  - O
+  - O
+- text: ouais ça me va
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: oui impec
+  bio_tags:
+  - O
+  - O
+- text: yep c'est ça
+  bio_tags:
+  - O
+  - O
+  - O
+- text: oui c'est ce que je veux
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: affirmatif chef
+  bio_tags:
+  - O
+  - O
+- text: ouais go
+  bio_tags:
+  - O
+  - O
+- text: oui pile poil
+  bio_tags:
+  - O
+  - O
+  - O
+- text: c'est ça oui
+  bio_tags:
+  - O
+  - O
+  - O
+- text: correcte
+  bio_tags:
+  - O
+- text: validé
+  bio_tags:
+  - O
+- text: oui tu as raison
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: oui effectivement
+  bio_tags:
+  - O
+  - O
+- text: tout à fait d'accord
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: je suis d'accord
+  bio_tags:
+  - O
+  - O
+  - O
+- text: oui sans problème
+  bio_tags:
+  - O
+  - O
+  - O
+- text: mais oui bien sûr
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: oui, oui
+  bio_tags:
+  - O
+  - O
+- text: ouais, ouais
+  bio_tags:
+  - O
+  - O
+- text: oui, c'est bon
+  bio_tags:
+  - O
+  - O
+  - O
+- text: oui, vas-y
+  bio_tags:
+  - O
+  - O
+- text: oui, fais-le
+  bio_tags:
+  - O
+  - O
+- text: oui, s'il te plaît
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: oui, c'est ça
+  bio_tags:
+  - O
+  - O
+  - O
+- text: oui, c'est exactement ça
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: oui, tout à fait
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: oui, je confirme
+  bio_tags:
+  - O
+  - O
+  - O
+- text: ouais, ça me va
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: oui, impec
+  bio_tags:
+  - O
+  - O
+- text: oui, c'est ce que je veux
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: ouais, go
+  bio_tags:
+  - O
+  - O
+- text: oui, pile poil
+  bio_tags:
+  - O
+  - O
+  - O
+- text: oui, tu as raison
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: oui, effectivement
+  bio_tags:
+  - O
+  - O
+- text: oui, sans problème
+  bio_tags:
+  - O
+  - O
+  - O

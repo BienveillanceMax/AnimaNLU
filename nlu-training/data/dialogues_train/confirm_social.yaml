@@ -1,0 +1,531 @@
+speech_act: Confirm
+domain: Social
+examples:
+- text: Oui, oui. Je sais
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui, au passé
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Oui merci
+  bio_tags:
+  - O
+  - O
+- text: Oui, oui, bien sûr
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Oui je sais, tu me l'as déjà dit
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui, c'est très bien
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui, bien-sûr! Je suis désolé
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, je sais mais Giles a dit que
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui je sais danser
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Oui, merci. Mmm
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Oui, oui. Je vous ai bipé
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui. Courez bien
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui-oui
+  bio_tags:
+  - O
+  - O
+- text: oui, je sais ce que c'est
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: D'accord
+  bio_tags:
+  - O
+- text: Oui c'est ça
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Oui, oui, tu es ou plutôt était
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui c'est vrai aussi
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui oui attention
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Oui, oui et encore oui
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: oui, oui. Abydos 1 terminé
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, je sais jouer
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Oui, merci Teal'c. Mon Dieu
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, je sais. Tu as raison. Merci
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui oui c'est vrai ça va pas mal
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, je sais Rachel
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui, je sais
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui oui. C'est ça
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, je sais, je sais
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui. Merci de faire ça
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui, oui c'est vrai
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui, je me souviens
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui d'accord
+  bio_tags:
+  - O
+  - O
+- text: Oui, oui, je sais. Merci
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui, c'est bon, j'arrive
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui oui... ne vous réveillez pas
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui, j'ai compris
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Oui oui, allons-y
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Oui, je sais mais je me sens bien
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui, très bonnes
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Oui, je sais. Un vélo ne pèse rien
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui en effet
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Ouais
+  bio_tags:
+  - O
+- text: Oui je sais. Je suis désolé
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui, génial
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Oui, oui. Je l'ai fait
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, je sais ça va j'ai compris
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui je sais. A moi aussi
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui je m'en charge
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: C'est ça
+  bio_tags:
+  - O
+  - O
+- text: Oui oui je vous crois sur parole
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: oui, oui c'est tout à fait ça
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui
+  bio_tags:
+  - O
+- text: Oui, oui, huit
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Oui, oui, oui
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Oui, oui... évidemment
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Oui, oui, j'y vais
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui, j'ai ça
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Oui, je sais, c'est un peu bête
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui... excusez-moi
+  bio_tags:
+  - O
+  - O
+  - O
+- text: oui, oui, j'en suis conscient
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui oui ! Baissez-vous tous
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui, ça va. Merci
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui. C'est moi
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui, je vous écoute
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui ça va, on connait
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui en effet... Merci
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui merci, je meure de faim
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, merci
+  bio_tags:
+  - O
+  - O
+- text: Oui, oui... bonna soira
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Oui oui, bien sûr
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Oui, je comprends mon général
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, merci. C'était... C'était
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Oui, je sais. Merci
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Oui je sais, je sais
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui oui
+  bio_tags:
+  - O
+  - O
+- text: Oui, oui, je réfléchissais
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Oui oui oui
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Oui, oui oui oui
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui, tout va bien ! Oh
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O

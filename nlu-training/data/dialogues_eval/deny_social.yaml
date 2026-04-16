@@ -1,0 +1,210 @@
+speech_act: Deny
+domain: Social
+examples:
+- text: Non non non non non
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, impossible
+  bio_tags:
+  - O
+  - O
+- text: Non, non je regrette
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Nan
+  bio_tags:
+  - O
+- text: Non, c'est pas vrai ! C'est pas vrai
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non non ! Je ne puis accepter
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Absolument pas
+  bio_tags:
+  - O
+  - O
+- text: non c'est pas vrai
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: non, non pas cet été, maintenant
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non non non non non non non
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, non toi vas-y
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Non, merci madame
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Non, non merci, allez-y
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Non, pas question
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Non non non non, après toi. J'insiste
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, non t'es pas obligé
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, non je l'ai pas vu
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, non pas encore
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Non non non non non non
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non merci
+  bio_tags:
+  - O
+  - O
+- text: Non non non non non non non non non
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, non attend je dis seulement
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, jamais entendu parler
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Non, non fais pas ça
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, jamais avec moins d'un dollar
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non non ! Je vais le faire
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, non arrêtez. C'est pas possible
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: non, non! Je n'y ai pas cru une minute
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Non, c'est faux
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Certainement pas
+  bio_tags:
+  - O
+  - O

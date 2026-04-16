@@ -1,0 +1,153 @@
+speech_act: Cancel
+domain: System
+examples:
+- text: Laisse tomber tonton
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Laisse tomber, ducon
+  bio_tags:
+  - O
+  - O
+  - O
+- text: laisse tomber
+  bio_tags:
+  - O
+  - O
+- text: Oublie ça
+  bio_tags:
+  - O
+  - O
+- text: Annulez
+  bio_tags:
+  - O
+- text: Oublie tout ça
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Tant pis pour elle. Allons-y
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oublie ça. Je reste ici
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Annulez le lancement
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Tant pis pour ton bonus
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: "Oublie ça, c\x92est foutu"
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Oublie ce que j'ai dit
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Tant pis pour toi
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Tant pis, je tente le coup
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Laisse tomber, on y va
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Tant pis j'étais premier
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Tant pis pour vous
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: En fait, non
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Annulez l'auto-destruction
+  bio_tags:
+  - O
+  - O
+- text: Laisse tomber. On oublie
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Oublie cette fête Meredith
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Tant pis, après-après demain
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Laisse tomber Sheldon
+  bio_tags:
+  - O
+  - O
+  - O
+- text: J'ai changé d'avis
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Tant pis
+  bio_tags:
+  - O
+  - O
+- text: En fait non
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Laisse tomber, j'ai compris
+  bio_tags:
+  - O
+  - O
+  - O
+  - O

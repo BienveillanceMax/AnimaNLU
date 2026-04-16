@@ -1,0 +1,443 @@
+speech_act: Farewell
+domain: Social
+examples:
+- text: Au revoir Jennifer
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir Dawson
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir, Peyton
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir, docteur Nick
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Bonne nuit, Sheldon
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir, Michael
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir Chandler Bing
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Au revoir Jack
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir ma chérie
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Au revoir, Lisa ! A bientôt
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Bonne nuit, on t'aime
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: au revoir Aby
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir Ellis
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir, Haley
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir Moe
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Bonne nuit, les petits
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Bonne nuit, Liz
+  bio_tags:
+  - O
+  - O
+  - O
+- text: au revoir, Charlie
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir, ma chérie
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Au revoir Gaius
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir. J'ai réussi
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Au revoir voisin
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir, Mr Green
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Bonne soirée Sheldon
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir Adil
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir Maman
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Bonne nuit mon amour
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Bonne nuit, Dawson
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir, les enfants
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: au revoir, grand-père
+  bio_tags:
+  - O
+  - O
+  - O
+- text: À tout à l'heure
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Au revoir. Portez-vous bien
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Au revoir Herbert
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir, chez moi
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Au revoir reine de beauté
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Bonne nuit Freddy
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir ! On t'aime
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Au revoir Brooke Davis
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Bonne nuit mon colonel
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Bonne nuit Sheldon
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir, tonton Bébert
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Au revoir les clés
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Bonne nuit Dawson
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Bonne nuit, Micro
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Bonne nuit, Brooke. Je t'aime
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Au revoir Ross
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Bonne nuit, garce
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir Geller
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir, Mme Davis
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: au revoir Déborah
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir. Salut petite
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Bonne nuit, chéri
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir, Arthur
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir, mon bébé
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Bonne soirée
+  bio_tags:
+  - O
+  - O
+- text: Au revoir mon chéri
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Au revoir, Daniel
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir, Leonard
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Bonne nuit Pacey
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir Charlie
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Bonne nuit maman
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir, chéri . Je t'aime
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Au revoir Helen
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir Adil. Bon voyage
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Bonne nuit, petit frère
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Bonne nuit, Albert
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Bonne nuit, les gars
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Bonne nuit trésor
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir, papa
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir mon Daniel
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Bonne nuit, Arthur
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Ciao
+  bio_tags:
+  - O
+- text: Bonne nuit, Madame Bouvier,
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Bonne nuit ma chérie
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Bonne nuit, Votre Majesté
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: bonne nuit, mon Colonel
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Bonne nuit, tante Quinn
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: À bientôt
+  bio_tags:
+  - O
+  - O
+- text: Au revoir, Oliver. Allez-y
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Bonne nuit Guenièvre
+  bio_tags:
+  - O
+  - O
+  - O

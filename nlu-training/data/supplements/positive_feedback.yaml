@@ -1,0 +1,234 @@
+speech_act: PositiveFeedback
+domain: Social
+examples:
+- text: merci
+  bio_tags:
+  - O
+- text: merci beaucoup
+  bio_tags:
+  - O
+  - O
+- text: super
+  bio_tags:
+  - O
+- text: parfait
+  bio_tags:
+  - O
+- text: nickel
+  bio_tags:
+  - O
+- text: génial
+  bio_tags:
+  - O
+- text: trop bien
+  bio_tags:
+  - O
+  - O
+- text: c'est parfait
+  bio_tags:
+  - O
+  - O
+- text: c'est super
+  bio_tags:
+  - O
+  - O
+- text: merci c'est gentil
+  bio_tags:
+  - O
+  - O
+  - O
+- text: t'es le meilleur
+  bio_tags:
+  - O
+  - O
+  - O
+- text: c'est exactement ce que je voulais
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: excellent
+  bio_tags:
+  - O
+- text: bravo
+  bio_tags:
+  - O
+- text: cool merci
+  bio_tags:
+  - O
+  - O
+- text: au top
+  bio_tags:
+  - O
+  - O
+- text: impeccable
+  bio_tags:
+  - O
+- text: c'est bon merci
+  bio_tags:
+  - O
+  - O
+  - O
+- text: ça c'est bien
+  bio_tags:
+  - O
+  - O
+  - O
+- text: j'adore
+  bio_tags:
+  - O
+- text: t'assures
+  bio_tags:
+  - O
+- text: bien joué
+  bio_tags:
+  - O
+  - O
+- text: c'est top
+  bio_tags:
+  - O
+  - O
+- text: je suis content
+  bio_tags:
+  - O
+  - O
+  - B-emotion
+- text: merci ça fait plaisir
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: t'es vraiment utile
+  bio_tags:
+  - O
+  - O
+  - O
+- text: ah super merci
+  bio_tags:
+  - O
+  - O
+  - O
+- text: c'est pile ce qu'il fallait
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: classe
+  bio_tags:
+  - O
+- text: chapeau
+  bio_tags:
+  - O
+- text: ah, c'est exactement ça
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: c'est tout bon
+  bio_tags:
+  - O
+  - O
+  - O
+- text: top, merci beaucoup
+  bio_tags:
+  - O
+  - O
+  - O
+- text: ouah c'est génial
+  bio_tags:
+  - O
+  - O
+  - O
+- text: ça c'est du boulot
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: je suis impressionné
+  bio_tags:
+  - O
+  - O
+  - O
+- text: c'est vraiment bien fait
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: ah enfin, merci
+  bio_tags:
+  - O
+  - O
+  - O
+- text: c'est nickel chrome
+  bio_tags:
+  - O
+  - O
+  - O
+- text: pile ce que je cherchais
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: ah bah voilà, c'est ça
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: tu gères
+  bio_tags:
+  - O
+  - O
+- text: c'est bon ça
+  bio_tags:
+  - O
+  - O
+  - O
+- text: on peut dire que t'assures
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: ah oui, ça c'est cool
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: c'est la classe
+  bio_tags:
+  - O
+  - O
+  - O
+- text: bien vu
+  bio_tags:
+  - O
+  - O
+- text: ah merci, c'est parfait
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: ça c'est une bonne réponse
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O

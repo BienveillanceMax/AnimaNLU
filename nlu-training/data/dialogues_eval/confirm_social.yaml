@@ -1,0 +1,203 @@
+speech_act: Confirm
+domain: Social
+examples:
+- text: Oui, oui, on y va
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui je sais, je suis douée
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Bien sûr
+  bio_tags:
+  - O
+  - O
+- text: Oui, oui c'est vrai
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui oui pas de problème
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, je sais. Ahh
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Oui, je sais, en effet
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui bien sûr. Viens
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui... je comprends
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui. Tu sais les fêtes
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui... je la changerai
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui, je l'aime beaucoup
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui, une seconde
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Oui, merci. Bien sûr
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Oui oui, je sais qui c'est
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui je sais
+  bio_tags:
+  - O
+  - O
+  - O
+- text: oui, oui, oui, oui
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Oui tout à fait
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Oui, je comprends
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Oui merci, on prend ce costume
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, je sais, on en a déjà parlé
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, c'est ça
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Oui, oui, d'accord. C'est mon tour
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui, oui, tu dois te reposer
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, d'accord
+  bio_tags:
+  - O
+  - O
+- text: Oui, oui, t'es le meilleur
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: oui, oui je sais
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Oui, je sais qui s'est
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, oui, je te suis
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oui, je sais, désolé
+  bio_tags:
+  - O
+  - O
+  - O
+  - O

@@ -1,0 +1,529 @@
+speech_act: Statement
+domain: Social
+examples:
+- text: j'aime le jazz
+  bio_tags:
+  - O
+  - O
+  - B-topic
+- text: j'aime pas le foot
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-topic
+- text: je préfère le rock
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-genre_type
+- text: j'adore le chocolat
+  bio_tags:
+  - O
+  - O
+  - B-topic
+- text: je déteste les araignées
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-topic
+- text: j'aime bien cuisiner
+  bio_tags:
+  - O
+  - O
+  - O
+- text: j'aime bien la pluie
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: moi j'aime le silence
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: j'écoute beaucoup de rap français
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-genre_type
+  - I-genre_type
+- text: mon film préféré c'est inception
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-media_item
+- text: je suis plutôt thé
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: je supporte pas le bruit
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: j'adore les chats
+  bio_tags:
+  - O
+  - O
+  - B-topic
+- text: j'aime pas les épinards
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-topic
+- text: le bleu c'est ma couleur préférée
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: j'aime bien marcher sous la pluie
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: je préfère le calme
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: j'adore les orages
+  bio_tags:
+  - O
+  - O
+  - B-topic
+- text: le matin c'est mon moment préféré
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: j'aime bien le fromage
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-topic
+- text: j'habite à lyon
+  bio_tags:
+  - O
+  - O
+  - B-location
+- text: je suis végétarien
+  bio_tags:
+  - O
+  - O
+  - O
+- text: je suis allergique aux noix
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-topic
+- text: je suis plutôt du matin
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: je suis gaucher
+  bio_tags:
+  - O
+  - O
+  - O
+- text: je parle trois langues
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: mon frère s'appelle thomas
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-person_name
+- text: j'ai deux enfants
+  bio_tags:
+  - O
+  - O
+  - O
+- text: je suis né en bretagne
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-location
+- text: ma femme travaille à l'hôpital
+  bio_tags:
+  - O
+  - B-person_name
+  - O
+  - O
+  - B-location
+- text: il fait froid
+  bio_tags:
+  - O
+  - O
+  - O
+- text: il fait chaud dehors
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: il pleut encore
+  bio_tags:
+  - O
+  - O
+  - O
+- text: j'ai faim
+  bio_tags:
+  - O
+  - O
+- text: j'ai soif
+  bio_tags:
+  - O
+  - O
+- text: je suis en route
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: je suis en télétravail
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: je rentre du bureau
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-location
+- text: les enfants dorment
+  bio_tags:
+  - O
+  - B-person_name
+  - O
+- text: la voisine fait du bruit
+  bio_tags:
+  - O
+  - B-person_name
+  - O
+  - O
+  - O
+- text: il y a des travaux dans la rue
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-topic
+  - O
+  - O
+  - O
+- text: il neige dehors
+  bio_tags:
+  - O
+  - O
+  - O
+- text: il fait nuit tôt en hiver
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: j'ai pas dormi cette nuit
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: mon téléphone est cassé
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: j'ai perdu mes clés
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: la machine à laver est en panne
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: le frigo est vide
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: il fait beau pour une fois
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: y a plus de café
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: je travaille demain
+  bio_tags:
+  - O
+  - O
+  - B-date_value
+- text: je pars dans dix minutes
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-duration
+  - I-duration
+- text: je rentre à vingt heures
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-time_value
+  - I-time_value
+- text: j'ai pas cours aujourd'hui
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: mon anniversaire c'est en juin
+  bio_tags:
+  - O
+  - B-event_name
+  - O
+  - O
+  - B-date_value
+- text: je pars en vacances lundi
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-topic
+  - B-date_value
+- text: j'ai une réunion à quatorze heures
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: mon frère arrive ce weekend
+  bio_tags:
+  - O
+  - B-person_name
+  - O
+  - O
+  - B-date_value
+- text: je bosse samedi
+  bio_tags:
+  - O
+  - O
+  - B-date_value
+- text: les vacances c'est dans deux semaines
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-duration
+  - I-duration
+- text: ma mère vient dîner ce soir
+  bio_tags:
+  - O
+  - B-person_name
+  - O
+  - O
+  - O
+  - O
+- text: j'ai rendez-vous chez le médecin mardi
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-date_value
+- text: je prends le train à huit heures
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-time_value
+  - I-time_value
+- text: les enfants ont école demain
+  bio_tags:
+  - O
+  - B-person_name
+  - O
+  - O
+  - B-date_value
+- text: on reçoit des amis dimanche
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-person_name
+  - B-date_value
+- text: je connais cette chanson
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: je connais pas ce groupe
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: les voisins du dessus sont bruyants
+  bio_tags:
+  - O
+  - B-person_name
+  - O
+  - O
+  - O
+  - O
+- text: je suis plutôt café que thé
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: c'est calme ce soir
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: il fait bon dans le salon
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-room
+- text: j'ai un nouveau collègue au boulot
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-person_name
+  - O
+  - B-topic
+- text: la route était longue
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: j'aime bien cet endroit
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: c'est la pleine lune ce soir
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: le jardin a besoin d'eau
+  bio_tags:
+  - O
+  - B-room
+  - O
+  - O
+  - O
+- text: je me suis fait couper les cheveux
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: j'ai croisé le facteur
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-person_name
+- text: il y a un chat dans le jardin
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-room
+- text: j'ai trouvé un bon resto
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-location

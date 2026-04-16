@@ -1,0 +1,33 @@
+speech_act: Correction
+domain: Home
+examples:
+  - {text: "non, la chambre pas le bureau", bio_tags: [O, O, B-room, O, O, B-room]}
+  - {text: "non c'est la terrasse", bio_tags: [O, O, O, B-room]}
+  - {text: "je disais le radiateur, pas la clim", bio_tags: [O, O, O, B-device_type, O, O, B-device_type]}
+  - {text: "non, c'est la lumière que je voulais", bio_tags: [O, O, O, B-device_type, O, O, O]}
+  - {text: "pas le couloir, le salon", bio_tags: [O, O, B-room, O, B-room]}
+  - {text: "non mais c'est le store, pas le volet", bio_tags: [O, O, O, O, B-device_type, O, O, B-device_type]}
+  - {text: "non, monte la température, baisse pas", bio_tags: [O, O, O, B-setting_type, O, O]}
+  - {text: "je parlais pas du salon mais de la cuisine", bio_tags: [O, O, O, O, B-room, O, O, O, B-room]}
+  - {text: "c'est la prise que je voulais, pas le chauffage", bio_tags: [O, O, B-device_type, O, O, O, O, O, B-device_type]}
+  - {text: "non je voulais ouvrir, pas fermer", bio_tags: [O, O, O, O, O, O]}
+  - {text: "dans la chambre des enfants, pas la nôtre", bio_tags: [O, O, B-room, I-room, I-room, O, O, O]}
+  - {text: "non, la salle à manger", bio_tags: [O, O, B-room, I-room, I-room]}
+  - {text: "je parlais de la lampe du bureau", bio_tags: [O, O, O, O, B-device_type, O, B-room]}
+  - {text: "non le grenier", bio_tags: [O, O, B-room]}
+  - {text: "non, éteindre pas allumer", bio_tags: [O, O, O, O]}
+  - {text: "pas dans la chambre, dans le salon", bio_tags: [O, O, O, B-room, O, O, B-room]}
+  - {text: "c'est pas le bon, je parlais de l'autre", bio_tags: [O, O, O, O, O, O, O, O]}
+  - {text: "je voulais baisser, pas monter", bio_tags: [O, O, O, O, O]}
+  - {text: "non c'est à quinze degrés, pas vingt", bio_tags: [O, O, O, B-setting_value, I-setting_value, O, B-setting_value]}
+  - {text: "la fenêtre, j'ai dit pas la porte", bio_tags: [O, B-device_type, O, O, O, O, B-device_type]}
+  - {text: "non, rouge pas bleu", bio_tags: [O, B-setting_value, O, B-setting_value]}
+  - {text: "je parlais du ventilateur", bio_tags: [O, O, O, B-device_type]}
+  - {text: "non c'est pas ça, la buanderie", bio_tags: [O, O, O, O, O, B-room]}
+  - {text: "non, je veux le mode cinéma pas le mode nuit", bio_tags: [O, O, O, O, O, B-scene_name, O, O, O, B-scene_name]}
+  - {text: "pas celle du couloir, celle de la chambre", bio_tags: [O, O, O, B-room, O, O, O, B-room]}
+  - {text: "j'ai dit le bureau, pas la chambre", bio_tags: [O, O, O, B-room, O, O, B-room]}
+  - {text: "non c'est dans l'entrée", bio_tags: [O, O, O, O]}
+  - {text: "la climatisation, pas le ventilateur", bio_tags: [O, B-device_type, O, O, B-device_type]}
+  - {text: "non pas dix-huit, vingt-deux", bio_tags: [O, O, B-setting_value, B-setting_value]}
+  - {text: "je voulais dire la véranda", bio_tags: [O, O, O, O, B-room]}

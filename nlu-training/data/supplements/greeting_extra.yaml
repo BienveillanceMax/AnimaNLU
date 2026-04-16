@@ -1,0 +1,170 @@
+speech_act: Greeting
+domain: Social
+examples:
+- text: coucou
+  bio_tags:
+  - O
+- text: hey
+  bio_tags:
+  - O
+- text: yo
+  bio_tags:
+  - O
+- text: salut ça va
+  bio_tags:
+  - O
+  - O
+  - O
+- text: bonjour comment ça va
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: hello
+  bio_tags:
+  - O
+- text: bien le bonjour
+  bio_tags:
+  - O
+  - O
+  - O
+- text: salut c'est moi
+  bio_tags:
+  - O
+  - O
+  - O
+- text: je suis rentré
+  bio_tags:
+  - O
+  - O
+  - O
+- text: je suis là
+  bio_tags:
+  - O
+  - O
+  - O
+- text: wesh
+  bio_tags:
+  - O
+- text: bonjour tout le monde
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: re
+  bio_tags:
+  - O
+- text: re bonjour
+  bio_tags:
+  - O
+  - O
+- text: hey salut
+  bio_tags:
+  - O
+  - O
+- text: coucou c'est moi
+  bio_tags:
+  - O
+  - O
+  - O
+- text: kikou
+  bio_tags:
+  - O
+- text: salut comment tu vas
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: bonjour c'est pierre
+  bio_tags:
+  - O
+  - O
+  - B-person_name
+- text: hey c'est moi je suis rentré
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: coucou je suis là
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: bonsoir comment ça va
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: bonjour je suis de retour
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: salut salut
+  bio_tags:
+  - O
+  - O
+- text: holà
+  bio_tags:
+  - O
+- text: salut tu es là
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: je suis de retour
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: hello c'est moi
+  bio_tags:
+  - O
+  - O
+  - O
+- text: coucou tu vas bien
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: bonsoir c'est moi
+  bio_tags:
+  - O
+  - O
+  - O
+- text: bonjour bonjour
+  bio_tags:
+  - O
+  - O
+- text: me revoilà
+  bio_tags:
+  - O
+  - O
+- text: je suis revenu
+  bio_tags:
+  - O
+  - O
+  - O
+- text: c'est moi
+  bio_tags:
+  - O
+  - O
+- text: ohé y a quelqu'un
+  bio_tags:
+  - O
+  - O
+  - O
+  - O

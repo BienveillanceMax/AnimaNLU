@@ -1,0 +1,55 @@
+speech_act: Cancel
+domain: System
+examples:
+- text: Oublie ça, c'est tout
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Pas la peine
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Laisse tomber Pacey
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Laisse tomber les autres
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Oublie ça. Ce n'est pas grave
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Oublie
+  bio_tags:
+  - O
+- text: Tant pis, je m'en remettrai
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Tant pis pour lui
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Laisse tomber l'affaire, Ross
+  bio_tags:
+  - O
+  - O
+  - O
+  - O

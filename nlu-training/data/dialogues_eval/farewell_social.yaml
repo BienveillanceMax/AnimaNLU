@@ -1,0 +1,232 @@
+speech_act: Farewell
+domain: Social
+examples:
+- text: Au revoir, Emma-Wemma-Demma
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir, mère
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir ! A la prochaine
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Au revoir, Nana
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir Laura
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir, Sheldon Cooper
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Au revoir Tree Hill
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: au revoir Karen
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir, Ross
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir les petits enfants
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Au revoir duc
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir Billy
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir Monsieur Picard
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Au revoir Mike
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir Mme Farell
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Bonne nuit, mon Bing-a-ling
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Au revoir Dr Stevens
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Au revoir chérie. Oui
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Bonne nuit, Leonard
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Bonne nuit, ma chérie
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Bonne nuit, face de singe
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Bonne nuit major
+  bio_tags:
+  - O
+  - O
+  - O
+- text: À demain
+  bio_tags:
+  - O
+  - O
+- text: Bonne nuit. Bonne nuit, Joe
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+- text: Bonne nuit, Joey
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Bonne nuit, Willie
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Au revoir, fiston
+  bio_tags:
+  - O
+  - O
+  - O
+- text: Bonne nuit mon petit
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Au revoir à bientôt
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: Au revoir, les gars
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+- text: bonne nuit
+  bio_tags: [O, O]
+- text: à demain
+  bio_tags: [O, O]
+- text: à plus tard
+  bio_tags: [O, O, O]
+- text: à bientôt
+  bio_tags: [O, O]
+- text: salut à demain
+  bio_tags: [O, O, O]
+- text: bonne soirée
+  bio_tags: [O, O]
+- text: je vais dormir
+  bio_tags: [O, O, O]
+- text: je vais me coucher
+  bio_tags: [O, O, O, O]
+- text: allez bonne nuit
+  bio_tags: [O, O, O]
+- text: à plus
+  bio_tags: [O, O]
+- text: je file bonne nuit
+  bio_tags: [O, O, O, O]
+- text: ciao
+  bio_tags: [O]
+- text: je m'en vais
+  bio_tags: [O, O, O]
+- text: bon allez à demain
+  bio_tags: [O, O, O, O]
+- text: je te dis à demain
+  bio_tags: [O, O, O, O, O]
+- text: on se retrouve demain
+  bio_tags: [O, O, O, O]
+- text: allez salut
+  bio_tags: [O, O]
+- text: bisous bonne nuit
+  bio_tags: [O, O, O]
+- text: à la prochaine
+  bio_tags: [O, O, O]
+- text: je vais y aller
+  bio_tags: [O, O, O, O]
+- text: faut que j'y aille
+  bio_tags: [O, O, O, O]
+- text: bon je te laisse
+  bio_tags: [O, O, O, O]
+- text: je vais dormir à demain
+  bio_tags: [O, O, O, O, O]
+- text: allez à plus
+  bio_tags: [O, O, O]
+- text: adieu
+  bio_tags: [O]
+- text: je me sauve
+  bio_tags: [O, O, O]
+- text: au revoir et merci
+  bio_tags: [O, O, O, O]
+- text: à tout à l'heure
+  bio_tags: [O, O, O, O]
+- text: bonsoir et bonne nuit
+  bio_tags: [O, O, O, O]
+- text: salut bonne nuit
+  bio_tags: [O, O, O]

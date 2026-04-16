@@ -1,0 +1,43 @@
+speech_act: Correction
+domain: Home
+examples:
+- text: non je voulais dire la chambre
+  bio_tags: [O, O, O, O, O, B-room]
+- text: non pas la cuisine le salon
+  bio_tags: [O, O, O, B-room, O, B-room]
+- text: non l'autre lumière
+  bio_tags: [O, O, B-device_type]
+- text: je parlais du garage
+  bio_tags: [O, O, O, B-room]
+- text: non pas le salon la salle de bain
+  bio_tags: [O, O, O, B-room, O, B-room, I-room, I-room]
+- text: non le chauffage pas la clim
+  bio_tags: [O, O, B-device_type, O, O, B-device_type]
+- text: je voulais dire le bureau
+  bio_tags: [O, O, O, O, B-room]
+- text: pas celle-là l'autre pièce
+  bio_tags: [O, O, O, O]
+- text: non les stores pas les lumières
+  bio_tags: [O, O, B-device_type, O, O, B-device_type]
+- text: non c'est la terrasse
+  bio_tags: [O, O, O, B-room]
+- text: je me suis trompé c'est l'entrée
+  bio_tags: [O, O, O, O, O, B-room]
+- text: non les volets pas les rideaux
+  bio_tags: [O, O, B-device_type, O, O, B-device_type]
+- text: non la lumière du couloir
+  bio_tags: [O, O, B-device_type, O, B-room]
+- text: non je voulais allumer pas éteindre
+  bio_tags: [O, O, O, O, O, O]
+- text: non pas vingt degrés vingt-deux
+  bio_tags: [O, O, B-setting_value, I-setting_value, B-setting_value]
+- text: non pas le ventilateur le radiateur
+  bio_tags: [O, O, O, B-device_type, O, B-device_type]
+- text: c'est la chambre d'amis pas la nôtre
+  bio_tags: [O, O, B-room, I-room, O, O, O]
+- text: non pas baisser monter
+  bio_tags: [O, O, O, O]
+- text: non je disais la salle de bain
+  bio_tags: [O, O, O, O, B-room, I-room, I-room]
+- text: pas la veilleuse le plafonnier
+  bio_tags: [O, O, B-device_type, O, B-device_type]

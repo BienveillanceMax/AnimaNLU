@@ -1,0 +1,43 @@
+speech_act: Correction
+domain: Media
+examples:
+- text: non je voulais la chanson d'avant
+  bio_tags: [O, O, O, O, O, O]
+- text: non pas cette playlist l'autre
+  bio_tags: [O, O, O, B-media_item, O]
+- text: non mets du rock pas du jazz
+  bio_tags: [O, O, O, B-genre_type, O, O, B-genre_type]
+- text: je voulais dire plus fort
+  bio_tags: [O, O, O, O, O]
+- text: non l'album d'après pas celui-là
+  bio_tags: [O, O, O, O, O]
+- text: non je voulais la radio pas la musique
+  bio_tags: [O, O, O, O, O, O, O, O]
+- text: pas ce morceau le suivant
+  bio_tags: [O, O, O, O, O]
+- text: non je disais du classique
+  bio_tags: [O, O, O, O, B-genre_type]
+- text: non l'autre chanson de cet artiste
+  bio_tags: [O, O, B-media_item, O, O, O]
+- text: non pas baisser le son monter
+  bio_tags: [O, O, O, O, O, O]
+- text: non c'est pas le bon podcast
+  bio_tags: [O, O, O, O, O, B-media_item]
+- text: je voulais dire le livre audio
+  bio_tags: [O, O, O, O, B-media_item, I-media_item]
+- text: non je parlais de la playlist détente
+  bio_tags: [O, O, O, O, O, B-media_item, I-media_item]
+- text: pas celui-là le film d'hier
+  bio_tags: [O, O, O, B-media_item, O]
+- text: non je voulais du rap pas du rock
+  bio_tags: [O, O, O, O, B-genre_type, O, O, B-genre_type]
+- text: non pas en pause en lecture
+  bio_tags: [O, O, O, O, O, O]
+- text: non c'est pas cet épisode
+  bio_tags: [O, O, O, O, O]
+- text: non la chaîne d'après
+  bio_tags: [O, O, O, O]
+- text: je me suis trompé c'est l'autre artiste
+  bio_tags: [O, O, O, O, O, O, O]
+- text: non je disais le podcast pas la radio
+  bio_tags: [O, O, O, O, B-media_item, O, O, B-media_item]
