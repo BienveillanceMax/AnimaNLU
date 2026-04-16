@@ -5,12 +5,12 @@ model:
   max_seq_length: 64
   use_crf: true
   head_hidden_dim: 256
-  gradient_checkpointing: false
+  gradient_checkpointing: true
 
 training:
   learning_rate: 0.00003
-  per_device_batch_size: 128
-  gradient_accumulation_steps: 1
+  per_device_batch_size: 32
+  gradient_accumulation_steps: 4
   num_epochs: 40
   early_stopping_patience: 7
   early_stopping_metric: "eval_composite_acc"
