@@ -5,10 +5,11 @@ model:
   max_seq_length: 64
   use_crf: true
   head_hidden_dim: 256
+  gradient_checkpointing: false
 
 training:
-  learning_rate: 0.00002
-  per_device_batch_size: 64
+  learning_rate: 0.00003
+  per_device_batch_size: 128
   gradient_accumulation_steps: 1
   num_epochs: 40
   early_stopping_patience: 7

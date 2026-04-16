@@ -20,7 +20,7 @@ from transformers import (
     EarlyStoppingCallback,
 )
 from collections import Counter
-from torch.utils.data import Dataset, WeightedRandomSampler
+from torch.utils.data import Dataset, WeightedRandomSampler, Sampler
 
 from labels import (
     SPEECH_ACTS, DOMAINS, SLOT_LABELS,
@@ -42,7 +42,7 @@ def set_seed(seed):
     torch.manual_seed(seed)
     torch.cuda.manual_seed_all(seed)
     torch.backends.cudnn.deterministic = True
-    torch.backends.cudnn.benchmark = False
+    torch.backends.cudnn.benchmark = True
 
 
 # ──────────────────────────────────────────────
@@ -144,6 +144,47 @@ class NluDataset(Dataset):
 
 
 # ──────────────────────────────────────────────
+# DDP-compatible weighted sampler
+# ──────────────────────────────────────────────
+class DistributedWeightedSampler(Sampler):
+    """WeightedRandomSampler that shards across DDP ranks.
+
+    Each rank draws from a disjoint subset of the weighted sample indices,
+    so no two GPUs see the same example in the same step. Re-shuffles
+    per epoch via set_epoch().
+    """
+
+    def __init__(self, weights, num_samples, num_replicas=None, rank=None):
+        import torch.distributed as dist
+        if num_replicas is None:
+            num_replicas = dist.get_world_size() if dist.is_initialized() else 1
+        if rank is None:
+            rank = dist.get_rank() if dist.is_initialized() else 0
+        self.weights = torch.as_tensor(weights, dtype=torch.double)
+        self.total_samples = num_samples
+        self.num_replicas = num_replicas
+        self.rank = rank
+        self.num_samples_per_rank = math.ceil(self.total_samples / self.num_replicas)
+        self.total_padded = self.num_samples_per_rank * self.num_replicas
+        self.epoch = 0
+
+    def set_epoch(self, epoch):
+        self.epoch = epoch
+
+    def __iter__(self):
+        g = torch.Generator()
+        g.manual_seed(self.epoch + 42)
+        indices = torch.multinomial(
+            self.weights, self.total_padded, replacement=True, generator=g
+        ).tolist()
+        start = self.rank * self.num_samples_per_rank
+        return iter(indices[start:start + self.num_samples_per_rank])
+
+    def __len__(self):
+        return self.num_samples_per_rank
+
+
+# ──────────────────────────────────────────────
 # Layer-wise LR decay
 # ──────────────────────────────────────────────
 def _build_param_groups(model, base_lr, layer_lr_decay, weight_decay):
@@ -219,6 +260,11 @@ class JointNluTrainer(Trainer):
 
     def _get_train_sampler(self, train_dataset=None):
         if self._sample_weights is not None:
+            if self.args.parallel_mode.value == "distributed":
+                return DistributedWeightedSampler(
+                    weights=self._sample_weights,
+                    num_samples=len(self._sample_weights),
+                )
             return WeightedRandomSampler(
                 weights=self._sample_weights,
                 num_samples=len(self._sample_weights),
@@ -268,7 +314,8 @@ class JointNluTrainer(Trainer):
         # Unpack logits tuple: (sa_logits, dom_logits, slot_logits)
         sa_logits, dom_logits, slot_logits = outputs
 
-        if hasattr(model, "use_crf") and model.use_crf and hasattr(model, "crf"):
+        unwrapped = getattr(model, "module", model)
+        if hasattr(unwrapped, "use_crf") and unwrapped.use_crf and hasattr(unwrapped, "crf"):
             slot_labels = inputs["slot_labels"]
             packed_logits, _, packed_mask = pack_for_crf(
                 slot_logits, slot_labels
@@ -277,20 +324,20 @@ class JointNluTrainer(Trainer):
             # Filter to rows that have real labels (CRF requires first timestep on)
             row_has_labels = packed_mask.any(dim=1)
             if row_has_labels.any():
-                decoded_valid = model.crf.decode(
+                decoded_valid = unwrapped.crf.decode(
                     packed_logits[row_has_labels],
                     mask=packed_mask[row_has_labels],
                 )
 
-                # Scatter decoded tags back to full seq_len positions
                 real_mask = (slot_labels != -100)
                 viterbi_logits = torch.full_like(slot_logits, -1e4)
                 valid_indices = row_has_labels.nonzero(as_tuple=True)[0]
                 for di, bi in enumerate(valid_indices):
                     idx = real_mask[bi].nonzero(as_tuple=True)[0]
-                    for j, pos in enumerate(idx):
-                        if j < len(decoded_valid[di]):
-                            viterbi_logits[bi, pos, decoded_valid[di][j]] = 1e4
+                    n = min(len(idx), len(decoded_valid[di]))
+                    if n > 0:
+                        tags = torch.tensor(decoded_valid[di][:n], device=slot_logits.device)
+                        viterbi_logits[bi, idx[:n], tags] = 1e4
 
                 outputs = (sa_logits, dom_logits, viterbi_logits)
 
@@ -370,9 +417,13 @@ def main():
     print(f"Model: {model_name}")
     print(f"Max seq length: {max_length}")
     print(f"CUDA available: {torch.cuda.is_available()}")
-    if torch.cuda.is_available():
-        print(f"GPU: {torch.cuda.get_device_name(0)}")
-        print(f"VRAM: {torch.cuda.get_device_properties(0).total_memory / 1e9:.1f} GB")
+    n_gpus = torch.cuda.device_count() if torch.cuda.is_available() else 0
+    if n_gpus > 0:
+        for i in range(n_gpus):
+            vram = torch.cuda.get_device_properties(i).total_memory / 1e9
+            print(f"GPU {i}: {torch.cuda.get_device_name(i)} ({vram:.1f} GB)")
+        if n_gpus > 1:
+            print(f"Multi-GPU: {n_gpus} devices — Trainer will use DDP automatically")
     else:
         print("WARNING: No GPU detected — training will be very slow on CPU")
 
@@ -391,6 +442,7 @@ def main():
     use_crf = mc.get("use_crf", False)
     head_hidden_dim = mc.get("head_hidden_dim", 256)
     lc = CONFIG["loss"]
+    gradient_checkpointing = mc.get("gradient_checkpointing", False)
     model = JointCamemBERTav2(
         model_name=model_name,
         num_speech_acts=len(SPEECH_ACTS),
@@ -400,14 +452,23 @@ def main():
         head_hidden_dim=head_hidden_dim,
         focal_gamma=lc["focal_gamma"],
         smoothing=lc.get("smoothing", 0.0),
+        gradient_checkpointing=gradient_checkpointing,
     )
     print(f"CRF: {'enabled' if use_crf else 'disabled'}")
+    print(f"Gradient checkpointing: {'enabled' if gradient_checkpointing else 'disabled'}")
     print(f"Head hidden dim: {head_hidden_dim}")
 
     # Training args
     tc = CONFIG["training"]
     early_metric = tc.get("early_stopping_metric", "eval_loss")
     greater_is_better = not early_metric.endswith("_loss")
+
+    # Auto-scale LR with GPU count (linear scaling rule)
+    base_lr = tc["learning_rate"]
+    if n_gpus > 1:
+        scaled_lr = base_lr * math.sqrt(n_gpus)
+        print(f"LR scaling: {base_lr:.1e} × √{n_gpus} = {scaled_lr:.1e}")
+        base_lr = scaled_lr
 
     # Auto-detect best mixed precision: bf16 on Ampere+ (sm_80+), fp16 on older
     use_bf16 = False
@@ -427,7 +488,7 @@ def main():
         per_device_train_batch_size=tc["per_device_batch_size"],
         per_device_eval_batch_size=tc["per_device_batch_size"] * 2,
         gradient_accumulation_steps=tc["gradient_accumulation_steps"],
-        learning_rate=tc["learning_rate"],
+        learning_rate=base_lr,
         warmup_ratio=tc["warmup_ratio"],
         weight_decay=tc["weight_decay"],
         max_grad_norm=tc["max_grad_norm"],
@@ -437,10 +498,11 @@ def main():
         load_best_model_at_end=True,
         metric_for_best_model=early_metric,
         greater_is_better=greater_is_better,
-        save_total_limit=3,
+        save_total_limit=2,
         logging_steps=50,
-        dataloader_num_workers=0,  # pre-tokenized data = no CPU work to parallelize
+        dataloader_num_workers=2,
         dataloader_pin_memory=True,
+        dataloader_persistent_workers=True,
         seed=CONFIG["seed"],
         fp16=use_fp16,
         bf16=use_bf16,
@@ -451,6 +513,13 @@ def main():
     loss_weights = lc["weights"]
     layer_lr_decay = tc.get("layer_lr_decay", 1.0)
 
+    effective_batch = (
+        tc["per_device_batch_size"]
+        * tc["gradient_accumulation_steps"]
+        * max(n_gpus, 1)
+    )
+    print(f"Effective batch size: {effective_batch} "
+          f"({tc['per_device_batch_size']} × {tc['gradient_accumulation_steps']} accum × {max(n_gpus, 1)} GPU)")
     print(f"LR scheduler: {tc.get('lr_scheduler_type', 'linear')}")
     print(f"Layer LR decay: {layer_lr_decay}")
     print(f"Label smoothing: {lc.get('smoothing', 0.0)}")

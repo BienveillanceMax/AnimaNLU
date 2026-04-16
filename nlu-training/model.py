@@ -67,6 +67,8 @@ def pack_for_crf(slot_logits: torch.Tensor,
     False). Since real label positions are scattered among -100 positions,
     we pack them left-aligned and build a contiguous mask.
 
+    Fully vectorized — no Python loops over the batch dimension.
+
     Returns: packed_logits, packed_labels, packed_mask (all same shape)
     """
     real_mask = (slot_labels != -100)  # (batch, seq_len)
@@ -88,15 +90,17 @@ def pack_for_crf(slot_logits: torch.Tensor,
     packed_logits = torch.zeros(batch, max_real, n_tags, device=device,
                                 dtype=slot_logits.dtype)
     packed_labels = torch.zeros(batch, max_real, dtype=torch.long, device=device)
-    packed_mask = torch.zeros(batch, max_real, dtype=torch.bool, device=device)
 
-    for i in range(batch):
-        idx = real_mask[i].nonzero(as_tuple=True)[0]
-        n = idx.size(0)
-        if n > 0:
-            packed_logits[i, :n] = slot_logits[i, idx]
-            packed_labels[i, :n] = slot_labels[i, idx]
-            packed_mask[i, :n] = True
+    packed_pos = (real_mask.long().cumsum(dim=1) - 1).clamp(min=0)
+    row_idx = torch.arange(batch, device=device).unsqueeze(1).expand_as(real_mask)
+
+    src_rows = row_idx[real_mask]
+    src_cols = packed_pos[real_mask]
+    packed_logits[src_rows, src_cols] = slot_logits[real_mask]
+    packed_labels[src_rows, src_cols] = slot_labels[real_mask]
+
+    pos_range = torch.arange(max_real, device=device).unsqueeze(0)
+    packed_mask = pos_range < counts.unsqueeze(1)
 
     return packed_logits, packed_labels, packed_mask
 
@@ -115,9 +119,12 @@ class JointCamemBERTav2(nn.Module):
         head_hidden_dim: int = 256,
         focal_gamma: float = 2.0,
         smoothing: float = 0.0,
+        gradient_checkpointing: bool = False,
     ):
         super().__init__()
         self.encoder = AutoModel.from_pretrained(model_name)
+        if gradient_checkpointing:
+            self.encoder.gradient_checkpointing_enable()
         hidden_size = self.encoder.config.hidden_size
 
         self.dropout = nn.Dropout(dropout)
