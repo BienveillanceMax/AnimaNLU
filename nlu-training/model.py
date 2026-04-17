@@ -174,11 +174,14 @@ class JointCamemBERTav2(nn.Module):
                 # so they don't corrupt CRF transition learning
                 row_has_labels = packed_mask.any(dim=1)
                 if row_has_labels.any():
+                    # token_mean (not mean) — per-token gradient is what the
+                    # transition matrix needs. 'mean' averages by batch size,
+                    # so long sequences dominate and transition signal is weak.
                     slot_loss = -self.crf(
                         packed_logits[row_has_labels],
                         packed_labels[row_has_labels],
                         mask=packed_mask[row_has_labels],
-                        reduction="mean",
+                        reduction="token_mean",
                     )
                 else:
                     slot_loss = torch.tensor(0.0, device=slot_logits.device,

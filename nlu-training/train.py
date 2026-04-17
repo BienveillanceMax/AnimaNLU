@@ -195,7 +195,11 @@ def _build_param_groups(model, base_lr, layer_lr_decay, weight_decay):
     Embeddings get lr * decay^12. Heads and CRF get lr * 1.0.
     No weight decay on bias and LayerNorm.
     """
-    no_decay = {"bias", "LayerNorm.weight", "LayerNorm.bias"}
+    # CRF transition/start/end parameters are sparse structural priors, not
+    # representation weights — weight decay pulls them toward 0, which erases
+    # learned transition constraints (Run 3: std=0.057 after 40 epochs).
+    no_decay = {"bias", "LayerNorm.weight", "LayerNorm.bias",
+                "crf.transitions", "crf.start_transitions", "crf.end_transitions"}
     num_layers = model.encoder.config.num_hidden_layers  # 12
 
     # Group parameters by layer depth
@@ -567,6 +571,14 @@ def main():
     # Final eval
     metrics = trainer.evaluate()
     print(f"\nFinal eval metrics: {metrics}")
+
+    # Dump full training history (epoch-by-epoch) — needed to diagnose
+    # whether training plateaued, early-stopped, or was still improving.
+    import json
+    history_path = output_dir / "training_history.json"
+    with open(history_path, "w", encoding="utf-8") as f:
+        json.dump(trainer.state.log_history, f, indent=2, ensure_ascii=False)
+    print(f"Training history saved to {history_path}")
 
 
 if __name__ == "__main__":

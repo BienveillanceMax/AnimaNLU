@@ -191,7 +191,7 @@ def main():
     model.load_state_dict(load_file(best_dir / "model.safetensors", device=str(device)))
     model.to(device)
 
-    tokenizer = AutoTokenizer.from_pretrained(str(best_dir))
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
 
     # Load test set
     test_dataset = NluDataset(data_dir / "test", tokenizer, max_length)
