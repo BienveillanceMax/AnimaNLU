@@ -187,28 +187,42 @@ class DistributedWeightedSampler(Sampler):
 # ──────────────────────────────────────────────
 # Layer-wise LR decay
 # ──────────────────────────────────────────────
-def _build_param_groups(model, base_lr, layer_lr_decay, weight_decay):
+def _build_param_groups(model, base_lr, layer_lr_decay, weight_decay, crf_lr_multiplier=50.0):
     """
     Build optimizer param groups with layer-wise LR decay.
 
     Layer 0 (bottom) gets lr * decay^12, layer 11 (top) gets lr * decay^1.
-    Embeddings get lr * decay^12. Heads and CRF get lr * 1.0.
+    Embeddings get lr * decay^12. Heads get lr * 1.0.
+    CRF params get their own group at base_lr * crf_lr_multiplier.
     No weight decay on bias and LayerNorm.
+
+    Why CRF LR multiplier: transition/start/end params start at 0 (unlike
+    pretrained encoder). At base_lr ~3e-5 and 'mean' reduction, the 1369
+    transition params develop std≈0.06 over 40 epochs — not enough to
+    separate legal from illegal transitions. 50x multiplier gives them
+    the aggressive learning they need, similar to training a classifier
+    head from scratch.
     """
     # CRF transition/start/end parameters are sparse structural priors, not
     # representation weights — weight decay pulls them toward 0, which erases
     # learned transition constraints (Run 3: std=0.057 after 40 epochs).
     no_decay = {"bias", "LayerNorm.weight", "LayerNorm.bias",
                 "crf.transitions", "crf.start_transitions", "crf.end_transitions"}
+    crf_param_names = {"crf.transitions", "crf.start_transitions", "crf.end_transitions"}
     num_layers = model.encoder.config.num_hidden_layers  # 12
 
-    # Group parameters by layer depth
+    # Group parameters by layer depth (CRF params pulled out into their own group)
     groups = {}  # depth → list of (name, param)
+    crf_params = []
     for name, param in model.named_parameters():
         if not param.requires_grad:
             continue
 
-        # Determine depth: heads/crf = 0 (full LR), encoder layers = 1..12, embeddings = 13
+        if name in crf_param_names:
+            crf_params.append((name, param))
+            continue
+
+        # Determine depth: heads = 0 (full LR), encoder layers = 1..12, embeddings = 13
         # DeBERTa-V2 params are under encoder.encoder.layer.{i}.*
         # (self.encoder = AutoModel, which contains .encoder = DebertaV2Encoder)
         if name.startswith("encoder.embeddings."):
@@ -221,12 +235,12 @@ def _build_param_groups(model, base_lr, layer_lr_decay, weight_decay):
             # encoder.encoder.rel_embeddings, encoder.encoder.LayerNorm
             depth = num_layers
         else:
-            # Heads (speech_act_head, domain_head, slot_head), CRF, dropout
+            # Heads (speech_act_head, domain_head, slot_head), dropout
             depth = 0
 
         groups.setdefault(depth, []).append((name, param))
 
-    # Build param groups
+    # Build param groups (encoder + heads)
     param_groups = []
     for depth, params in sorted(groups.items()):
         lr = base_lr * (layer_lr_decay ** depth)
@@ -246,6 +260,14 @@ def _build_param_groups(model, base_lr, layer_lr_decay, weight_decay):
                 "weight_decay": 0.0,
             })
 
+    # Dedicated CRF group — high LR, no weight decay
+    if crf_params:
+        param_groups.append({
+            "params": [p for _, p in crf_params],
+            "lr": base_lr * crf_lr_multiplier,
+            "weight_decay": 0.0,
+        })
+
     return param_groups
 
 
@@ -256,11 +278,12 @@ class JointNluTrainer(Trainer):
     """Trainer that passes loss_weights, focal_gamma, and CRF config to the model."""
 
     def __init__(self, *args, loss_weights=None, sample_weights=None,
-                 layer_lr_decay=1.0, **kwargs):
+                 layer_lr_decay=1.0, crf_lr_multiplier=50.0, **kwargs):
         super().__init__(*args, **kwargs)
         self.loss_weights = loss_weights or {"speech_act": 1.0, "domain": 1.0, "slots": 2.0}
         self._sample_weights = sample_weights
         self._layer_lr_decay = layer_lr_decay
+        self._crf_lr_multiplier = crf_lr_multiplier
 
     def _get_train_sampler(self, train_dataset=None):
         if self._sample_weights is not None:
@@ -277,13 +300,17 @@ class JointNluTrainer(Trainer):
         return super()._get_train_sampler()
 
     def create_optimizer(self):
-        """Override to apply layer-wise LR decay."""
-        if self._layer_lr_decay < 1.0:
+        """Override to apply layer-wise LR decay and a dedicated CRF param group."""
+        # Always use the custom optimizer when CRF is present, even if
+        # layer_lr_decay=1.0, so the CRF LR multiplier takes effect.
+        has_crf = any(n.startswith("crf.") for n, _ in self.model.named_parameters())
+        if self._layer_lr_decay < 1.0 or has_crf:
             param_groups = _build_param_groups(
                 self.model,
                 base_lr=self.args.learning_rate,
                 layer_lr_decay=self._layer_lr_decay,
                 weight_decay=self.args.weight_decay,
+                crf_lr_multiplier=self._crf_lr_multiplier,
             )
             self.optimizer = torch.optim.AdamW(param_groups)
         else:
@@ -370,7 +397,11 @@ class NluDataCollator:
 # Metrics
 # ──────────────────────────────────────────────
 def compute_metrics(eval_pred):
-    """Compute per-head accuracy for logging and early stopping."""
+    """Compute per-head accuracy for logging and early stopping.
+
+    Note: slot_logits here may be CRF-Viterbi-decoded (when use_crf=True),
+    with argmax returning the decoded tag directly — see prediction_step.
+    """
     predictions, labels = eval_pred
     sa_logits, dom_logits, slot_logits = predictions
     sa_labels, dom_labels, slot_labels = labels
@@ -381,10 +412,29 @@ def compute_metrics(eval_pred):
     sa_acc = (sa_preds == sa_labels).mean()
     dom_acc = (dom_preds == dom_labels).mean()
 
-    # Slot accuracy (ignoring -100)
+    # Slot token-level accuracy (ignoring -100). Kept for visibility but
+    # NOT used in composite because it saturates near 0.95 due to O-majority
+    # (82% of real tokens are O) — doesn't reflect entity F1.
     slot_preds = np.argmax(slot_logits, axis=-1)
     mask = slot_labels != -100
     slot_acc = (slot_preds[mask] == slot_labels[mask]).mean() if mask.any() else 0.0
+
+    # Slot entity-level F1 via seqeval — the metric that actually tracks
+    # slot performance. Only real-label positions are included.
+    pred_tag_seqs, gold_tag_seqs = [], []
+    for i in range(slot_preds.shape[0]):
+        row_mask = mask[i]
+        if not row_mask.any():
+            continue
+        pred_seq = [SLOT_LABELS[t] for t in slot_preds[i][row_mask]]
+        gold_seq = [SLOT_LABELS[t] for t in slot_labels[i][row_mask]]
+        pred_tag_seqs.append(pred_seq)
+        gold_tag_seqs.append(gold_seq)
+    if pred_tag_seqs:
+        from seqeval.metrics import f1_score as _seq_f1
+        slot_f1 = _seq_f1(gold_tag_seqs, pred_tag_seqs, zero_division=0)
+    else:
+        slot_f1 = 0.0
 
     # Sentence accuracy: all 3 heads correct
     sa_correct = sa_preds == sa_labels
@@ -392,15 +442,17 @@ def compute_metrics(eval_pred):
     slot_correct = np.all((slot_preds == slot_labels) | (slot_labels == -100), axis=-1)
     sent_acc = (sa_correct & dom_correct & slot_correct).mean()
 
-    # Weighted composite: geometric mean of the 3 head accuracies.
-    # Ensures early stopping balances all heads — no single head can
-    # inflate the metric while another collapses.
-    composite = (sa_acc * dom_acc * slot_acc) ** (1.0 / 3.0) if slot_acc > 0 else 0.0
+    # Composite: geometric mean of the 3 head accuracies, using entity F1
+    # instead of token accuracy for the slot dimension. This ensures early
+    # stopping actually tracks slot performance rather than the trivial
+    # O-majority baseline.
+    composite = (sa_acc * dom_acc * slot_f1) ** (1.0 / 3.0) if slot_f1 > 0 else 0.0
 
     return {
         "speech_act_acc": sa_acc,
         "domain_acc": dom_acc,
         "slot_token_acc": slot_acc,
+        "slot_entity_f1": slot_f1,
         "sentence_acc": sent_acc,
         "composite_acc": composite,
     }
@@ -527,12 +579,14 @@ def main():
     # Loss config
     loss_weights = lc["weights"]
     layer_lr_decay = tc.get("layer_lr_decay", 1.0)
+    crf_lr_multiplier = tc.get("crf_lr_multiplier", 50.0)
 
     print(f"Effective batch size: {effective_batch} "
           f"({tc['per_device_batch_size']} × {tc['gradient_accumulation_steps']} accum × {max(n_gpus, 1)} GPU)")
     print(f"Total steps: {total_steps}, Warmup steps: {warmup_steps} ({tc['warmup_ratio']:.0%})")
     print(f"LR scheduler: {tc.get('lr_scheduler_type', 'linear')}")
     print(f"Layer LR decay: {layer_lr_decay}")
+    print(f"CRF LR multiplier: {crf_lr_multiplier}x (applied to transition params only)")
     print(f"Label smoothing: {lc.get('smoothing', 0.0)}")
     print(f"Early stopping on: {early_metric} (greater_is_better={greater_is_better})")
 
@@ -563,6 +617,7 @@ def main():
         loss_weights=loss_weights,
         sample_weights=sample_weights,
         layer_lr_decay=layer_lr_decay,
+        crf_lr_multiplier=crf_lr_multiplier,
     )
 
     # Train

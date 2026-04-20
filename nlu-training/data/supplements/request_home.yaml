@@ -119,8 +119,8 @@ examples:
   - O
   - B-room
   - O
-  - O
   - B-scene_name
+  - I-scene_name
 - text: tu peux allumer la prise du bureau
   bio_tags:
   - O

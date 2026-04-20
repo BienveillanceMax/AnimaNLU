@@ -1,0 +1,6392 @@
+[
+  {
+    "text": "Tu ne pourrais pas te dépêcher un peu ? Tu débordes sur le temps du prix du meilleur flûtiste !",
+    "speech_act": "Request",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Eloignez-vous de cette chose !",
+    "speech_act": "Command",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Alors pourquoi vous n'avez rien dit ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Peut-on avoir nos boissons s'il vous plaît ? ! Serveur— euh, euse ! !",
+    "speech_act": "Request",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oh... merde",
+    "speech_act": "ExpressEmotion",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Il a fallut que j'encaisse",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Euh, de quoi vous parlez ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Hé, j'ai pas parié notre argent, je l'ai emprunté à ce mec",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Vous allez vraiment vous faire tatouer ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "T'as embrassé Peyton non ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "B-person_name",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Salut. Peut-on Emma et moi vivre ici pour un temps?",
+    "speech_act": "Request",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "B-person_name",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je ne pourrais pas faire ca, même si j'voulais le faire",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je bosse à la radio pourquoi ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Bravo, Brooke",
+    "speech_act": "PositiveFeedback",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "B-person_name"
+    ]
+  },
+  {
+    "text": "vous ne croyez pas que le crâne est responsable de ce qui est arrivé à Daniel, c'est ça ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-person_name",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Brooke. Si ça ne vous ennuie pas de remettre ça à plus tard, Lucas et moi, il faut qu'on parle",
+    "speech_act": "Request",
+    "domain": "Social",
+    "bio_tags": [
+      "B-person_name",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-person_name",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Non ! Ce n'est pas vrai !",
+    "speech_act": "Deny",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je sais ce que vous allez dire, et oui c'est de ma faute si elle nous a volé",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Salut Brooke. Quoi de neuf?",
+    "speech_act": "Greeting",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "B-person_name",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Un point pour toi. Je sais pas j'imagine que j'espérais",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Bon choix ! J'arrive",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oooh, Lisa, attend !",
+    "speech_act": "Command",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "B-person_name",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Vite le vase !",
+    "speech_act": "Command",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "J'étais sûre que tu serais choquée",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oui, il paraît. Tu es debout, tu as à manger, je file",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ne me dites pas que vous aussi, vous êtes retournée habiter chez votre mère !",
+    "speech_act": "ExpressEmotion",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Tu sais ? Voilà une idée dingue ! Si on se donnait une autre chance ?",
+    "speech_act": "Request",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Pourquoi je serais venu ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Pourtant vous êtes une vendeuse pro, non ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Si j'avais su",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Chez Blakely ? Juste vous deux ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "B-person_name",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "quoi ! vous vous figurez qu'vous pourriez faire mieux",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Vous êtes sûre?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Qui a eu l'idée de vous faire servir sur des rollers ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oui, j'aurai besoin que tu m'aides sur un truc pour le chef. Tu sais garder un secret ?",
+    "speech_act": "Request",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ah, peut-être que vous êtes homosexuels vous aussi ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Arrête d'être une lopette ! Enlève-nous ça...et viens regarder danser des filles nues !",
+    "speech_act": "Command",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Non, aucun risque",
+    "speech_act": "Deny",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oui, et je ne veux pas que tu te sentes obligée de me donner la clé de ton appartement",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oui, c'est à quel sujet ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Sauf si vous insistez, bien sûr",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Qui vient juste d'oublier le respect qu'elle doit à son enfant",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Vous avez dit de lui donner tout ce qu'il demandait !",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Tu vas pas en faire un plat !",
+    "speech_act": "Command",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ca ne devrait pas plutôt viser mon cou ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Alors passe un \"D\"-licieux été !",
+    "speech_act": "Farewell",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Tu vas quelque part ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Vous savez pourquoi il est parti ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Tu me manques déjà !!",
+    "speech_act": "ExpressEmotion",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oui, je sais, et je crois que tu penses que ca serait bizarre. Mais ça ne l'est pas !",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Très bien, je vous le promets",
+    "speech_act": "Confirm",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "C'est...c'est pas totalement horrible",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je vais t'embrasser",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Vous allez arrêté ça!",
+    "speech_act": "Command",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "J'ai encore faim !",
+    "speech_act": "ExpressEmotion",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Et moi qui croyait que les barmaids avaient le sens du relationnel",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Il a manque la moitie de l'année",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Euh, mais j'ai demandé gentiment",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "OK. Vous noterez l'économie de parole, OK. C'est simple et direct",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "J'ai peur pour vous",
+    "speech_act": "ExpressEmotion",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je croyais que la déco n'était pas top ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Mlle. Summers! Tu es si belle!",
+    "speech_act": "PositiveFeedback",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "B-person_name",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "C'était dans un des nouveaux livres et je crois que c'est à vous",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Quoi ? Le kiné a encore forcé sur ton bras ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je ne sais ce que c'est que d'avoir un fils",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Pourquoi? Eddie Ca me rend tout calme, s'il te plait, continue",
+    "speech_act": "Request",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "B-person_name",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ouais, tu étais... Tu étais super. Tu es toujours génial. Tu es une... Une vraie actrice, Natasha",
+    "speech_act": "PositiveFeedback",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-person_name"
+    ]
+  },
+  {
+    "text": "Oh ! Ils commandent nos petites voitures !",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Et votre femme ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oui, Merlin",
+    "speech_act": "Confirm",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "B-person_name"
+    ]
+  },
+  {
+    "text": "Bon, pour la dernière fois. Elle ne prend pas le nom de chacun",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Quand ça?",
+    "speech_act": "Question",
+    "domain": "DateTime",
+    "bio_tags": [
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "C'est votre copain ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Alors Dumbo, tu me la donnes la réponse?",
+    "speech_act": "Request",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "B-person_name",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Sauf si tu magouille",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "C'est simple, le soleil est là, donc avec l'heure on peut calculer le... la... quelle heure il est ?",
+    "speech_act": "Question",
+    "domain": "DateTime",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Son pouls bat à nouveau",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "On le fera, bientôt",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "C'est 42 à 21",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ah, c'est vous",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Le patient qui l'occupe n'a pas été surpris de vous voir ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "C'est ton âge",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Euh, pas mal",
+    "speech_act": "PositiveFeedback",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oh, je sais. Je suis maintenant un entrepreneur indépendant",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ce serait génial si Buffy se pointait demain, comme si rien ne s'était passé",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-person_name",
+      "O",
+      "O",
+      "B-date_value",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "gardez votre calme monsieur, nos agents fouillent le centre commercial",
+    "speech_act": "Command",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oh ! Je m'en doutais ! Vous n'avez pas continuez à la fac ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Vieux ! T' as pas entendu le double bip ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ah. Oui",
+    "speech_act": "Confirm",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Tenez-vous bien : Mireille Mathieu n'est plus de ce monde",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "B-person_name",
+      "I-person_name",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "J'ai terminé",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "C'était rien",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "il m'a puni",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Exact. Dawn, Vi a laissé son carnet de notes là-bas. Voudrais-tu lui l'amener dehors dans la voiture ?",
+    "speech_act": "Request",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "B-person_name",
+      "B-person_name",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "C'est moi qui choisit et personne d'autre?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je sens rien de spécial",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Mais on peut pas supprimer un péché par magie, on en a tous !",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Joey Potter! Comme je vis et respire! Salut!",
+    "speech_act": "Greeting",
+    "domain": "Social",
+    "bio_tags": [
+      "B-person_name",
+      "I-person_name",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je suis navré. Hum, euh...je, je t'appelle dès que j'en saurai plus",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Non, ne les touche pas !",
+    "speech_act": "Command",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Efficace ce truc d'aveugle. Sans la vue je suis plus en phase avec mes autres sens",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Carol, Carol. Joey peut te poser une question sur l'allaitement ?",
+    "speech_act": "Request",
+    "domain": "Social",
+    "bio_tags": [
+      "B-person_name",
+      "B-person_name",
+      "B-person_name",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Avec plaisir mais en amis, c'est ça ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Tu n'étais pas là ! C'est peut-être un truc que je dois \"saisir\"",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Vraiment ? Tu veux que j'aborde le sujet ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "L'avantage de Tom, c'est qu'il soutient une conversation",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "B-person_name",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Tu sembles aimer mettre ton petit costume de singe tous les matins",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "On pourrait ?",
+    "speech_act": "Request",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "A toute",
+    "speech_act": "Farewell",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "J'ai paniqué. Je n'ai vu que l'arme et j'ai paniqué. J'ai simplement paniqué. Il va s'en sortir ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oh Jim, c'est affreux",
+    "speech_act": "ExpressEmotion",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "B-person_name",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ça devait être un cercueil fermé",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je l'ai reçu par mail ce matin. On nous menace d'appeler la presse",
+    "speech_act": "Statement",
+    "domain": "Communication",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Si, si !",
+    "speech_act": "Confirm",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Doucement junior. Il ne faut jamais aller trop vite. Il faut apprendre à marcher avant de courir",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je ne sais plus très bien... On est en vacances ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "17 ans, en première année de fac",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je suis votre médecin. Ce n'est pas mon rôle d'être contente",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Vous devez être musclé",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je ne sais pas, Martouff est en train de tout lui expliquer",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-person_name",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Quelle profusion",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Merci. Et maintenant ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Mais qu'est-ce que tu fais ? !",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Non, enfin si. Du bout des lèvres. On dirait que ça ne va pas fort?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Désolé, c'est tout ce qui m'est venu à l'esprit",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Avec cette jambe ? J'en doute",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Faut absolument que j'aille dormir un peu... Oh, je ferais mieux de surveiller les progrès de mon elfe bleu",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Alors pourquoi tu te bats",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je peux savoir à quoi tu joues ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "T'es malade, c'est pas un guitariste! On dirait qu'il joue du banjo",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Tu n'étais pas censée nous voir",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ce n'est rien, tu ne pouvais pas deviner. Je n'en ai pas pour longtemps",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je suis désolé et je suis sincère. Euh, je croyais que j'étais le Premier ministre en vie",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Et en plus, vous gardez le sourire",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ca ne va pas marcher",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ouh...ok, ok. De toute façon, c'est pas la première fois que vous voyez ça",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Et moi je tiens la caisse !",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Qui t'a demandé de venir travailler ??",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "C.J. n'est pas gay",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "B-person_name",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ca t'embête si je vais leur dire deux mots ?",
+    "speech_act": "Request",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "A nous de jouer!",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oh, tu as plus de flip",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Salut grand-père",
+    "speech_act": "Greeting",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ca suffit, vas-t'en vas-t'en vas-t'en, allez allez, dehors dehors une fois !",
+    "speech_act": "Command",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Il y a certains bruits qui courent, c'est la vérité. Nous avons été découverts",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Tu ne penses pas que ça fait un peu \"Tracey Flick\" ? Il ne te connaît même pas",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oui, avec ma maman. oui, pas autant avec mon père",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Hum, je sais",
+    "speech_act": "Confirm",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Bon sang , Maman Baker est à croquer aujourd'hui",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "B-person_name",
+      "I-person_name",
+      "O",
+      "O",
+      "O",
+      "B-date_value"
+    ]
+  },
+  {
+    "text": "Jonah ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "B-person_name",
+      "O"
+    ]
+  },
+  {
+    "text": "Du poison",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Euh... oui, bien sûr ! Merci",
+    "speech_act": "Confirm",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ouais, Chuck ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "B-person_name",
+      "O"
+    ]
+  },
+  {
+    "text": "Le pied! Je voulais rien faire. La seule nuit de l'année où je peux être tranquille!",
+    "speech_act": "ExpressEmotion",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ecoutez ça. Quand je suis allé le voir",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Et tu veux que je largue tout du jour au lendemain, c'est ça?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oui. Et moi aussi",
+    "speech_act": "Confirm",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Et si ç'avait été lui? Je croyais qu'il n'y avait rien entre vous deux",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Le 21 novembre 2059",
+    "speech_act": "Statement",
+    "domain": "DateTime",
+    "bio_tags": [
+      "O",
+      "B-date_value",
+      "I-date_value",
+      "I-date_value"
+    ]
+  },
+  {
+    "text": "Plus près du micro",
+    "speech_act": "Command",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Vite, on va être en retard",
+    "speech_act": "Command",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Une marche !",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "J'aimerais que tu puisses rester",
+    "speech_act": "ExpressEmotion",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oh wow ! Il est par terre !",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oooh, eh bien personne ne se sentira seul, ce soir",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-time_value",
+      "I-time_value"
+    ]
+  },
+  {
+    "text": "Allez. Elle n'aurait pas avalé le \"on passait dans le coin.\"",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Salut vieux !",
+    "speech_act": "Greeting",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oh non, les roues sont coincées. Regardez, elles ne bougeront jamais",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Okay, elle sait pas à ce niveau là",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je l'ai accompagnée à sa voiture et là...il s'est rien passé du tout",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oui ? Qu'est-ce que t'as mangé ?",
+    "speech_act": "Question",
+    "domain": "Cooking",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je ne suis pas sûre de te croire. Sauf si",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "C'est un très joli nom. C'était une gentille femme. Elle aimait que vous disiez toujours la vérité, hein ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "T'as oublié comment il s'est battu quand on l'a mis en maison de retraite ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je mens mieux que ça, hein ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "expliquez moi votre théorie",
+    "speech_act": "Request",
+    "domain": "Knowledge",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "T'approche pas. J'ai dit non",
+    "speech_act": "Command",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Quoi !? Cite-m'en 12 !",
+    "speech_act": "Command",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ça expliquerait leur comportement un peu étrange",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ah ! Vous êtes là ! J'ai bien cru vous avoir perdu, monsieur !",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Elle aurait bien fini par le savoir",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Comme un dieu",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Pourquoi est-ce que tu es venu?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ecoute, juste avant le mariage, j'ai dit à Lucas de ne pas épouser Lindsay !",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-person_name",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-person_name",
+      "O"
+    ]
+  },
+  {
+    "text": "Je doute fort qu'elle vous accable de malheur. Elle a un coeur pur",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ah ! Raclure ! Rends-moi mon fric, immédiatement, voleur !",
+    "speech_act": "Command",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je crois que nous sortons ensemble",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Les molécules et les atomes ? Oui. Asseyez vous. Vous devez vous servir de ça",
+    "speech_act": "Statement",
+    "domain": "Knowledge",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oh ! Appelle les flics, Charles !",
+    "speech_act": "Command",
+    "domain": "Communication",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-person_name",
+      "O"
+    ]
+  },
+  {
+    "text": "Ah oui ? Et que lui diriez-vous ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Evidemment, il n'y avait plus de chambre à deux lits !",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Votre mari en a sept. Un, deux, trois, quatre, cinq, six, sept. À quoi sert la septième clé ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Toi aussi tu mens, tu te fais passer pour une gentille lycéenne alors que tu es une trainée",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oui, Papa !",
+    "speech_act": "Confirm",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Cette méthode me parait pas très efficace !",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Nous sommes toute ouïe",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "La petite main marionnette de Joey qui dit byyye?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-person_name",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Comme si t'avais des fesses",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ce genre de test ne peut pas se rater",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oh là, oh là, oh là! Où vous allez comme ça?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "C'est curieux, effectivement !",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Mais ensuite, votre père a montré son vrai visage",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Croix de bois, croix de fer, si je mens, tu vas en enfer",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Bonjour Tag. J'ai une réunion aujourd'hui, n'est-ce pas ?",
+    "speech_act": "Question",
+    "domain": "Calendar",
+    "bio_tags": [
+      "O",
+      "B-person_name",
+      "O",
+      "O",
+      "B-event_name",
+      "B-date_value",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "T'es comme il t'avait décrite dans ses lettres, c'est troublant",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Sans parler de l'incinération",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Que doit-on trouver ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "C'est pourquoi tes affiches ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je me sens bien. Ca va aller. Nous tenions à ce que vous soyez le premier à le voir",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Y a un démon",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je pensais à un voyage plus... plus lointain",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Tu es sûr que sa va ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je pense que nous devrions prendre une photo pour immortaliser ce moment",
+    "speech_act": "Request",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Lucas me cache quelque chose, c'est bizarre",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "B-person_name",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Eh, mon bras !",
+    "speech_act": "ExpressEmotion",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ho, Béa !",
+    "speech_act": "Greeting",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "B-person_name",
+      "O"
+    ]
+  },
+  {
+    "text": "Oh, chic alors",
+    "speech_act": "PositiveFeedback",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oui juste le temps d'être engagé sur un autre yacht",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "En Espagne, c'est très courant",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "B-location",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Quel souk ! Qu'est-ce qu'ils sont venus faire ici Bogart et Ingrid Bergman ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-person_name",
+      "O",
+      "B-person_name",
+      "I-person_name",
+      "O"
+    ]
+  },
+  {
+    "text": "Quant à la servante, est-elle votre complice ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Bien trop original",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Qu'est ce qui lui est arrivé?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Une demi-heure. Vous avez 30 minutes pour terminer l'examen",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "B-duration",
+      "I-duration",
+      "O",
+      "O",
+      "B-duration",
+      "I-duration",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je joue du Theremin",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "On dirait que vous n'étiez pas tout seule hier soir",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-time_value",
+      "I-time_value"
+    ]
+  },
+  {
+    "text": "C'est complètement dément ! Regarde, hier je m'intéressais à la pop music et aujourd'hui, aux pluies de grenouilles !",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-date_value",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-genre_type",
+      "I-genre_type",
+      "O",
+      "B-date_value",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Normalement ça devrait être l'inverse, normalement c'est moi qui devrais te consoler",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je ne trahirais pas mon père",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Pas du tout. Je me réapproprie mon espace vital",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ne crains rien ma chérie !",
+    "speech_act": "Command",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je t'ai apporté un cadeau",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "en mission",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je vais chercher à comprendre ce qu'il attend",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Héhé, regardes Bart, j'ai ton nez",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "B-person_name",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Le supplice de Tantale",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Merci ! Vite !",
+    "speech_act": "Command",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Hé cool, t'as vu elle vole !",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "C'est une porte classique",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Non, ce n'est pas d'alcool que j'ai besoin maintenant",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Alors ça me va aussi",
+    "speech_act": "Confirm",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Avec plaisir! Quelque chose de très consistant",
+    "speech_act": "Request",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Tu parles, tu ne me ferais pas de mal",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Permuter, c'est ca. Oui",
+    "speech_act": "Confirm",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ne sois pas aussi négative !",
+    "speech_act": "Command",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Un journaliste ? Pour qui ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Bien, bien, bien tu veux savoir ce que je fais quand je tourne?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ça doit être très émouvant d'assister à ses propres funérailles",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Tu crois qu'elle bluffe ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je suis navré, je suis contre le fait de prescrire sans une forme ou une autre de parlotte",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Me brusque surtout pas",
+    "speech_act": "Command",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Elle a eu des convulsions et elle a fait un arrêt, voilà",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oh, comment on fait alors ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je suis vraiment gâtée ! C'est tout",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Il est très timide. Comment je peux le mettre à l'aise ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je peux prendre soin d'elle",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oui, mais ici aussi !",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oh, ok !",
+    "speech_act": "Confirm",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Et si je pouvais prouver son innocence ? Voulez-vous voir votre nom lavé de tout soupçon ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Tu sais, j'ai réfléchi... et j'ai décidé que cette histoire n'est pas une bonne idée",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je parie que c'est \"T'as pas vu ta tronche\"",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Moi j'ai acheté ce porte-crayon",
+    "speech_act": "Statement",
+    "domain": "Shopping",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ben vas-y, décroche !",
+    "speech_act": "Command",
+    "domain": "Communication",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "C'est marrant. Pourquoi il blague pas dans son bureau ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "J'ai passé un coup de fil à l'agence pour repousser le rendez-vous. Tu peux aller te reposer",
+    "speech_act": "Statement",
+    "domain": "Communication",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "J'arrive pas a croire qu'elle soit morte. Emma etait une de mes meilleures amies",
+    "speech_act": "ExpressEmotion",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-person_name",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Heureusement que tu l'as pas ouverte, comme la boîte de Pandore, ça aurait été affreux",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ça peut être un accident ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Pogonophobie. La peur des barbes et des moustaches",
+    "speech_act": "Statement",
+    "domain": "Knowledge",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je sais que c'est compliqué, mais",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Six !",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "70 kilos. Ouais, Je vais jouer dans une publicité pour les sandwiches Subway",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Il fait sa vie ! Fais la tienne, aussi !",
+    "speech_act": "Command",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oh, s'il te plait, comme si tu pouvais être hétéro. Ton coeur est trop gros, tout comme ton cerveau",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Cool, on peut enlever l'avis de recherche",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "On ne passe pas par-là alors ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oui, c'est peut-être plus raisonnable",
+    "speech_act": "Confirm",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Non pas du tout, ça m'est venu tout seul",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Savez-vous où on peut le trouver ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Pas mal Fergie",
+    "speech_act": "PositiveFeedback",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "B-person_name"
+    ]
+  },
+  {
+    "text": "Un moka double lait sans mousse",
+    "speech_act": "Request",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Pas vraiment, mais je suis un aficionado",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "A savoir ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Vu quoi? C'est quoi le problème?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Monica a fait ca?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "B-person_name",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "C'est ça, va du côté des mauviettes",
+    "speech_act": "Command",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Comment auriez-vous pu savoir qu'elle était morte dans le caniveaux ? Sauf si vous y étiez",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ce serait bien présomptueux. Non, je parlais de mes pieds",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je sais, mais en conséquence de mes actes Morgane agonise",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-person_name",
+      "O"
+    ]
+  },
+  {
+    "text": "Salut Chris !",
+    "speech_act": "Greeting",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "B-person_name",
+      "O"
+    ]
+  },
+  {
+    "text": "Il peut. Il le fera. Il a intérêt",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Il a une santé de fer !",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je voulais seulement te dire à quel point je t'aimais !",
+    "speech_act": "ExpressEmotion",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oh oui, bien sur",
+    "speech_act": "Confirm",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Rachel, il faut qu'on y aille !",
+    "speech_act": "Command",
+    "domain": "Social",
+    "bio_tags": [
+      "B-person_name",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Mais c'est génial ! Tu vois ? Imagine que tu aies sauté, dans un moment de désespoir",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Arrêtes un peu de parler de ça !",
+    "speech_act": "Command",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oh... Halte !",
+    "speech_act": "Command",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "On se met en route !",
+    "speech_act": "Command",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Vous pourriez acheter un coffre anti-feu",
+    "speech_act": "Request",
+    "domain": "Shopping",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Comme si vous ne saviez pas que vous avez un énorme problème de confiance",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Eu-Euh, Nathan ? Est-ce que tu pourrais refaire ton entrée et... et redire tout ca ?",
+    "speech_act": "Request",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "B-person_name",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Euh, un tantinet. Ça a marché. Ca va. Un peu exagéré quand même",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Y'en a d'autres ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "C'est exact ! J'ai... j'ai fait sauter la banque au casino d'Enghien !",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-location",
+      "O"
+    ]
+  },
+  {
+    "text": "Alors là, je serais incapable de vous le dire",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Il est resté assommer quelques minutes, ça a été épouvantable",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-duration",
+      "I-duration",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Aujourd'hui on a essayé de se masturber pour de l'argent",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "B-date_value",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Et la fois d'avant si j'me souviens bien",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je crois que tu peux me présenter tes excuses",
+    "speech_act": "Request",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Non ! Joey, tu vas être génial !",
+    "speech_act": "PositiveFeedback",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "B-person_name",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Comment tu le trouve ? il est sexy hein ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Tant que ça ? Mais vous n'êtes pas là !",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "En tout cas, c'est gentil de m'avoir invité, je me suis bien amusée",
+    "speech_act": "PositiveFeedback",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Tout ça c'est du passé",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "J'aimerais vraiment vraiment",
+    "speech_act": "ExpressEmotion",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Vaudrait mieux qu'il l'apprenne jamais. Bon sang, qu'est-ce qui t'es passé par la tête ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "J'ai une tête de plombier, tu trouves ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oui. J'aurai certainement besoin d'un mot avec elle. J'aime toujours, euh, apprendre à connaître la personne avec qui je travaille",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Non je plaisantais ! Je peux quand même pas te faire ça !",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Penny, bonjour",
+    "speech_act": "Greeting",
+    "domain": "Social",
+    "bio_tags": [
+      "B-person_name",
+      "O"
+    ]
+  },
+  {
+    "text": "Bon, faites de beaux rêves",
+    "speech_act": "Farewell",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Merci de cette intervention",
+    "speech_act": "PositiveFeedback",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Non, Sylvia je n'ai pas l'intention d'accepter votre argent",
+    "speech_act": "Deny",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "B-person_name",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "T'as pas dormi non plus ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Non. C'est mieux quand c'est spontané. . Alors, ton avis ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Bonjour, M. Jane. C'est bon",
+    "speech_act": "Greeting",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "B-person_name",
+      "I-person_name",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Vous et... moi ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Qu'on s'est embrassés ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Tu ne crois pas que, que Jimmy est tué Keith ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-person_name",
+      "O",
+      "O",
+      "B-person_name",
+      "O"
+    ]
+  },
+  {
+    "text": "Excusez moi, Dr. Shepherd?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "B-person_name",
+      "I-person_name"
+    ]
+  },
+  {
+    "text": "J'étais pauvre",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Il a déménagé, mes parents vont divorcer",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "je vais les avertir et leur dire au revoir",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je sais vraiment pas ce qui m'a pris",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "C'est tout ce qui est écrit. Vol 421. Décolle à 20h40. Aéroport de Newark",
+    "speech_act": "Statement",
+    "domain": "Transport",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-time_value",
+      "B-location",
+      "I-location",
+      "I-location"
+    ]
+  },
+  {
+    "text": "Te mentir? Quinn de quoi tu parles, Je n'ai acheté aucune drogue",
+    "speech_act": "Deny",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "B-person_name",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Poussez-vous ! C'est moi qui sors ce bébé !",
+    "speech_act": "Command",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Waou ! ! Comment sais-tu faire ce genre de choses ? !",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Personnaliser le chantage c'est le seul moyen d'y arriver",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ok, on est encore à égalité, 41 à 41",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Alors Il y avait qui d'autre?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Passez à mon bureau demain. Je crois que nous avons besoin d'un entretien",
+    "speech_act": "Request",
+    "domain": "Calendar",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-date_value",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-event_name"
+    ]
+  },
+  {
+    "text": "Depuis combien de temps",
+    "speech_act": "Question",
+    "domain": "DateTime",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Qu'est ce quelle a dit la?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Comment vous saviez qu'il avait une preuve?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oui, bien sur. Vous êtes plutôt une buveuse de vin blanc",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oui, je veux t'épouser. Oui",
+    "speech_act": "Confirm",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Quoi ? Je ne vois rien",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Tu vas faire une plaisanterie sur mon cadeau spécial ! Pourquoi vas-tu faire ça ?!",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Eh bien, que puis-je faire pour arranger ça ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Elle est magnifique",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Nous avons fouillé partout",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "On peut dire que nous sommes entrés dans l'age d'or",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Alors toutes tes affaires seraient ici",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ouh! Dans ce cas, il a un sacré pouvoir",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Elles sont encore dans ma poche",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je suis navré de ce que notre père vous a fait subir",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Comment tu viens de m'appeler ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Jamais de ma vie je ne recommencerai",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Un geste commercial ?",
+    "speech_act": "Question",
+    "domain": "Shopping",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ca va bien, et qu'en est-il de votre président ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "je te trouve ravissante",
+    "speech_act": "PositiveFeedback",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je crains que quelqu'un ait voulu te faire du mal",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "ça leur a plut j'espère?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oui... elle n'est pas très belle",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Croix de bois ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "obscure, ambivalent, euh... équivoque",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Moi ? Mais pas du tout !",
+    "speech_act": "Deny",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "C'était, c'était bien",
+    "speech_act": "PositiveFeedback",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ce n'est pas le scénario, mais l'idée est là. Il est doué",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "C'est comme ça, que tu sois d'accord ou pas. Fais-toi une raison et passe à autre chose",
+    "speech_act": "Command",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Mais... mais... C'est le téléphone d'Estelle !",
+    "speech_act": "Statement",
+    "domain": "Communication",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-person_name",
+      "O"
+    ]
+  },
+  {
+    "text": "Je note. Ca y est !",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Où est passé notre amis ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Il est sur le coup",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Touchez le",
+    "speech_act": "Command",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Et comment à t-il fait ? Il a du faire de la manipulation génétique",
+    "speech_act": "Question",
+    "domain": "Knowledge",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "T'es un loup garou si ça se trouve !",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Mais une stérnotomie médiane peut être nécessaire",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je déteste ça",
+    "speech_act": "ExpressEmotion",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ben lui non plus il a pas décroché le gros lot",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "C'est toi?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Regarde le ciel, fin du monde dans vingt minutes !",
+    "speech_act": "Command",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-duration",
+      "I-duration",
+      "O"
+    ]
+  },
+  {
+    "text": "Ça a beaucoup changé",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je peut pas écrire une chanson, j'ai que dix ans !",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Tommy Lee est vieux, il est ridicule. Comment t'as pu croire que je fantasmais dessus ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "B-person_name",
+      "I-person_name",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ouais, tu parles. Il faut que je te laisse, mais je t'embrasse fort",
+    "speech_act": "Farewell",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Mais allez vous faire voir!",
+    "speech_act": "ExpressEmotion",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "J'espère que vous ne me décevrez pas une fois de plus",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Et quel est le médecin qui retire les chaussures des fessiers ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ah oui, comme ça ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "De prison",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je pensais pas que cette journée allait être aussi bizarre",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Ouais, c'est bizarre. Mais, c'est peut être que ça. Bizarre mais anodin",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Il est hors de question que je m'en aille",
+    "speech_act": "Deny",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Alors, quoi ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Qu'est-ce que tu as, Homer ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-person_name",
+      "O"
+    ]
+  },
+  {
+    "text": "Pourquoi t'es passé par la porte de derrière?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je t'ai dis qu'on le réparerait !",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oh, bien sûr. Je suis déjà en train de la faire visiter mais entrez",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Attendez. Laissez-moi",
+    "speech_act": "Request",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Très bien. Tant qu'on y est, on règle son compte à ce ventre ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je veux une fin heureuse pur Isabella",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-person_name"
+    ]
+  },
+  {
+    "text": "Je leur passerai le message",
+    "speech_act": "Statement",
+    "domain": "Communication",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Je quitte la série ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Et pour Merle Dixon ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "B-person_name",
+      "I-person_name",
+      "O"
+    ]
+  },
+  {
+    "text": "Une mise en scène, pour te faire gober le morceau",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Oh regardez-moi ces jambes!",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Heu, tu me fais marcher?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Quoi ? Non. Sur internet, il ne disait rien sur une infection éventuelle",
+    "speech_act": "Statement",
+    "domain": "Knowledge",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "J'ai demandé la première!",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "en effet, vous le pouvez",
+    "speech_act": "Confirm",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Mais nous avons déjà une chanteuse principale, les filles",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Nan, laisse tomber le sac, ça va pas être possible. Qu'est-ce que t'as sur toi ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Vous ne pouvez pas faire ça. Vous ne pouvez pas",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Quoi c'était quoi?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "C'est pas à Ross ?",
+    "speech_act": "Question",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O",
+      "B-person_name",
+      "O"
+    ]
+  },
+  {
+    "text": "Je préfère mourir",
+    "speech_act": "Statement",
+    "domain": "Social",
+    "bio_tags": [
+      "O",
+      "O",
+      "O"
+    ]
+  }
+]

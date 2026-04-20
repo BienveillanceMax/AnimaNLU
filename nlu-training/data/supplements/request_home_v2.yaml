@@ -288,8 +288,8 @@ examples:
   - O
   - O
   - O
-  - O
   - B-scene_name
+  - I-scene_name
   - O
   - O
   - B-room

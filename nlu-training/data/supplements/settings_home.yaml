@@ -1,0 +1,206 @@
+speech_act: Request
+domain: Home
+examples:
+- text: tu peux baisser la température
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-setting_type
+- text: tu peux monter la température
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-setting_type
+- text: augmente la température s'il te plaît
+  bio_tags:
+  - O
+  - O
+  - B-setting_type
+  - O
+  - O
+  - O
+- text: pourrais-tu régler la température
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-setting_type
+- text: monter la luminosité
+  bio_tags:
+  - O
+  - O
+  - B-setting_type
+- text: tu pourrais baisser la luminosité dans le salon
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-setting_type
+  - O
+  - O
+  - B-room
+- text: augmente la luminosité de la cuisine
+  bio_tags:
+  - O
+  - O
+  - B-setting_type
+  - O
+  - O
+  - B-room
+- text: tu peux régler la luminosité
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-setting_type
+- text: règle la température à vingt degrés
+  bio_tags:
+  - O
+  - O
+  - B-setting_type
+  - O
+  - B-setting_value
+  - I-setting_value
+- text: mets la température à dix-huit
+  bio_tags:
+  - O
+  - O
+  - B-setting_type
+  - O
+  - B-setting_value
+- text: tu pourrais monter le volume
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-setting_type
+- text: baisse le volume de la télé
+  bio_tags:
+  - O
+  - O
+  - B-setting_type
+  - O
+  - O
+  - B-device_type
+- text: tu peux augmenter le volume
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-setting_type
+- text: j'aimerais régler la puissance du chauffage
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-setting_type
+  - O
+  - B-device_type
+- text: tu peux ajuster la vitesse du ventilateur
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - B-setting_type
+  - O
+  - B-device_type
+- text: mettre la lumière en mode cinéma
+  bio_tags:
+  - O
+  - O
+  - B-device_type
+  - O
+  - B-scene_name
+  - I-scene_name
+- text: tu pourrais mettre la maison en mode nuit
+  bio_tags:
+  - O
+  - O
+  - O
+  - O
+  - O
+  - O
+  - B-scene_name
+  - I-scene_name
+- text: passe en mode cocooning
+  bio_tags:
+  - O
+  - O
+  - B-scene_name
+  - I-scene_name
+- text: mets le salon en ambiance soirée
+  bio_tags:
+  - O
+  - O
+  - B-room
+  - O
+  - B-scene_name
+  - I-scene_name
+- text: active le mode cinéma dans le salon
+  bio_tags:
+  - O
+  - O
+  - B-scene_name
+  - I-scene_name
+  - O
+  - O
+  - B-room
+- text: tu pourrais lancer l'ambiance romantique
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-scene_name
+  - I-scene_name
+- text: passer en mode nuit
+  bio_tags:
+  - O
+  - O
+  - B-scene_name
+  - I-scene_name
+- text: activer le mode cocooning dans la chambre
+  bio_tags:
+  - O
+  - O
+  - B-scene_name
+  - I-scene_name
+  - O
+  - O
+  - B-room
+- text: mets-toi en mode jour
+  bio_tags:
+  - O
+  - O
+  - B-scene_name
+  - I-scene_name
+- text: déclenche le mode vacances
+  bio_tags:
+  - O
+  - O
+  - B-scene_name
+  - I-scene_name
+- text: j'aimerais bien activer l'ambiance lecture dans le salon
+  bio_tags:
+  - O
+  - O
+  - O
+  - B-scene_name
+  - I-scene_name
+  - O
+  - O
+  - B-room
+- text: lance la scène réveil
+  bio_tags:
+  - O
+  - O
+  - B-scene_name
+  - I-scene_name

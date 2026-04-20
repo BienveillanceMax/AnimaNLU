@@ -14,17 +14,27 @@ training:
   num_epochs: 40
   early_stopping_patience: 7
   early_stopping_metric: "eval_composite_acc"
-  warmup_ratio: 0.06
+  # 10% (vs prior 6%) gives CRF transitions more time to stabilize before peak LR.
+  # At crf_lr_multiplier=50 (effective LR 1.5e-3), aggressive early updates on the
+  # 1,443 CRF params can overshoot if warmup is too short.
+  warmup_ratio: 0.10
   weight_decay: 0.01
   max_grad_norm: 1.0
   lr_scheduler_type: "cosine"
   layer_lr_decay: 0.9
+  # CRF transitions start at 0 and need aggressive learning (unlike pretrained encoder).
+  # At 50x base LR (~1.5e-3), transitions develop std≥1.0 over training — enough to
+  # separate legal B→I from illegal O→I by several score points.
+  crf_lr_multiplier: 50.0
 
 loss:
   weights:
     speech_act: 1.0
     domain: 1.0
-    slots: 2.0
+    # Switched CRF reduction from 'token_mean' to 'mean' in model.py — per-sequence
+    # loss is ~9x larger than per-token, so slot weight halved to keep effective
+    # balance with the two classification heads.
+    slots: 1.0
   focal_gamma: 1.0
   smoothing: 0.05
 
