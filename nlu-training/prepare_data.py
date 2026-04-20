@@ -22,7 +22,7 @@ from sklearn.model_selection import StratifiedShuffleSplit
 from labels import (
     SPEECH_ACTS, DOMAINS, SLOT_LABELS,
     SPEECH_ACT_L2I, DOMAIN_L2I, SLOT_LABEL_L2I,
-    MASSIVE_INTENT_MAP, MASSIVE_SLOT_MAP,
+    MASSIVE_INTENT_MAP, MASSIVE_INTENT_SKIP, MASSIVE_SLOT_MAP,
     write_label_files,
 )
 
@@ -130,7 +130,7 @@ def remap_example(utt: str, annot_utt: str, intent: str):
 
     Returns None if intent not in our map (shouldn't happen).
     """
-    if intent not in MASSIVE_INTENT_MAP:
+    if intent not in MASSIVE_INTENT_MAP or intent in MASSIVE_INTENT_SKIP:
         return None
 
     speech_act, domain = MASSIVE_INTENT_MAP[intent]
@@ -353,11 +353,24 @@ def main():
     # 4. Load Sonnet-classified dialogue extracts (from classify_results/)
     #    100% train (Sonnet labels too noisy for eval)
     classify_results_dir = DATA_DIR / "classify_results"
+    classify_annotated_dir = DATA_DIR / "classify_results_annotated"
     if classify_results_dir.exists():
+        # Pre-load BIO annotations keyed by text.
+        # Missing keys or length mismatches fall back to all-O (not IGNORE),
+        # so the slot head still trains on O-transition statistics the CRF needs.
+        annotations_by_text: dict[str, list[str]] = {}
+        if classify_annotated_dir.exists():
+            for af in sorted(classify_annotated_dir.glob("*.json")):
+                with open(af, encoding="utf-8") as fh:
+                    for a in json.load(fh):
+                        annotations_by_text[a["text"]] = a["bio_tags"]
+
         dialogue_all = []
         seen = set()
         skipped_long = 0
         skipped_stmt_q = 0
+        annotated_hits = 0
+        annotated_misses = 0
         for f in sorted(classify_results_dir.glob("*.json")):
             with open(f, encoding="utf-8") as fh:
                 classify_data = json.load(fh)
@@ -378,24 +391,43 @@ def main():
                     continue
                 seen.add(key)
                 words = ex["text"].split()
+                bio_tags = annotations_by_text.get(ex["text"])
+                if bio_tags is None or len(bio_tags) != len(words):
+                    bio_tags = ["O"] * len(words)
+                    annotated_misses += 1
+                else:
+                    annotated_hits += 1
                 dialogue_all.append({
                     "text": ex["text"],
-                    "bio_tags": ["IGNORE"] * len(words),
+                    "bio_tags": bio_tags,
                     "speech_act": sa,
                     "domain": dom,
                 })
+        print(f"  classify_results BIO annotations: {annotated_hits} hits, "
+              f"{annotated_misses} fell back to all-O")
 
         print(f"  Sonnet classified: {len(dialogue_all)} unique "
               f"(skipped {skipped_long} long + {skipped_stmt_q} Statement-with-?)")
 
-        # Fix 3: Cap Sonnet-Social to reduce domain bias
+        # Fix 3: Cap Sonnet-Social to reduce domain bias.
+        # Prefer entity-bearing entries when truncating — dropping them loses the
+        # very annotations we just produced, and the dialogues_train YAML duplicates
+        # (all-O) would then win the conflict resolver by default.
         sonnet_cap = CONFIG.get("sonnet_social_cap", 2000)
         sonnet_social = [ex for ex in dialogue_all if ex["domain"] == "Social"]
         sonnet_other = [ex for ex in dialogue_all if ex["domain"] != "Social"]
         original_social = len(sonnet_social)
         if len(sonnet_social) > sonnet_cap:
-            random.shuffle(sonnet_social)
-            sonnet_social = sonnet_social[:sonnet_cap]
+            with_ent = [ex for ex in sonnet_social
+                        if any(t != "O" for t in ex["bio_tags"])]
+            without_ent = [ex for ex in sonnet_social
+                           if all(t == "O" for t in ex["bio_tags"])]
+            random.shuffle(with_ent)
+            random.shuffle(without_ent)
+            kept = with_ent[:sonnet_cap]
+            if len(kept) < sonnet_cap:
+                kept.extend(without_ent[:sonnet_cap - len(kept)])
+            sonnet_social = kept
         dialogue_all = sonnet_other + sonnet_social
         print(f"    Social capped: {original_social} → {len(sonnet_social)}")
 
@@ -442,12 +474,20 @@ def main():
         balanced_train = []
         for combo, examples in sorted(by_combo.items()):
             n = len(examples)
+            unique_n = len({ex["text"].lower().strip() for ex in examples})
             if n > max_per:
                 # Downsample
                 random.shuffle(examples)
                 balanced_train.extend(examples[:max_per])
             elif n < min_per:
-                # Upsample by repeating
+                # Require real lexical diversity before upsampling —
+                # repeating a single sentence 40× teaches memorization,
+                # not generalization. Combos below the diversity floor
+                # are dropped so the model doesn't learn a spurious rule.
+                if unique_n < 5:
+                    print(f"    skipping {combo}: only {unique_n} unique "
+                          f"text(s) in {n} examples — insufficient diversity")
+                    continue
                 repeats = (min_per // n) + 1
                 upsampled = (examples * repeats)[:min_per]
                 balanced_train.extend(upsampled)

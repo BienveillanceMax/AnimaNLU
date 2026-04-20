@@ -130,6 +130,10 @@ MASSIVE_INTENT_MAP = {
     # ── general (scenario 9) — MASSIVE only has 3 general intents ──
     "general_greet":          ("Greeting",  "Social"),
     "general_joke":           ("Question",  "Social"),
+    # NOTE: general_quirky is MASSIVE's catch-all — it contains iPhone spec
+    # questions, math, movie queries, event searches, etc. Force-mapping all
+    # 2,487 examples to (Question, Social) poisoned the Social domain head
+    # (confusion with Knowledge/Media/Calendar). Dropped via MASSIVE_INTENT_SKIP.
     "general_quirky":         ("Question",  "Social"),
     # ── iot (scenario 8) ──
     "iot_hue_lighton":        ("Command",  "Home"),
@@ -165,7 +169,9 @@ MASSIVE_INTENT_MAP = {
     "qa_currency":            ("Question", "Knowledge"),
     "qa_stock":               ("Question", "Knowledge"),
     # ── recommendation (scenario 6) ──
-    "recommendation_events":    ("Question", "Social"),
+    # events are calendar-like queries ("are there any concerts tonight?"), not
+    # generic Social. Keeping them in Social conflated them with general chit-chat.
+    "recommendation_events":    ("Question", "Calendar"),
     "recommendation_locations": ("Question", "Transport"),
     "recommendation_movies":    ("Question", "Media"),
     # ── social (scenario 0) ──
@@ -184,6 +190,14 @@ MASSIVE_INTENT_MAP = {
 }
 
 assert len(MASSIVE_INTENT_MAP) == 60, f"Expected 60 intents, got {len(MASSIVE_INTENT_MAP)}"
+
+
+# Intents to drop entirely: their labels don't reflect the semantics well enough
+# to be useful training signal. Dropping beats mislabeling.
+MASSIVE_INTENT_SKIP = {
+    "general_quirky",  # MASSIVE's catch-all; polluted Question×Social with
+                       # Knowledge/Media/Calendar queries
+}
 
 
 # ──────────────────────────────────────────────

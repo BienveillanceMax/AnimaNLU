@@ -486,6 +486,17 @@ def main():
             use_fp16 = True
             print(f"Mixed precision: fp16 (compute capability {capability[0]}.{capability[1]})")
 
+    # Compute warmup_steps from ratio (warmup_ratio is deprecated in transformers v5.2).
+    effective_batch = (
+        tc["per_device_batch_size"]
+        * tc["gradient_accumulation_steps"]
+        * max(n_gpus, 1)
+    )
+    total_steps = tc["num_epochs"] * math.ceil(
+        len(train_dataset) / effective_batch
+    )
+    warmup_steps = int(total_steps * tc["warmup_ratio"])
+
     training_args = TrainingArguments(
         output_dir=str(output_dir / "checkpoints"),
         num_train_epochs=tc["num_epochs"],
@@ -493,7 +504,7 @@ def main():
         per_device_eval_batch_size=tc["per_device_batch_size"] * 2,
         gradient_accumulation_steps=tc["gradient_accumulation_steps"],
         learning_rate=base_lr,
-        warmup_ratio=tc["warmup_ratio"],
+        warmup_steps=warmup_steps,
         weight_decay=tc["weight_decay"],
         max_grad_norm=tc["max_grad_norm"],
         lr_scheduler_type=tc.get("lr_scheduler_type", "linear"),
@@ -517,13 +528,9 @@ def main():
     loss_weights = lc["weights"]
     layer_lr_decay = tc.get("layer_lr_decay", 1.0)
 
-    effective_batch = (
-        tc["per_device_batch_size"]
-        * tc["gradient_accumulation_steps"]
-        * max(n_gpus, 1)
-    )
     print(f"Effective batch size: {effective_batch} "
           f"({tc['per_device_batch_size']} × {tc['gradient_accumulation_steps']} accum × {max(n_gpus, 1)} GPU)")
+    print(f"Total steps: {total_steps}, Warmup steps: {warmup_steps} ({tc['warmup_ratio']:.0%})")
     print(f"LR scheduler: {tc.get('lr_scheduler_type', 'linear')}")
     print(f"Layer LR decay: {layer_lr_decay}")
     print(f"Label smoothing: {lc.get('smoothing', 0.0)}")
