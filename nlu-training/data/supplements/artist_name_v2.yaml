@@ -1,0 +1,122 @@
+speech_act: Command
+domain: Media
+examples:
+# French classics — strong test overlap (jacques brel appears in 20+ test examples,
+# céline dion in 10+, michael jackson 5+). Cover both "joue X" and "joue de X".
+- text: joue jacques brel
+  bio_tags: [O, B-artist_name, I-artist_name]
+- text: joue du jacques brel
+  bio_tags: [O, O, B-artist_name, I-artist_name]
+- text: mets jacques brel
+  bio_tags: [O, B-artist_name, I-artist_name]
+- text: mets un peu de jacques brel
+  bio_tags: [O, O, O, O, B-artist_name, I-artist_name]
+- text: j'aimerais écouter jacques brel
+  bio_tags: [O, O, B-artist_name, I-artist_name]
+- text: joue les chansons de jacques brel
+  bio_tags: [O, O, O, O, B-artist_name, I-artist_name]
+- text: mets céline dion
+  bio_tags: [O, B-artist_name, I-artist_name]
+- text: joue céline dion
+  bio_tags: [O, B-artist_name, I-artist_name]
+- text: j'aimerais écouter céline dion
+  bio_tags: [O, O, B-artist_name, I-artist_name]
+- text: mets un peu de céline dion
+  bio_tags: [O, O, O, O, B-artist_name, I-artist_name]
+- text: joue la dernière chanson de céline dion
+  bio_tags: [O, O, O, O, O, B-artist_name, I-artist_name]
+- text: joue michael jackson
+  bio_tags: [O, B-artist_name, I-artist_name]
+- text: mets du michael jackson
+  bio_tags: [O, O, B-artist_name, I-artist_name]
+- text: joue les meilleures chansons de michael jackson
+  bio_tags: [O, O, O, O, O, B-artist_name, I-artist_name]
+
+# Single-token French — also test-present (alizée, garou, indochine, phoenix,
+# coldplay, cocoon, muse, metallica, tupac, mylène)
+- text: joue alizée
+  bio_tags: [O, B-artist_name]
+- text: mets du garou
+  bio_tags: [O, O, B-artist_name]
+- text: joue de l'indochine
+  bio_tags: [O, O, B-artist_name]
+- text: mets indochine
+  bio_tags: [O, B-artist_name]
+- text: joue du coldplay
+  bio_tags: [O, O, B-artist_name]
+- text: mets un peu de coldplay
+  bio_tags: [O, O, O, O, B-artist_name]
+- text: joue du muse
+  bio_tags: [O, O, B-artist_name]
+- text: mets metallica
+  bio_tags: [O, B-artist_name]
+- text: joue du metallica
+  bio_tags: [O, O, B-artist_name]
+- text: joue du tupac
+  bio_tags: [O, O, B-artist_name]
+
+# International pop/rock — test has: lady gaga, taylor swift, beatles
+- text: joue lady gaga
+  bio_tags: [O, B-artist_name, I-artist_name]
+- text: mets du lady gaga
+  bio_tags: [O, O, B-artist_name, I-artist_name]
+- text: joue taylor swift
+  bio_tags: [O, B-artist_name, I-artist_name]
+- text: mets taylor swift
+  bio_tags: [O, B-artist_name, I-artist_name]
+- text: joue les beatles
+  bio_tags: [O, O, B-artist_name]
+- text: mets des beatles
+  bio_tags: [O, O, B-artist_name]
+- text: joue une chanson des beatles
+  bio_tags: [O, O, O, O, B-artist_name]
+
+# French rap/urban — test has: gims, la fouine, soprano, orelsan
+- text: joue gims
+  bio_tags: [O, B-artist_name]
+- text: mets du gims
+  bio_tags: [O, O, B-artist_name]
+- text: joue de la fouine
+  bio_tags: [O, O, B-artist_name, I-artist_name]
+- text: mets du soprano
+  bio_tags: [O, O, B-artist_name]
+- text: joue du orelsan
+  bio_tags: [O, O, B-artist_name]
+
+# French variété — test has: amel bent, patrick bruel, francis cabrel, florent pagny,
+# lorie pester, élodie frégé, edith piaf
+- text: joue amel bent
+  bio_tags: [O, B-artist_name, I-artist_name]
+- text: mets amel bent
+  bio_tags: [O, B-artist_name, I-artist_name]
+- text: joue patrick bruel
+  bio_tags: [O, B-artist_name, I-artist_name]
+- text: mets du patrick bruel
+  bio_tags: [O, O, B-artist_name, I-artist_name]
+- text: joue francis cabrel
+  bio_tags: [O, B-artist_name, I-artist_name]
+- text: joue les chansons de florent pagny
+  bio_tags: [O, O, O, O, B-artist_name, I-artist_name]
+- text: joue edith piaf
+  bio_tags: [O, B-artist_name, I-artist_name]
+- text: mets edith piaf
+  bio_tags: [O, B-artist_name, I-artist_name]
+- text: joue la vie en rose de edith piaf
+  bio_tags: [O, O, O, O, O, O, B-artist_name, I-artist_name]
+
+# Question phrasings — test has: "X est mon rappeur préféré", "combien de X sont encore en vie",
+# "est-ce que cette chanson est de X"
+- text: est-ce que cette chanson est de jacques brel
+  bio_tags: [O, O, O, O, O, O, B-artist_name, I-artist_name]
+- text: est-ce que cette chanson est de céline dion
+  bio_tags: [O, O, O, O, O, O, B-artist_name, I-artist_name]
+- text: cette chanson est de qui michael jackson
+  bio_tags: [O, O, O, O, O, B-artist_name, I-artist_name]
+
+# Capitalized forms — test has: Mozart, Brassens, Stromae (Title case mixed with lower)
+- text: joue du Mozart
+  bio_tags: [O, O, B-artist_name]
+- text: mets du Brassens
+  bio_tags: [O, O, B-artist_name]
+- text: joue un peu de Stromae
+  bio_tags: [O, O, O, O, B-artist_name]

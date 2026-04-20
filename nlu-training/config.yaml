@@ -37,6 +37,21 @@ loss:
     slots: 1.0
   focal_gamma: 1.0
   smoothing: 0.05
+  # Class weighting for speech_act and domain heads.
+  # 'sqrt_inverse' = weight_i ∝ 1/√count_i, normalized so mean weight = 1.0.
+  # Rationale: NegativeFeedback has 40 train vs PositiveFeedback 169 — inverse
+  # weighting would over-correct (4× up) and destabilize. Sqrt gives ~2× boost,
+  # which pairs well with the new NegFb supplement examples.
+  # Options: 'none', 'sqrt_inverse', 'inverse'
+  class_weighting: sqrt_inverse
+  # Slot-label class weighting (separate because slot head goes through CRF
+  # which has no per-class weight support). When set, adds a weighted CE
+  # auxiliary loss on the raw slot logits, scaled by slot_emission_aux_weight.
+  # Target: rare slot labels (frequency, setting_type, scene_name, artist_name
+  # at ~0 F1) that never get promoted out of O by the CRF.
+  # Set slot_emission_aux_weight to 0 to disable even if mode is set.
+  slot_class_weighting: sqrt_inverse
+  slot_emission_aux_weight: 0.3
 
 supplement_upsample_factor: 3
 

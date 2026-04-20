@@ -1,0 +1,70 @@
+speech_act: Command
+domain: Home
+examples:
+# setting_type — existing supplements cover température/luminosité/volume/puissance.
+# Add: intensité (1 existing), vitesse (1 existing), brillance, couleur, débit,
+# contraste, fraîcheur (cooking/oven)
+- text: augmente l'intensité
+  bio_tags: [O, B-setting_type]
+- text: baisse l'intensité de la lumière
+  bio_tags: [O, B-setting_type, O, O, O]
+- text: règle la vitesse du ventilateur
+  bio_tags: [O, O, B-setting_type, O, O]
+- text: augmente la vitesse
+  bio_tags: [O, O, B-setting_type]
+- text: change la couleur
+  bio_tags: [O, O, B-setting_type]
+- text: modifie la couleur de l'ambiance
+  bio_tags: [O, O, B-setting_type, O, O]
+- text: règle la brillance
+  bio_tags: [O, O, B-setting_type]
+- text: baisse le contraste
+  bio_tags: [O, O, B-setting_type]
+- text: augmente le contraste de l'écran
+  bio_tags: [O, O, B-setting_type, O, O]
+- text: règle le débit
+  bio_tags: [O, O, B-setting_type]
+- text: change la fraîcheur du frigo
+  bio_tags: [O, O, B-setting_type, O, O]
+- text: règle la température du salon
+  bio_tags: [O, O, B-setting_type, O, B-room]
+- text: augmente la température
+  bio_tags: [O, O, B-setting_type]
+- text: tu peux monter la température
+  bio_tags: [O, O, O, O, B-setting_type]
+- text: tu pourrais baisser la température
+  bio_tags: [O, O, O, O, B-setting_type]
+
+# scene_name — existing covers mode nuit / mode cinéma / mode cocooning / mode jour /
+# ambiance lecture / mode soirée / mode silencieux / mode vacances / scène réveil.
+# Add more mode-prefixed variants + a few "ambiance X" forms
+- text: active le mode nuit
+  bio_tags: [O, O, B-scene_name, I-scene_name]
+- text: passe en mode nuit
+  bio_tags: [O, O, B-scene_name, I-scene_name]
+- text: mets le mode nuit
+  bio_tags: [O, O, B-scene_name, I-scene_name]
+- text: mets la lumière en mode nuit
+  bio_tags: [O, O, O, O, B-scene_name, I-scene_name]
+- text: active le mode film
+  bio_tags: [O, O, B-scene_name, I-scene_name]
+- text: passe en mode repos
+  bio_tags: [O, O, B-scene_name, I-scene_name]
+- text: active le mode détente
+  bio_tags: [O, O, B-scene_name, I-scene_name]
+- text: lance le mode méditation
+  bio_tags: [O, O, B-scene_name, I-scene_name]
+- text: mets l'ambiance dîner
+  bio_tags: [O, B-scene_name, I-scene_name]
+- text: active l'ambiance zen
+  bio_tags: [O, B-scene_name, I-scene_name]
+- text: lance l'ambiance tropicale
+  bio_tags: [O, B-scene_name, I-scene_name]
+- text: passe en ambiance cosy
+  bio_tags: [O, O, B-scene_name, I-scene_name]
+- text: mets la scène cinéma
+  bio_tags: [O, O, B-scene_name, I-scene_name]
+- text: active la scène réveil
+  bio_tags: [O, O, B-scene_name, I-scene_name]
+- text: lance la scène coucher
+  bio_tags: [O, O, B-scene_name, I-scene_name]

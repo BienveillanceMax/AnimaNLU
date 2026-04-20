@@ -24,11 +24,17 @@ class FocalLoss(nn.Module):
     """
 
     def __init__(self, gamma: float = 2.0, ignore_index: int = -100,
-                 smoothing: float = 0.0):
+                 smoothing: float = 0.0,
+                 class_weights: torch.Tensor | None = None):
         super().__init__()
         self.gamma = gamma
         self.ignore_index = ignore_index
         self.smoothing = smoothing
+        # Register as buffer so .to(device) moves it with the module
+        if class_weights is not None:
+            self.register_buffer("class_weights", class_weights)
+        else:
+            self.class_weights = None
 
     def forward(self, logits: torch.Tensor, targets: torch.Tensor) -> torch.Tensor:
         mask = targets != self.ignore_index
@@ -40,6 +46,7 @@ class FocalLoss(nn.Module):
 
         ce_loss = F.cross_entropy(
             valid_logits, valid_targets,
+            weight=self.class_weights,
             reduction="none",
             label_smoothing=self.smoothing,
         )
@@ -120,6 +127,11 @@ class JointCamemBERTav2(nn.Module):
         focal_gamma: float = 2.0,
         smoothing: float = 0.0,
         gradient_checkpointing: bool = False,
+        speech_act_class_weights: torch.Tensor | None = None,
+        domain_class_weights: torch.Tensor | None = None,
+        slot_class_weights: torch.Tensor | None = None,
+        slot_emission_aux_weight: float = 0.0,
+        slot_labels: list[str] | None = None,
     ):
         super().__init__()
         self.encoder = AutoModel.from_pretrained(model_name)
@@ -135,9 +147,66 @@ class JointCamemBERTav2(nn.Module):
         self.use_crf = use_crf
         if use_crf:
             self.crf = CRF(num_slot_labels, batch_first=True)
+            if slot_labels is not None:
+                self._mask_illegal_transitions(slot_labels)
 
-        self.focal_cls = FocalLoss(gamma=focal_gamma, smoothing=smoothing)
-        self.focal_slot = FocalLoss(gamma=focal_gamma)
+        # Separate FocalLoss instances per classification head so each can
+        # carry its own class weights (speech_act is imbalanced, domain is
+        # mostly balanced — typically only the SA head needs weights).
+        self.focal_sa = FocalLoss(gamma=focal_gamma, smoothing=smoothing,
+                                  class_weights=speech_act_class_weights)
+        self.focal_dom = FocalLoss(gamma=focal_gamma, smoothing=smoothing,
+                                   class_weights=domain_class_weights)
+        # focal_slot carries slot-label class weights. Used directly when CRF is
+        # off (primary loss). When CRF is on, it's added as an auxiliary signal
+        # weighted by slot_emission_aux_weight — pytorch-crf has no per-class
+        # weight support, so the weighted CE term is the only way to push rare
+        # BIO labels up at the emission level.
+        self.focal_slot = FocalLoss(gamma=focal_gamma,
+                                    class_weights=slot_class_weights)
+        self.slot_emission_aux_weight = slot_emission_aux_weight
+
+    @torch.no_grad()
+    def _mask_illegal_transitions(self, slot_labels: list[str],
+                                  neg_inf: float = -1e4) -> None:
+        """Hard-constrain CRF transition scores to eliminate BIO violations.
+
+        pytorch-crf exposes three learnable parameters:
+          - start_transitions[i]: log-score for starting in tag i
+          - transitions[i, j]:    log-score for i → j
+          - end_transitions[i]:   log-score for ending in tag i
+
+        We set impossible edges to a large negative number so Viterbi never
+        picks them. The CRF still *learns* remaining transitions freely; this
+        is a structural prior, not a fixed assignment. Overrides data only —
+        gradient can still flow, but the values stay effectively -inf because
+        the penalty on these positions dominates any update.
+
+        Illegal moves for BIO:
+          1. Start with I-X (must be B-X or O)
+          2. O → I-X
+          3. B-X → I-Y where X != Y
+          4. I-X → I-Y where X != Y
+        """
+        name_to_id = {name: i for i, name in enumerate(slot_labels)}
+        def idx(name):
+            return name_to_id[name]
+
+        o_id = idx("O")
+        slot_types = sorted({n[2:] for n in slot_labels if n != "O"})
+
+        # 1. Starts: only O or B-* allowed
+        for name, i in name_to_id.items():
+            if name.startswith("I-"):
+                self.crf.start_transitions.data[i] = neg_inf
+
+        # 2,3,4. Transitions into I-Y only legal from B-Y or I-Y
+        for y in slot_types:
+            iy = idx(f"I-{y}")
+            for src_name, src in name_to_id.items():
+                if src_name == f"B-{y}" or src_name == f"I-{y}":
+                    continue
+                self.crf.transitions.data[src, iy] = neg_inf
 
     def forward(
         self,
@@ -162,8 +231,8 @@ class JointCamemBERTav2(nn.Module):
         if speech_act_labels is not None and domain_labels is not None and slot_labels is not None:
             w = loss_weights or {"speech_act": 1.0, "domain": 1.0, "slots": 2.0}
 
-            sa_loss = self.focal_cls(speech_act_logits, speech_act_labels)
-            dom_loss = self.focal_cls(domain_logits, domain_labels)
+            sa_loss = self.focal_sa(speech_act_logits, speech_act_labels)
+            dom_loss = self.focal_dom(domain_logits, domain_labels)
 
             if self.use_crf:
                 # Pack real-label positions into contiguous sequences
@@ -180,12 +249,25 @@ class JointCamemBERTav2(nn.Module):
                     # parameters need to develop large-magnitude structural scores.
                     # Observed after 40 epochs with token_mean: trans std=0.057,
                     # legal vs illegal gap +0.024 → CRF indifferent, 959 BIO violations.
-                    slot_loss = -self.crf(
+                    crf_nll = -self.crf(
                         packed_logits[row_has_labels],
                         packed_labels[row_has_labels],
                         mask=packed_mask[row_has_labels],
                         reduction="mean",
                     )
+                    slot_loss = crf_nll
+
+                    # Auxiliary weighted CE on emissions. pytorch-crf has no
+                    # per-class weight support, so we add a weighted focal CE
+                    # on the raw slot logits to upweight rare BIO labels. The
+                    # CRF still owns transition structure; this term only shifts
+                    # emission priors toward rare-class recall.
+                    if self.slot_emission_aux_weight > 0 and self.focal_slot.class_weights is not None:
+                        emission_loss = self.focal_slot(
+                            slot_logits.view(-1, slot_logits.size(-1)),
+                            slot_labels.view(-1),
+                        )
+                        slot_loss = slot_loss + self.slot_emission_aux_weight * emission_loss
                 else:
                     slot_loss = torch.tensor(0.0, device=slot_logits.device,
                                              requires_grad=True)

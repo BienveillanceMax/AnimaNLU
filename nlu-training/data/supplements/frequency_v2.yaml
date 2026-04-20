@@ -1,0 +1,98 @@
+speech_act: Command
+domain: Reminder
+examples:
+# "chaque X" — covers test phrases: chaque jour, chaque lundi, chaque vendredi,
+# chaque mercredi, chaque jeudi, chaque semaine, chaque année, chaque mois
+- text: rappelle-moi chaque jour à neuf heures
+  bio_tags: [O, B-frequency, I-frequency, O, B-time_value, I-time_value]
+- text: crée un rappel chaque jour
+  bio_tags: [O, O, O, B-frequency, I-frequency]
+- text: rappelle-moi chaque lundi
+  bio_tags: [O, B-frequency, I-frequency]
+- text: rappelle-moi chaque vendredi de sortir les poubelles
+  bio_tags: [O, B-frequency, I-frequency, O, O, O, O]
+- text: mets un rappel chaque mercredi
+  bio_tags: [O, O, O, B-frequency, I-frequency]
+- text: rappelle-moi chaque jeudi soir
+  bio_tags: [O, B-frequency, I-frequency, O]
+- text: un rappel chaque semaine
+  bio_tags: [O, O, B-frequency, I-frequency]
+- text: programme un rappel chaque semaine
+  bio_tags: [O, O, O, B-frequency, I-frequency]
+- text: rappelle-moi chaque année la date
+  bio_tags: [O, B-frequency, I-frequency, O, O]
+- text: rappel chaque année à cette date
+  bio_tags: [O, B-frequency, I-frequency, O, O, O]
+- text: rappelle-moi chaque mois de payer le loyer
+  bio_tags: [O, B-frequency, I-frequency, O, O, O, O]
+
+# "tous les X" — covers: tous les jours, tous les matins, tous les mardis,
+# tous les jeudis, tous les vendredis
+- text: rappelle-moi tous les jours
+  bio_tags: [O, B-frequency, I-frequency, I-frequency]
+- text: rappelle-moi tous les matins
+  bio_tags: [O, B-frequency, I-frequency, I-frequency]
+- text: rappelle-moi tous les matins à sept heures
+  bio_tags: [O, B-frequency, I-frequency, I-frequency, O, B-time_value, I-time_value]
+- text: rappelle-moi tous les soirs de fermer la porte
+  bio_tags: [O, B-frequency, I-frequency, I-frequency, O, O, O, O]
+- text: rappelle-moi tous les mardis
+  bio_tags: [O, B-frequency, I-frequency, I-frequency]
+- text: un rappel tous les jeudis
+  bio_tags: [O, O, B-frequency, I-frequency, I-frequency]
+- text: rappelle-moi tous les vendredis de passer à la boulangerie
+  bio_tags: [O, B-frequency, I-frequency, I-frequency, O, O, O, O, O]
+- text: rappelle-moi tous les dimanches
+  bio_tags: [O, B-frequency, I-frequency, I-frequency]
+- text: tous les lundis rappelle-moi la réunion
+  bio_tags: [B-frequency, I-frequency, I-frequency, O, O, O]
+
+# "toutes les X" — test has: toutes les trois heures
+- text: rappelle-moi toutes les heures
+  bio_tags: [O, B-frequency, I-frequency, I-frequency]
+- text: notifie-moi toutes les deux heures
+  bio_tags: [O, B-frequency, I-frequency, I-frequency, I-frequency]
+- text: rappelle-moi toutes les trois heures
+  bio_tags: [O, B-frequency, I-frequency, I-frequency, I-frequency]
+- text: un rappel toutes les quatre heures
+  bio_tags: [O, O, B-frequency, I-frequency, I-frequency, I-frequency]
+
+# Single-word periodic adjectives/adverbs — test has: quotidien, quotidiennement,
+# hebdomadaire, mensuel, annuelle, toujours
+- text: mets un rappel quotidien
+  bio_tags: [O, O, O, B-frequency]
+- text: crée un rappel quotidien à huit heures
+  bio_tags: [O, O, O, B-frequency, O, B-time_value, I-time_value]
+- text: rappelle-moi quotidiennement
+  bio_tags: [O, B-frequency]
+- text: ajoute un rappel hebdomadaire
+  bio_tags: [O, O, O, B-frequency]
+- text: programme un rappel hebdomadaire
+  bio_tags: [O, O, O, B-frequency]
+- text: rappel hebdomadaire pour le ménage
+  bio_tags: [O, B-frequency, O, O, O]
+- text: mets un rappel mensuel pour le loyer
+  bio_tags: [O, O, O, B-frequency, O, O, O]
+- text: rappel mensuel du paiement
+  bio_tags: [O, B-frequency, O, O]
+- text: rappel annuel pour l'anniversaire
+  bio_tags: [O, B-frequency, O, O]
+- text: un rappel annuelle pour les impôts
+  bio_tags: [O, O, B-frequency, O, O, O]
+- text: rappelle-moi toujours à midi
+  bio_tags: [O, B-frequency, O, B-time_value]
+
+# Composite patterns — test has: chaque deux jours, chaque deuxième vendredi du mois,
+# chaque quatre mai, quinze de chaque mois
+- text: rappelle-moi chaque deux jours
+  bio_tags: [O, B-frequency, I-frequency, I-frequency]
+- text: crée un rappel chaque trois jours
+  bio_tags: [O, O, O, B-frequency, I-frequency, I-frequency]
+- text: rappelle-moi chaque deuxième lundi du mois
+  bio_tags: [O, B-frequency, I-frequency, I-frequency, I-frequency, I-frequency]
+- text: un rappel chaque premier vendredi du mois
+  bio_tags: [O, O, B-frequency, I-frequency, I-frequency, I-frequency, I-frequency]
+- text: rappelle-moi le quinze de chaque mois
+  bio_tags: [O, O, B-frequency, I-frequency, I-frequency, I-frequency]
+- text: rappel le premier de chaque mois
+  bio_tags: [O, O, B-frequency, I-frequency, I-frequency, I-frequency]

@@ -1,0 +1,216 @@
+speech_act: NegativeFeedback
+domain: Social
+examples:
+# "c'est nul" family — test set has 12 occurrences, train had 1
+- text: c'est nul ça
+  bio_tags: [O, O, O]
+- text: c'est nul comme idée
+  bio_tags: [O, O, O, O]
+- text: c'est nul ton truc
+  bio_tags: [O, O, O, O]
+- text: c'est vraiment naze
+  bio_tags: [O, O, O]
+- text: c'est trop nul
+  bio_tags: [O, O, O]
+- text: c'est nul à chier
+  bio_tags: [O, O, O, O]
+- text: c'est super nul
+  bio_tags: [O, O, O]
+- text: c'est nul ce que tu proposes
+  bio_tags: [O, O, O, O, O, O]
+- text: c'est nul ta suggestion
+  bio_tags: [O, O, O, O]
+- text: franchement c'est nul
+  bio_tags: [O, O, O]
+- text: mais c'est nul
+  bio_tags: [O, O, O]
+- text: c'est nul cette blague
+  bio_tags: [O, O, O, O]
+- text: c'est nul, recommence
+  bio_tags: [O, O, O]
+- text: nul, totalement nul
+  bio_tags: [O, O, O]
+- text: c'est totalement nul
+  bio_tags: [O, O, O]
+
+# "c'est ridicule" family — test set has 5, train had 2
+- text: c'est ridicule
+  bio_tags: [O, O]
+- text: c'est vraiment ridicule
+  bio_tags: [O, O, O]
+- text: c'est ridicule ce que tu dis
+  bio_tags: [O, O, O, O, O, O]
+- text: c'est ridicule cette histoire
+  bio_tags: [O, O, O, O]
+- text: c'est complètement ridicule
+  bio_tags: [O, O, O]
+- text: c'est ridicule comme réponse
+  bio_tags: [O, O, O, O]
+- text: ridicule, franchement
+  bio_tags: [O, O]
+- text: c'est ridicule tout ça
+  bio_tags: [O, O, O, O]
+
+# "c'est lamentable" family — test has it, train had 0
+- text: c'est lamentable
+  bio_tags: [O, O]
+- text: c'est vraiment lamentable
+  bio_tags: [O, O, O]
+- text: lamentable
+  bio_tags: [O]
+- text: c'est lamentable ton attitude
+  bio_tags: [O, O, O, O]
+
+# "n'importe quoi" family — test has 4+, train had 3
+- text: mais n'importe quoi
+  bio_tags: [O, O, O]
+- text: n'importe quoi c'est pas
+  bio_tags: [O, O, O, O]
+- text: tu racontes n'importe quoi
+  bio_tags: [O, O, O, O]
+- text: c'est n'importe quoi cette histoire
+  bio_tags: [O, O, O, O, O]
+- text: pff mais n'importe quoi
+  bio_tags: [O, O, O, O]
+- text: n'importe quoi ce que tu dis
+  bio_tags: [O, O, O, O, O, O]
+
+# "ça craint" family — test has more, train had 1
+- text: ça craint vraiment
+  bio_tags: [O, O, O]
+- text: ça craint ce truc
+  bio_tags: [O, O, O, O]
+- text: ça craint ton plan
+  bio_tags: [O, O, O, O]
+- text: ça craint grave
+  bio_tags: [O, O, O]
+- text: ça craint à mort
+  bio_tags: [O, O, O, O]
+
+# Short negative reactions
+- text: vraiment nul
+  bio_tags: [O, O]
+- text: trop nul
+  bio_tags: [O, O]
+- text: nul à chier
+  bio_tags: [O, O, O]
+- text: pas bon du tout
+  bio_tags: [O, O, O, O]
+- text: c'est à jeter
+  bio_tags: [O, O, O]
+- text: à jeter tout ça
+  bio_tags: [O, O, O, O]
+- text: bof bof bof
+  bio_tags: [O, O, O]
+- text: vraiment bof
+  bio_tags: [O, O]
+- text: mouais, c'est moyen
+  bio_tags: [O, O, O]
+- text: c'est moyen
+  bio_tags: [O, O]
+- text: c'est médiocre
+  bio_tags: [O, O]
+- text: ça ne vaut rien
+  bio_tags: [O, O, O, O]
+- text: ça vaut rien
+  bio_tags: [O, O, O]
+- text: sans intérêt
+  bio_tags: [O, O]
+- text: c'est sans intérêt
+  bio_tags: [O, O, O]
+
+# Contextualized negative reactions (addressee, content)
+- text: c'est nul, on regarde autre chose
+  bio_tags: [O, O, O, O, O, O]
+- text: c'est nul, change
+  bio_tags: [O, O, O]
+- text: c'est nul, passe à autre chose
+  bio_tags: [O, O, O, O, O, O]
+- text: non mais c'est nul ça
+  bio_tags: [O, O, O, O, O]
+- text: arrête c'est ridicule
+  bio_tags: [O, O, O]
+- text: sérieux c'est nul
+  bio_tags: [O, O, O]
+- text: sérieux c'est ridicule
+  bio_tags: [O, O, O]
+- text: franchement c'est pas terrible
+  bio_tags: [O, O, O, O]
+- text: franchement c'est décevant
+  bio_tags: [O, O, O]
+- text: bof, vraiment bof
+  bio_tags: [O, O, O]
+
+# Complaining forms
+- text: c'est pas à la hauteur
+  bio_tags: [O, O, O, O, O]
+- text: tu peux faire mieux
+  bio_tags: [O, O, O, O]
+- text: tu pourrais faire mieux
+  bio_tags: [O, O, O, O]
+- text: je suis déçu
+  bio_tags: [O, O, O]
+- text: je suis déçue
+  bio_tags: [O, O, O]
+- text: je suis vraiment déçu
+  bio_tags: [O, O, O, O]
+- text: tu m'as déçu
+  bio_tags: [O, O, O]
+- text: c'est décevant franchement
+  bio_tags: [O, O, O]
+- text: quelle déception
+  bio_tags: [O, O]
+- text: grosse déception
+  bio_tags: [O, O]
+
+# Harsh rejection
+- text: c'est à côté
+  bio_tags: [O, O, O]
+- text: c'est complètement à côté
+  bio_tags: [O, O, O, O]
+- text: tu t'es planté
+  bio_tags: [O, O, O]
+- text: tu te plantes complètement
+  bio_tags: [O, O, O, O]
+- text: t'as tout faux
+  bio_tags: [O, O, O]
+- text: c'est tout faux
+  bio_tags: [O, O, O]
+- text: rien à voir
+  bio_tags: [O, O, O]
+- text: ça n'a rien à voir
+  bio_tags: [O, O, O, O, O]
+- text: raté
+  bio_tags: [O]
+- text: c'est complètement raté
+  bio_tags: [O, O, O]
+- text: c'est totalement raté
+  bio_tags: [O, O, O]
+
+# "c'est pas X" family
+- text: c'est pas top
+  bio_tags: [O, O, O]
+- text: c'est pas extraordinaire
+  bio_tags: [O, O, O]
+- text: c'est pas fameux
+  bio_tags: [O, O, O]
+- text: c'est pas satisfaisant
+  bio_tags: [O, O, O]
+- text: c'est pas super
+  bio_tags: [O, O, O]
+- text: c'est pas génial
+  bio_tags: [O, O, O]
+- text: c'est pas fantastique
+  bio_tags: [O, O, O]
+
+# Variations with intensifiers
+- text: absolument nul
+  bio_tags: [O, O]
+- text: complètement nul
+  bio_tags: [O, O]
+- text: vraiment décevant
+  bio_tags: [O, O]
+- text: très décevant
+  bio_tags: [O, O]
+- text: franchement décevant
+  bio_tags: [O, O]

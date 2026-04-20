@@ -499,6 +499,77 @@ def main():
     head_hidden_dim = mc.get("head_hidden_dim", 256)
     lc = CONFIG["loss"]
     gradient_checkpointing = mc.get("gradient_checkpointing", False)
+
+    # Class weighting for imbalanced speech_act / domain heads.
+    # With `class_weighting: sqrt_inverse`, rare classes get a higher per-step
+    # loss contribution without fully inverting frequency (which would drown
+    # majority classes). `none` disables. Weights are L1-normalized so their
+    # mean equals 1.0 — this keeps the loss magnitude comparable to unweighted.
+    sa_weights, dom_weights, slot_weights = None, None, None
+    weighting_mode = lc.get("class_weighting", "none")
+
+    def _compute_weights(counts: Counter, n_classes: int, mode: str) -> torch.Tensor:
+        raw = torch.ones(n_classes)
+        for idx in range(n_classes):
+            c = counts.get(idx, 0)
+            if c == 0:
+                raw[idx] = 0.0  # unseen class — no gradient signal anyway
+            elif mode == "sqrt_inverse":
+                raw[idx] = 1.0 / math.sqrt(c)
+            elif mode == "inverse":
+                raw[idx] = 1.0 / c
+            else:
+                raise ValueError(f"Unknown class_weighting: {mode}")
+        # Normalize so mean weight = 1.0 over classes that are present
+        present = raw > 0
+        raw[present] = raw[present] * (present.sum().float() / raw[present].sum())
+        return raw
+
+    if weighting_mode != "none":
+        sa_counts = Counter(train_dataset.speech_act_labels.tolist())
+        dom_counts = Counter(train_dataset.domain_labels.tolist())
+        sa_weights = _compute_weights(sa_counts, len(SPEECH_ACTS), weighting_mode)
+        dom_weights = _compute_weights(dom_counts, len(DOMAINS), weighting_mode)
+        print(f"Class weighting: {weighting_mode}")
+        print(f"  SA weights (min/max/mean): "
+              f"{sa_weights[sa_weights > 0].min():.2f} / "
+              f"{sa_weights.max():.2f} / "
+              f"{sa_weights[sa_weights > 0].mean():.2f}")
+        # Print the per-class speech-act weights (small number, useful)
+        for i, sa in enumerate(SPEECH_ACTS):
+            print(f"    {sa:20s} count={sa_counts.get(i, 0):5d}  weight={sa_weights[i]:.3f}")
+
+    # Slot-label class weighting. Separate knob because the slot head runs
+    # through the CRF, which has no per-class weight support — we add a
+    # weighted CE auxiliary loss to push rare BIO labels up at emission time.
+    # `slot_emission_aux_weight: 0` disables; 0.3–0.5 is typical — enough to
+    # shift the emission prior without overwhelming the CRF's structural signal.
+    slot_weighting_mode = lc.get("slot_class_weighting", "none")
+    slot_aux_weight = lc.get("slot_emission_aux_weight", 0.0)
+    if slot_weighting_mode != "none" and slot_aux_weight > 0:
+        # Flatten all real slot labels (ignore -100 and pad tokens)
+        flat = train_dataset.slot_labels.view(-1)
+        real = flat[flat != -100].tolist()
+        slot_counts = Counter(real)
+        slot_weights = _compute_weights(slot_counts, len(SLOT_LABELS), slot_weighting_mode)
+        print(f"Slot class weighting: {slot_weighting_mode} "
+              f"(aux weight × {slot_aux_weight})")
+        total = sum(slot_counts.values())
+        # Log the top-5 upweighted and O for reference
+        ranked = sorted(range(len(SLOT_LABELS)),
+                        key=lambda i: -slot_weights[i].item())
+        o_idx = SLOT_LABELS.index("O") if "O" in SLOT_LABELS else None
+        print(f"  Top-10 upweighted slot labels:")
+        for idx in ranked[:10]:
+            c = slot_counts.get(idx, 0)
+            pct = 100 * c / total if total else 0
+            print(f"    {SLOT_LABELS[idx]:24s} count={c:6d} ({pct:5.2f}%)  weight={slot_weights[idx]:.3f}")
+        if o_idx is not None:
+            c = slot_counts.get(o_idx, 0)
+            pct = 100 * c / total if total else 0
+            print(f"  For reference:")
+            print(f"    {'O':24s} count={c:6d} ({pct:5.2f}%)  weight={slot_weights[o_idx]:.3f}")
+
     model = JointCamemBERTav2(
         model_name=model_name,
         num_speech_acts=len(SPEECH_ACTS),
@@ -509,6 +580,11 @@ def main():
         focal_gamma=lc["focal_gamma"],
         smoothing=lc.get("smoothing", 0.0),
         gradient_checkpointing=gradient_checkpointing,
+        speech_act_class_weights=sa_weights,
+        domain_class_weights=dom_weights,
+        slot_class_weights=slot_weights,
+        slot_emission_aux_weight=slot_aux_weight,
+        slot_labels=SLOT_LABELS,
     )
     print(f"CRF: {'enabled' if use_crf else 'disabled'}")
     print(f"Gradient checkpointing: {'enabled' if gradient_checkpointing else 'disabled'}")
