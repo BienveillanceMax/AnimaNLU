@@ -271,20 +271,107 @@ def stratified_split(examples, train_ratio=0.8, dev_ratio=0.1, test_ratio=0.1):
     return train, dev, test
 
 
+# ──────────────────────────────────────────────
+# Time-phrase BIO normalization
+# ──────────────────────────────────────────────
+# The raw data is inconsistent about whether tokens like "du matin", "ce soir",
+# "à midi" are included in time_value spans. An audit
+# (see diag_time_conventions.py) showed ~80%+ of each pattern uses the same
+# convention, with the rest being annotation noise. We apply the majority
+# convention uniformly to all splits so train and test agree.
+#
+# Rules (driven by the audit):
+#   1. '<N> heures du <matin|soir|...>' → 'du <part>' becomes I-time_value
+#      (83% of 311 occurrences follow this; normalize the 17% holdouts).
+#   2. '<demain|aujourd'hui|<weekday>> <matin|soir|...>' → if first word is
+#      B-date_value, force second to B-time_value (2 separate spans).
+#      (50 vs 7 majority).
+#   3. 'ce/cette <matin|soir|...>' → force B-time_value | I-time_value
+#      (95 vs 52 holdouts spread across O|B, O|O, etc).
+#   4. 'à <midi|minuit>' → force O | B-time_value (38 vs 3).
+_TIME_PARTS = {"matin", "soir", "après-midi", "apres-midi", "nuit",
+               "midi", "minuit", "matinée", "soirée"}
+_TIME_WEEKDAYS = {"lundi", "mardi", "mercredi", "jeudi", "vendredi",
+                  "samedi", "dimanche"}
+_TIME_DATE_PRONOUNS = {"demain", "hier", "aujourd'hui"} | _TIME_WEEKDAYS
+
+
+def normalize_time_bio(words: list[str], tags: list[str]) -> list[str]:
+    """Apply the four time-phrase normalization rules. Returns new tag list."""
+    if len(words) != len(tags):
+        return tags
+    tags = list(tags)
+    lw = [w.lower() for w in words]
+
+    for i, w in enumerate(lw):
+        if w not in _TIME_PARTS:
+            continue
+        prev1 = lw[i-1] if i >= 1 else ""
+        prev2 = lw[i-2] if i >= 2 else ""
+        tag_i = tags[i]
+        tag_p1 = tags[i-1] if i >= 1 else ""
+        tag_p2 = tags[i-2] if i >= 2 else ""
+
+        # Rule 1: 'heures du <part>' — extend the time_value span over 'du <part>'.
+        # Fires when 'heures' is already inside a time_value span.
+        if prev2 == "heures" and prev1 == "du" and tag_p2 in ("B-time_value", "I-time_value"):
+            tags[i-1] = "I-time_value"
+            tags[i] = "I-time_value"
+            continue
+
+        # Rule 3: 'ce/cette <part>' — one time_value span, demonstrative included.
+        if prev1 in ("ce", "cette"):
+            # Only rewrite if not already part of a larger span (e.g. event_name).
+            # We only override O/partial time_value/date_value labelings.
+            if tag_p1 in ("O", "B-time_value", "I-time_value", "B-date_value", "I-date_value") \
+               and tag_i in ("O", "B-time_value", "I-time_value", "B-date_value", "I-date_value"):
+                tags[i-1] = "B-time_value"
+                tags[i] = "I-time_value"
+            continue
+
+        # Rule 2: '<demain|hier|aujourd'hui|<weekday>> <part>' — 2 separate spans.
+        # Fires only when pronoun is labeled as a date_value; leaves other
+        # structures (scene_name, event_name, etc) alone.
+        if prev1 in _TIME_DATE_PRONOUNS and tag_p1 in ("B-date_value", "I-date_value"):
+            # Force date span to end at prev1, and start a fresh time_value at i.
+            tags[i] = "B-time_value"
+            continue
+
+        # Rule 4: 'à midi/minuit' — à is outside.
+        if prev1 == "à" and w in {"midi", "minuit"}:
+            # Only override if existing labels are within our reach (don't
+            # break a larger span that happens to include 'à').
+            if tag_p1 in ("O", "B-time_value", "I-time_value") \
+               and tag_i in ("O", "B-time_value", "I-time_value"):
+                tags[i-1] = "O"
+                tags[i] = "B-time_value"
+            continue
+
+    return tags
+
+
 def write_split(examples, split_dir: Path):
-    """Write the 4 files for a split."""
+    """Write the 4 files for a split. Applies BIO normalization on the way out."""
     split_dir.mkdir(parents=True, exist_ok=True)
 
+    normalized = 0
     with open(split_dir / "seq.in", "w", encoding="utf-8") as f_in, \
          open(split_dir / "seq.out", "w", encoding="utf-8") as f_out, \
          open(split_dir / "speech_act", "w", encoding="utf-8") as f_sa, \
          open(split_dir / "domain", "w", encoding="utf-8") as f_dom:
 
         for ex in examples:
+            words = ex["text"].split()
+            new_tags = normalize_time_bio(words, ex["bio_tags"])
+            if new_tags != ex["bio_tags"]:
+                normalized += 1
             f_in.write(ex["text"] + "\n")
-            f_out.write(" ".join(ex["bio_tags"]) + "\n")
+            f_out.write(" ".join(new_tags) + "\n")
             f_sa.write(ex["speech_act"] + "\n")
             f_dom.write(ex["domain"] + "\n")
+
+    if normalized:
+        print(f"  [{split_dir.name}] normalized {normalized} time-BIO sequences")
 
 
 def print_stats(name, examples):

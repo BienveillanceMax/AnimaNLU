@@ -188,7 +188,11 @@ def main():
         head_hidden_dim=CONFIG["model"].get("head_hidden_dim", 256),
     )
     from safetensors.torch import load_file
-    model.load_state_dict(load_file(best_dir / "model.safetensors", device=str(device)))
+    state = load_file(best_dir / "model.safetensors", device=str(device))
+    # Back-compat: older checkpoints persisted FocalLoss class_weights as buffers.
+    # They're training-only and now non-persistent — strip any lingering keys.
+    state = {k: v for k, v in state.items() if not k.endswith(".class_weights")}
+    model.load_state_dict(state)
     model.to(device)
 
     tokenizer = AutoTokenizer.from_pretrained(model_name)

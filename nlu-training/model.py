@@ -30,9 +30,12 @@ class FocalLoss(nn.Module):
         self.gamma = gamma
         self.ignore_index = ignore_index
         self.smoothing = smoothing
-        # Register as buffer so .to(device) moves it with the module
+        # Register as non-persistent buffer: .to(device) moves it with the
+        # module, but it's not saved into state_dict. Class weights are
+        # training-only — not needed at eval, and persisting them would
+        # break checkpoints loaded by a weight-less eval model.
         if class_weights is not None:
-            self.register_buffer("class_weights", class_weights)
+            self.register_buffer("class_weights", class_weights, persistent=False)
         else:
             self.class_weights = None
 

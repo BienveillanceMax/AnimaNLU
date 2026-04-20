@@ -39,11 +39,14 @@ loss:
   smoothing: 0.05
   # Class weighting for speech_act and domain heads.
   # 'sqrt_inverse' = weight_i ∝ 1/√count_i, normalized so mean weight = 1.0.
-  # Rationale: NegativeFeedback has 40 train vs PositiveFeedback 169 — inverse
-  # weighting would over-correct (4× up) and destabilize. Sqrt gives ~2× boost,
-  # which pairs well with the new NegFb supplement examples.
+  # Disabled: sqrt_inverse bled Commands into Request (Command→Request 126 in
+  # confusion matrix, SA acc 0.923 → 0.848). Ratio was Command n=3000 vs
+  # Request n=54 → √-ratio ≈ 7.4× → normalized ~3× on Request, enough to
+  # flip decision boundary on ambiguous imperatives. NegFb improvement
+  # came from the 96 supplement examples, not from weighting — supplements
+  # alone are the correct lever for SA imbalance.
   # Options: 'none', 'sqrt_inverse', 'inverse'
-  class_weighting: sqrt_inverse
+  class_weighting: none
   # Slot-label class weighting (separate because slot head goes through CRF
   # which has no per-class weight support). When set, adds a weighted CE
   # auxiliary loss on the raw slot logits, scaled by slot_emission_aux_weight.
@@ -51,7 +54,10 @@ loss:
   # at ~0 F1) that never get promoted out of O by the CRF.
   # Set slot_emission_aux_weight to 0 to disable even if mode is set.
   slot_class_weighting: sqrt_inverse
-  slot_emission_aux_weight: 0.3
+  # Bumped 0.3 → 0.5 after first training run: frequency stayed at F1=0.13
+  # despite 101 train examples — CRF's O-default too strong at aux_weight=0.3.
+  # Hard transition masks block illegal moves so overshoot risk is bounded.
+  slot_emission_aux_weight: 0.5
 
 supplement_upsample_factor: 3
 

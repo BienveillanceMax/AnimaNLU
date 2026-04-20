@@ -1,0 +1,106 @@
+speech_act: Command
+domain: Media
+examples:
+# App/service names — single-token media_items (test has: spotify, pandora, nrj,
+# audible, sirius, rtl, youtube, deezer). 77/212 test spans are single-token.
+- text: ouvre spotify
+  bio_tags: [O, B-media_item]
+- text: lance spotify
+  bio_tags: [O, B-media_item]
+- text: mets spotify
+  bio_tags: [O, B-media_item]
+- text: ouvre pandora
+  bio_tags: [O, B-media_item]
+- text: lance pandora
+  bio_tags: [O, B-media_item]
+- text: mets nrj
+  bio_tags: [O, B-media_item]
+- text: joue nrj
+  bio_tags: [O, B-media_item]
+- text: ouvre audible
+  bio_tags: [O, B-media_item]
+- text: lance audible
+  bio_tags: [O, B-media_item]
+- text: ouvre deezer
+  bio_tags: [O, B-media_item]
+- text: lance deezer
+  bio_tags: [O, B-media_item]
+- text: ouvre youtube
+  bio_tags: [O, B-media_item]
+- text: mets rtl
+  bio_tags: [O, B-media_item]
+- text: mets sirius
+  bio_tags: [O, B-media_item]
+
+# Song/book + 'de/par' + artist boundary — critical because the new artist_name
+# supplements don't teach this. 14/212 test spans have an artist after.
+- text: joue ne me quitte pas de jacques brel
+  bio_tags: [O, B-media_item, I-media_item, I-media_item, I-media_item, O, B-artist_name, I-artist_name]
+- text: mets ne me quitte pas par jacques brel
+  bio_tags: [O, B-media_item, I-media_item, I-media_item, I-media_item, O, B-artist_name, I-artist_name]
+- text: joue ma philosophie de amel bent
+  bio_tags: [O, B-media_item, I-media_item, O, B-artist_name, I-artist_name]
+- text: mets ma philosophie par amel bent
+  bio_tags: [O, B-media_item, I-media_item, O, B-artist_name, I-artist_name]
+- text: joue ça peut faire de mal de jacques brel
+  bio_tags: [O, B-media_item, I-media_item, I-media_item, I-media_item, I-media_item, O, B-artist_name, I-artist_name]
+- text: écoute la vie en rose de edith piaf
+  bio_tags: [O, B-media_item, I-media_item, I-media_item, I-media_item, O, B-artist_name, I-artist_name]
+- text: mets savoir aimer de florent pagny
+  bio_tags: [O, B-media_item, I-media_item, O, B-artist_name, I-artist_name]
+- text: joue thriller de michael jackson
+  bio_tags: [O, B-media_item, O, B-artist_name, I-artist_name]
+- text: mets poker face par lady gaga
+  bio_tags: [O, B-media_item, I-media_item, O, B-artist_name, I-artist_name]
+
+# Book titles with articles — test has: l'agent secret, le petit chaperon rouge
+- text: lis l'agent secret
+  bio_tags: [O, B-media_item, I-media_item]
+- text: reprends l'agent secret
+  bio_tags: [O, B-media_item, I-media_item]
+- text: lis le petit chaperon rouge
+  bio_tags: [O, B-media_item, I-media_item, I-media_item, I-media_item]
+- text: ouvre le petit chaperon rouge
+  bio_tags: [O, B-media_item, I-media_item, I-media_item, I-media_item]
+- text: reprends le livre audio de l'agent secret
+  bio_tags: [O, O, O, O, O, B-media_item, I-media_item]
+- text: continue la lecture de l'agent secret
+  bio_tags: [O, O, O, O, B-media_item, I-media_item]
+
+# Game titles — test has: tic tac toe, les échecs, logan, harrypotter, temple runner
+- text: joue à tic tac toe
+  bio_tags: [O, O, B-media_item, I-media_item, I-media_item]
+- text: lance tic tac toe
+  bio_tags: [O, B-media_item, I-media_item, I-media_item]
+- text: joue aux échecs
+  bio_tags: [O, O, B-media_item]
+- text: lance les échecs
+  bio_tags: [O, B-media_item, I-media_item]
+- text: joue à harrypotter
+  bio_tags: [O, O, B-media_item]
+- text: lance temple runner
+  bio_tags: [O, B-media_item, I-media_item]
+- text: joue à temple runner
+  bio_tags: [O, O, B-media_item, I-media_item]
+
+# Playlist/radio contexts — test has: 'station de rock', 'livre audio', 'playlist'
+- text: mets ma playlist préférée
+  bio_tags: [O, O, B-media_item, O]
+- text: lance ma playlist
+  bio_tags: [O, O, B-media_item]
+- text: mets la radio
+  bio_tags: [O, O, B-media_item]
+- text: ouvre la radio
+  bio_tags: [O, O, B-media_item]
+- text: lance le livre audio
+  bio_tags: [O, O, B-media_item, I-media_item]
+- text: ouvre le livre audio
+  bio_tags: [O, O, B-media_item, I-media_item]
+- text: reprends le livre audio
+  bio_tags: [O, O, B-media_item, I-media_item]
+- text: mets une station de rock
+  bio_tags: [O, O, B-media_item, I-media_item, I-media_item]
+- text: lance le podcast
+  bio_tags: [O, O, B-media_item]
+- text: ouvre le podcast
+  bio_tags: [O, O, B-media_item]
