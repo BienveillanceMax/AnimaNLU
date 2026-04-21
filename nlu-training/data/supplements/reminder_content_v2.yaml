@@ -1,0 +1,149 @@
+speech_act: Command
+domain: Reminder
+examples:
+# Convention: the content noun after 'liste de/d'' is tagged, 'liste' + 'de/d''
+# stay O. Verified against test set patterns (33 occurrences).
+
+# Single-token content after "liste de/d'"
+- text: ajouter lait à ma liste de course
+  bio_tags: [O, O, O, O, O, O, B-reminder_content]
+- text: ajouter des oeufs sur ma liste de course
+  bio_tags: [O, O, O, O, O, O, O, B-reminder_content]
+- text: supprimer le pain de ma liste de course
+  bio_tags: [O, O, O, O, O, O, O, B-reminder_content]
+- text: enlever les bananes de ma liste de course
+  bio_tags: [O, O, O, O, O, O, O, B-reminder_content]
+- text: ouvrir ma liste de course
+  bio_tags: [O, O, O, O, B-reminder_content]
+- text: montre-moi ma liste de course
+  bio_tags: [O, O, O, O, B-reminder_content]
+- text: vide ma liste de course
+  bio_tags: [O, O, O, O, B-reminder_content]
+- text: ouvre ma liste d' épicerie
+  bio_tags: [O, O, O, O, B-reminder_content]
+- text: montre-moi ma liste d' épicerie
+  bio_tags: [O, O, O, O, B-reminder_content]
+- text: regarde ma liste d' épicerie
+  bio_tags: [O, O, O, O, B-reminder_content]
+- text: ajouter du beurre à ma liste d' épicerie
+  bio_tags: [O, O, O, O, O, O, O, B-reminder_content]
+- text: relis-moi ma liste d' épicerie
+  bio_tags: [O, O, O, O, B-reminder_content]
+- text: imprime ma liste d' épicerie
+  bio_tags: [O, O, O, O, B-reminder_content]
+- text: ajouter un article à ma liste de shopping
+  bio_tags: [O, O, O, O, O, O, O, B-reminder_content]
+- text: ouvre ma liste de shopping
+  bio_tags: [O, O, O, O, B-reminder_content]
+- text: affiche ma liste de shopping
+  bio_tags: [O, O, O, O, B-reminder_content]
+- text: montre-moi ma liste de cuisine
+  bio_tags: [O, O, O, O, B-reminder_content]
+- text: ouvre ma liste de cuisine
+  bio_tags: [O, O, O, O, B-reminder_content]
+- text: affiche ma liste de tâches
+  bio_tags: [O, O, O, O, B-reminder_content]
+- text: montre-moi ma liste de tâches
+  bio_tags: [O, O, O, O, B-reminder_content]
+- text: qu' est-ce qu' il y a sur ma liste de tâches
+  bio_tags: [O, O, O, O, O, O, O, O, O, O, B-reminder_content]
+- text: ai-je des tâches aujourd'hui
+  bio_tags: [O, O, B-reminder_content, O]
+- text: quelles sont mes tâches du jour
+  bio_tags: [O, O, O, B-reminder_content, O, O]
+- text: ouvre ma liste de voyage
+  bio_tags: [O, O, O, O, B-reminder_content]
+- text: montre ma liste de voyage
+  bio_tags: [O, O, O, O, B-reminder_content]
+- text: supprime ma liste de voyage
+  bio_tags: [O, O, O, O, B-reminder_content]
+
+# Multi-token content after "liste de/d'"
+- text: affiche ma liste de choses à faire
+  bio_tags: [O, O, O, O, B-reminder_content, I-reminder_content, I-reminder_content]
+- text: montre-moi ma liste de choses à faire
+  bio_tags: [O, O, O, O, B-reminder_content, I-reminder_content, I-reminder_content]
+- text: vide ma liste de choses à faire
+  bio_tags: [O, O, O, O, B-reminder_content, I-reminder_content, I-reminder_content]
+- text: supprime ma liste de choses à faire
+  bio_tags: [O, O, O, O, B-reminder_content, I-reminder_content, I-reminder_content]
+- text: ouvre ma liste de fournitures scolaires
+  bio_tags: [O, O, O, O, B-reminder_content, I-reminder_content]
+- text: montre-moi ma liste de fournitures scolaires
+  bio_tags: [O, O, O, O, B-reminder_content, I-reminder_content]
+- text: crée une liste de fournitures scolaires
+  bio_tags: [O, O, O, O, B-reminder_content, I-reminder_content]
+- text: vide ma liste de planning de travail
+  bio_tags: [O, O, O, O, B-reminder_content, I-reminder_content, I-reminder_content]
+- text: ouvre ma liste de planning de travail
+  bio_tags: [O, O, O, O, B-reminder_content, I-reminder_content, I-reminder_content]
+- text: ma nouvelle liste planning de travail
+  bio_tags: [O, O, O, B-reminder_content, I-reminder_content, I-reminder_content]
+- text: montre ma liste de courses hebdomadaires
+  bio_tags: [O, O, O, O, B-reminder_content, I-reminder_content]
+- text: ouvre ma liste de fruits et légumes
+  bio_tags: [O, O, O, O, B-reminder_content, I-reminder_content, I-reminder_content]
+
+# Single-token standalone category (no "liste de" prefix)
+- text: qu' est-ce qu' il y a sur ma liste shopping
+  bio_tags: [O, O, O, O, O, O, O, O, O, B-reminder_content]
+- text: montre-moi ma liste épicerie
+  bio_tags: [O, O, O, B-reminder_content]
+- text: vide ma liste course
+  bio_tags: [O, O, O, B-reminder_content]
+- text: mes épiceries pour cette semaine
+  bio_tags: [O, B-reminder_content, O, O, O]
+- text: supprimer les épiceries
+  bio_tags: [O, O, B-reminder_content]
+- text: crée une liste course
+  bio_tags: [O, O, O, B-reminder_content]
+- text: ai-je des courses à faire
+  bio_tags: [O, O, B-reminder_content, O, O]
+
+# "faire une liste de X" / "créer une liste de X" — creation verbs
+- text: faire une nouvelle liste de course
+  bio_tags: [O, O, O, O, O, B-reminder_content]
+- text: faire une liste de course
+  bio_tags: [O, O, O, O, B-reminder_content]
+- text: créer une nouvelle liste de course
+  bio_tags: [O, O, O, O, O, B-reminder_content]
+- text: créer une liste d' épicerie
+  bio_tags: [O, O, O, O, B-reminder_content]
+- text: commencer une nouvelle liste d' épicerie
+  bio_tags: [O, O, O, O, O, B-reminder_content]
+- text: démarrer une liste de shopping
+  bio_tags: [O, O, O, O, B-reminder_content]
+- text: créer une liste de tâches à faire
+  bio_tags: [O, O, O, O, B-reminder_content, I-reminder_content, I-reminder_content]
+- text: créer une liste de choses à acheter
+  bio_tags: [O, O, O, O, B-reminder_content, I-reminder_content, I-reminder_content]
+
+# "des/les X" patterns without "liste" — content after prepositions
+- text: ajoute du pain à la liste
+  bio_tags: [O, O, B-reminder_content, O, O, O]
+- text: ajoute des oeufs à la liste
+  bio_tags: [O, O, B-reminder_content, O, O, O]
+- text: ajoute les courses de la semaine
+  bio_tags: [O, O, B-reminder_content, O, O, O]
+
+# "liste de X" in context of Reminder/calendar items
+- text: supprimer ma liste de vacances
+  bio_tags: [O, O, O, O, B-reminder_content]
+- text: ouvre ma liste de vacances
+  bio_tags: [O, O, O, O, B-reminder_content]
+- text: relis-moi ma liste de vacances
+  bio_tags: [O, O, O, O, B-reminder_content]
+- text: ouvre ma liste de contacts
+  bio_tags: [O, O, O, O, B-reminder_content]
+- text: montre ma liste de contacts
+  bio_tags: [O, O, O, O, B-reminder_content]
+- text: ouvre ma liste de lecture
+  bio_tags: [O, O, O, O, B-reminder_content]
+- text: montre-moi ma liste de lecture
+  bio_tags: [O, O, O, O, B-reminder_content]
+
+# Mixed-context sentences with other slots
+- text: rappelle-moi d' acheter du lait sur ma liste de course
+  bio_tags: [O, O, O, O, O, O, O, O, O, B-reminder_content]
+- text: ajoute des piles à ma liste de shopping demain
+  bio_tags: [O, O, O, O, O, O, O, B-reminder_content, B-date_value]

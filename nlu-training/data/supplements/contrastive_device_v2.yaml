@@ -1,0 +1,94 @@
+speech_act: Command
+domain: Home
+examples:
+# Contrastive set for device_type FPs found in audit:
+# model predicts B-device_type on tokens that should be setting_type,
+# setting_value, or O. Each pattern includes explicit positive+negative
+# framing so the CRF sees the collision locally.
+
+# "mode" / "mode X" — setting_value, NOT device_type
+- text: mets la télé en mode nuit
+  bio_tags: [O, O, B-device_type, O, B-setting_value, I-setting_value]
+- text: active le mode silencieux
+  bio_tags: [O, O, B-setting_value, I-setting_value]
+- text: mets le mode fête
+  bio_tags: [O, O, B-setting_value, I-setting_value]
+- text: passe en mode économie
+  bio_tags: [O, O, B-setting_value, I-setting_value]
+- text: change le mode
+  bio_tags: [O, O, O]
+- text: règle le mode nuit du thermostat
+  bio_tags: [O, O, B-setting_value, I-setting_value, O, B-device_type]
+
+# "luminosité" — setting_type, NOT device_type
+- text: baisse la luminosité
+  bio_tags: [O, O, B-setting_type]
+- text: monte la luminosité du salon
+  bio_tags: [O, O, B-setting_type, O, B-room]
+- text: règle la luminosité à cinquante pour cent
+  bio_tags: [O, O, B-setting_type, B-setting_value, I-setting_value, I-setting_value, I-setting_value]
+- text: augmente la luminosité de la lampe
+  bio_tags: [O, O, B-setting_type, O, O, B-device_type]
+
+# "température" — setting_type, NOT device_type
+- text: baisse la température
+  bio_tags: [O, O, B-setting_type]
+- text: monte la température du salon
+  bio_tags: [O, O, B-setting_type, O, B-room]
+- text: règle la température à vingt degrés
+  bio_tags: [O, O, B-setting_type, B-setting_value, I-setting_value, I-setting_value]
+- text: quelle est la température
+  bio_tags: [O, O, O, B-setting_type]
+
+# "volume" — setting_type, NOT device_type
+- text: baisse le volume
+  bio_tags: [O, O, B-setting_type]
+- text: monte le volume de la télé
+  bio_tags: [O, O, B-setting_type, O, O, B-device_type]
+- text: règle le volume à soixante
+  bio_tags: [O, O, B-setting_type, B-setting_value, I-setting_value]
+
+# "pleine puissance" / "au maximum" — setting_value, NOT device_type
+- text: mets à pleine puissance
+  bio_tags: [O, B-setting_value, I-setting_value, I-setting_value]
+- text: règle le chauffage à pleine puissance
+  bio_tags: [O, O, B-device_type, B-setting_value, I-setting_value, I-setting_value]
+- text: mets le volume au maximum
+  bio_tags: [O, O, B-setting_type, B-setting_value, I-setting_value]
+
+# Colors — setting_value, NOT device_type
+- text: mets les lumières en vert
+  bio_tags: [O, O, B-device_type, O, B-setting_value]
+- text: mets les lumières en verte
+  bio_tags: [O, O, B-device_type, O, B-setting_value]
+- text: change la couleur en bleu
+  bio_tags: [O, O, O, O, B-setting_value]
+- text: rends les lumières bleues
+  bio_tags: [O, O, B-device_type, B-setting_value]
+- text: mets la lampe en rouge
+  bio_tags: [O, O, B-device_type, O, B-setting_value]
+
+# Device words that should be tagged (gold-consistency positive examples
+# to counter the "everything is O" defensive learning)
+- text: allume la télé
+  bio_tags: [O, O, B-device_type]
+- text: éteins la télé
+  bio_tags: [O, O, B-device_type]
+- text: allume le four
+  bio_tags: [O, O, B-device_type]
+- text: éteins la prise
+  bio_tags: [O, O, B-device_type]
+- text: allume la prise wemo
+  bio_tags: [O, O, B-device_type, I-device_type]
+- text: démarre l' aspirateur
+  bio_tags: [O, O, B-device_type]
+- text: lance le robot aspirateur
+  bio_tags: [O, O, B-device_type, I-device_type]
+- text: ouvre les volets
+  bio_tags: [O, O, B-device_type]
+- text: ferme les rideaux
+  bio_tags: [O, O, B-device_type]
+- text: allume la veilleuse
+  bio_tags: [O, O, B-device_type]
+- text: ouvre la porte du garage
+  bio_tags: [O, O, B-device_type, O, B-room]

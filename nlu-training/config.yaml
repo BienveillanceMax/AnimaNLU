@@ -54,10 +54,12 @@ loss:
   # at ~0 F1) that never get promoted out of O by the CRF.
   # Set slot_emission_aux_weight to 0 to disable even if mode is set.
   slot_class_weighting: sqrt_inverse
-  # Bumped 0.3 → 0.5 after first training run: frequency stayed at F1=0.13
-  # despite 101 train examples — CRF's O-default too strong at aux_weight=0.3.
-  # Hard transition masks block illegal moves so overshoot risk is bounded.
-  slot_emission_aux_weight: 0.5
+  # Reverted to 0.3: aux=0.5 hurt rare-slot PRECISION by flooding emissions
+  # — setting_value P=0.56/R=0.07 (F1 0.35→0.12), slot F1 regressed 0.573→0.539.
+  # Only frequency improved (0.13→0.19). Aux is a balance, not a ceiling-lifter:
+  # to actually promote rare slots, we need more *data* for them, not more
+  # emission weight.
+  slot_emission_aux_weight: 0.3
 
 supplement_upsample_factor: 3
 

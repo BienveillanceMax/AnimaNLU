@@ -1,0 +1,171 @@
+speech_act: Command
+domain: Home
+examples:
+# Convention from data audit: the preposition 'à' / 'de' is inside the
+# setting_value span when followed by a number. Colors stand alone.
+# Playback actions (Media domain) are tagged B-setting_value — unusual but
+# consistent in test set.
+
+# PERCENTAGES: "à X pour cent" — preposition inside span
+- text: règle le volume à cinquante pour cent
+  bio_tags: [O, O, O, B-setting_value, I-setting_value, I-setting_value, I-setting_value]
+- text: baisse le volume à vingt pour cent
+  bio_tags: [O, O, O, B-setting_value, I-setting_value, I-setting_value, I-setting_value]
+- text: monte le volume à quatre-vingts pour cent
+  bio_tags: [O, O, O, B-setting_value, I-setting_value, I-setting_value, I-setting_value]
+- text: règle la luminosité à trente pour cent
+  bio_tags: [O, O, O, B-setting_value, I-setting_value, I-setting_value, I-setting_value]
+- text: baisse la luminosité à dix pour cent
+  bio_tags: [O, O, O, B-setting_value, I-setting_value, I-setting_value, I-setting_value]
+- text: règle les lumières à cinq pour cent
+  bio_tags: [O, O, O, B-setting_value, I-setting_value, I-setting_value, I-setting_value]
+- text: baisse les lumières à quarante pour cent
+  bio_tags: [O, O, O, B-setting_value, I-setting_value, I-setting_value, I-setting_value]
+- text: règle la musique à soixante pour cent
+  bio_tags: [O, O, O, B-setting_value, I-setting_value, I-setting_value, I-setting_value]
+- text: mets le volume à soixante-dix pour cent
+  bio_tags: [O, O, O, B-setting_value, I-setting_value, I-setting_value, I-setting_value]
+- text: monte à cent pour cent
+  bio_tags: [O, B-setting_value, I-setting_value, I-setting_value, I-setting_value]
+
+# "de X pour cent" variant
+- text: baisser le volume de vingt pour cent
+  bio_tags: [O, O, O, B-setting_value, I-setting_value, I-setting_value, I-setting_value]
+- text: monter la luminosité de quinze pour cent
+  bio_tags: [O, O, O, B-setting_value, I-setting_value, I-setting_value, I-setting_value]
+- text: augmenter le volume de dix pour cent
+  bio_tags: [O, O, O, B-setting_value, I-setting_value, I-setting_value, I-setting_value]
+- text: réduire la luminosité de vingt-cinq pour cent
+  bio_tags: [O, O, O, B-setting_value, I-setting_value, I-setting_value, I-setting_value]
+
+# "X pourcent" (single word) variant
+- text: mets le volume à cinquante pourcent
+  bio_tags: [O, O, O, B-setting_value, I-setting_value, I-setting_value]
+- text: règle les lumières à trente pourcent
+  bio_tags: [O, O, O, B-setting_value, I-setting_value, I-setting_value]
+- text: baisse à vingt pourcent
+  bio_tags: [O, B-setting_value, I-setting_value, I-setting_value]
+
+# "à X" without 'pour cent' — just numeric
+- text: règle le volume à sept
+  bio_tags: [O, O, O, B-setting_value, I-setting_value]
+- text: baisse les lumières à cinq
+  bio_tags: [O, O, O, B-setting_value, I-setting_value]
+- text: mets le volume à dix
+  bio_tags: [O, O, O, B-setting_value, I-setting_value]
+- text: baisse à trois
+  bio_tags: [O, B-setting_value, I-setting_value]
+
+# COLORS — standalone tag
+- text: mets les lumières en bleu
+  bio_tags: [O, O, O, O, B-setting_value]
+- text: mets les lumières en rouge
+  bio_tags: [O, O, O, O, B-setting_value]
+- text: mets les lumières en vert
+  bio_tags: [O, O, O, O, B-setting_value]
+- text: mets les lumières en jaune
+  bio_tags: [O, O, O, O, B-setting_value]
+- text: mets les lumières en orange
+  bio_tags: [O, O, O, O, B-setting_value]
+- text: mets les lumières en blanc
+  bio_tags: [O, O, O, O, B-setting_value]
+- text: mets les lumières en violet
+  bio_tags: [O, O, O, O, B-setting_value]
+- text: mets les lumières en rose
+  bio_tags: [O, O, O, O, B-setting_value]
+- text: change la couleur en bleu
+  bio_tags: [O, O, O, O, B-setting_value]
+- text: change la couleur en rouge
+  bio_tags: [O, O, O, O, B-setting_value]
+- text: allume les lumières en bleu
+  bio_tags: [O, O, O, O, B-setting_value]
+- text: allume les lumières en rouge
+  bio_tags: [O, O, O, O, B-setting_value]
+- text: rends les lumières bleues
+  bio_tags: [O, O, O, B-setting_value]
+- text: rends les lumières rouges
+  bio_tags: [O, O, O, B-setting_value]
+- text: rends le salon bleu
+  bio_tags: [O, O, B-room, B-setting_value]
+- text: rends le salon orange
+  bio_tags: [O, O, B-room, B-setting_value]
+- text: lumières aux tons lavande
+  bio_tags: [O, O, O, B-setting_value]
+- text: donne-moi un peu de lumière en bleu
+  bio_tags: [O, O, O, O, O, B-setting_value, I-setting_value]
+- text: rends la lumière plus rouge
+  bio_tags: [O, O, O, B-setting_value, I-setting_value]
+- text: rends la lumière plus bleue
+  bio_tags: [O, O, O, B-setting_value, I-setting_value]
+- text: rends la lumière plus chaude
+  bio_tags: [O, O, O, B-setting_value, I-setting_value]
+- text: mets une lumière bleue foncée
+  bio_tags: [O, O, O, B-setting_value, I-setting_value]
+- text: mets une lumière rose claire
+  bio_tags: [O, O, O, B-setting_value, I-setting_value]
+
+# TEMPERATURES
+- text: règle le thermostat à vingt degrés
+  bio_tags: [O, O, O, B-setting_value, I-setting_value, I-setting_value]
+- text: règle le chauffage à vingt-deux degrés
+  bio_tags: [O, O, O, B-setting_value, I-setting_value, I-setting_value]
+- text: mets la température à dix-huit degrés
+  bio_tags: [O, O, O, B-setting_value, I-setting_value, I-setting_value]
+- text: baisse le chauffage à dix-huit
+  bio_tags: [O, O, O, B-setting_value, I-setting_value]
+
+# MEDIA PLAYBACK ACTIONS — single-verb setting_value
+- text: reprends la lecture
+  bio_tags: [B-setting_value, O, O]
+- text: reprends ma musique
+  bio_tags: [B-setting_value, O, O]
+- text: reprends le podcast
+  bio_tags: [B-setting_value, O, O]
+- text: mélange ma playlist
+  bio_tags: [B-setting_value, O, O]
+- text: mélange mes chansons
+  bio_tags: [B-setting_value, O, O]
+- text: commence le podcast
+  bio_tags: [B-setting_value, O, O]
+- text: commence le chapitre suivant
+  bio_tags: [B-setting_value, O, O, O]
+- text: répète la chanson
+  bio_tags: [B-setting_value, O, O]
+- text: répète cette chanson
+  bio_tags: [B-setting_value, O, O]
+- text: continue la lecture
+  bio_tags: [B-setting_value, I-setting_value, I-setting_value]
+- text: continue de lire
+  bio_tags: [B-setting_value, I-setting_value, I-setting_value]
+- text: passe à la suivante
+  bio_tags: [B-setting_value, O, O, O]
+- text: passe au prochain morceau
+  bio_tags: [B-setting_value, O, O, O]
+- text: mets en boucle
+  bio_tags: [O, B-setting_value, I-setting_value]
+- text: mets cette chanson en boucle
+  bio_tags: [O, O, O, B-setting_value, I-setting_value]
+- text: mets ça en mode aléatoire
+  bio_tags: [O, O, B-setting_value, I-setting_value, I-setting_value]
+- text: lecture aléatoire
+  bio_tags: [B-setting_value, I-setting_value]
+- text: saute cette chanson
+  bio_tags: [B-setting_value, O, O]
+- text: démarre la lecture
+  bio_tags: [B-setting_value, O, O]
+- text: rejoue la dernière chanson
+  bio_tags: [B-setting_value, O, O, O]
+- text: recommence ma playlist
+  bio_tags: [B-setting_value, O, O]
+
+# EXTREMES — "au maximum", "au minimum", "à fond"
+- text: mets le volume au maximum
+  bio_tags: [O, O, O, B-setting_value, I-setting_value]
+- text: mets le volume au minimum
+  bio_tags: [O, O, O, B-setting_value, I-setting_value]
+- text: baisse les lumières au minimum
+  bio_tags: [O, O, O, B-setting_value, I-setting_value]
+- text: règle le chauffage à fond
+  bio_tags: [O, O, O, B-setting_value, I-setting_value]
+- text: mets la musique à pleine puissance
+  bio_tags: [O, O, O, B-setting_value, I-setting_value, I-setting_value]

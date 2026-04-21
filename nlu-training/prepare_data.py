@@ -295,6 +295,141 @@ _TIME_WEEKDAYS = {"lundi", "mardi", "mercredi", "jeudi", "vendredi",
                   "samedi", "dimanche"}
 _TIME_DATE_PRONOUNS = {"demain", "hier", "aujourd'hui"} | _TIME_WEEKDAYS
 
+# Rule 5: French number words that can precede 'heures' in a clock-time phrase.
+# Audit Pattern C: gold inconsistency on '(à) <num> heures [du <part>]'.
+# Majority convention is: 'à' OUT, '<num> heures' IN, optional 'du <part>' IN.
+_FR_NUMERALS = {
+    "une", "un", "deux", "trois", "quatre", "cinq", "six", "sept", "huit",
+    "neuf", "dix", "onze", "douze", "treize", "quatorze", "quinze", "seize",
+    "dix-sept", "dix-huit", "dix-neuf", "vingt", "vingt-et-une", "vingt-et-un",
+    "vingt-deux", "vingt-trois", "vingt-quatre", "zéro",
+}
+# Rule 6: multi-day period tokens. Audit Pattern E shows gold overwhelmingly
+# uses date_value for durations like 'trois jours', 'une semaine', 'un mois'.
+# Only demote when preceded by a cardinal/quantifier, NOT by a demonstrative
+# like 'ce/cette/la/le' (those signal a specific window → keep time_value).
+_PERIOD_TOKENS = {"jour", "jours", "journée", "journées", "semaine", "semaines",
+                  "mois", "année", "années", "an", "ans", "week-end", "weekend"}
+_PERIOD_QUANTIFIERS = _FR_NUMERALS | {
+    "quelques", "plusieurs", "prochains", "prochaines", "derniers", "dernières",
+    "dernier", "dernière", "prochain", "prochaine",
+}
+# Rule 7: timezone tokens that gold inconsistently labels time_value but are
+# semantically locations. Audit Pattern F identifies these; model predicts
+# location (reasonable). Demote to O to stop training on nonsense spans.
+_TIMEZONE_TOKENS = {"pacifique", "montagne", "pacific", "atlantique",
+                    "centrale", "orientale", "occidentale"}
+
+
+# ──────────────────────────────────────────────
+# person_name BIO normalization
+# ──────────────────────────────────────────────
+# Audit finding: ~17 cases of `de <name>` / `d' <name>` where gold inconsistently
+# includes the preposition. Majority convention: preposition OUT.
+# Apply uniformly to all splits.
+_PERSON_DE_PREPS = {"de", "d'", "du", "des"}
+
+
+def normalize_person_name_bio(words: list[str],
+                              tags: list[str]) -> list[str]:
+    """Drop leading 'de'/'d'' preposition from person_name spans.
+
+    Example:
+      words:  ['email', 'de', 'paul']
+      before: [O,        B-person_name, I-person_name]
+      after:  [O,        O,             B-person_name]
+    """
+    if len(words) != len(tags):
+        return tags
+    tags = list(tags)
+    lw = [w.lower() for w in words]
+    n = len(tags)
+    i = 0
+    while i < n:
+        if not tags[i].startswith("B-person_name"):
+            i += 1
+            continue
+        j = i + 1
+        while j < n and tags[j] == "I-person_name":
+            j += 1
+        if lw[i] in _PERSON_DE_PREPS and i + 1 < j:
+            tags[i] = "O"
+            tags[i + 1] = "B-person_name"
+        elif lw[i] in _PERSON_DE_PREPS:
+            # Lone 'de' tagged person_name — clear it
+            tags[i] = "O"
+        i = j
+    return tags
+
+
+# ──────────────────────────────────────────────
+# reminder_content BIO normalization
+# ──────────────────────────────────────────────
+# Audit finding: gold mixes five incompatible conventions for "liste de X":
+#   A. (majority, ~25) liste+de O, content tagged — e.g. "liste de [courses]"
+#   B. (~7) whole phrase tagged — "[liste de vacances]"
+#   C. (~2) "de X" tagged without "liste"
+#   D/E. "choses" sometimes in span, sometimes out
+# Convention A matches the v2 supplement. We normalize toward A in BOTH train
+# AND test/dev so the model is scored against a consistent ground truth. This
+# is the fix the audit called "strong recommendation: re-normalize gold".
+_LISTE_WORDS = {"liste", "listes"}
+_DE_WORDS = {"de", "d'", "du", "des"}
+
+
+def normalize_reminder_content_bio(words: list[str],
+                                   tags: list[str]) -> list[str]:
+    """Normalize 'liste de X' reminder_content spans to Convention A.
+
+    Rule: if a B/I-reminder_content span starts on 'liste' and the following
+    token is a `de`-family word, push the span start past `liste de` onto the
+    content noun.
+
+    Example transformation:
+      words:  ['ouvre', 'ma', 'liste', 'de', 'vacances']
+      before: [O,       O,    B-rc,    I-rc, I-rc]
+      after:  [O,       O,    O,       O,    B-rc]
+
+    Leaves Convention-A spans untouched (they never start on 'liste').
+    """
+    if len(words) != len(tags):
+        return tags
+    tags = list(tags)
+    lw = [w.lower() for w in words]
+    n = len(tags)
+
+    i = 0
+    while i < n:
+        t = tags[i]
+        if not t.startswith("B-reminder_content"):
+            i += 1
+            continue
+        # Walk to find span end
+        j = i + 1
+        while j < n and tags[j] == "I-reminder_content":
+            j += 1
+        # Span is [i, j). Check Convention B/C patterns.
+        if lw[i] in _LISTE_WORDS and i + 1 < j and lw[i + 1] in _DE_WORDS:
+            # Convention B: span includes 'liste de'. Push start to i+2.
+            if i + 2 < j:
+                tags[i] = "O"
+                tags[i + 1] = "O"
+                tags[i + 2] = "B-reminder_content"
+                # tags[i+3:j] already I-reminder_content, leave them
+            else:
+                # Span was only 'liste de' — clear it entirely (degenerate case)
+                for k in range(i, j):
+                    tags[k] = "O"
+        elif lw[i] in _DE_WORDS:
+            # Convention C: span starts on 'de' — drop the preposition.
+            tags[i] = "O"
+            if i + 1 < j:
+                tags[i + 1] = "B-reminder_content"
+            # else span was just a lone 'de', it's now all-O
+        i = j
+
+    return tags
+
 
 def normalize_time_bio(words: list[str], tags: list[str]) -> list[str]:
     """Apply the four time-phrase normalization rules. Returns new tag list."""
@@ -347,6 +482,71 @@ def normalize_time_bio(words: list[str], tags: list[str]) -> list[str]:
                 tags[i] = "B-time_value"
             continue
 
+    # Rule 5: '(à) <num> heures [du <part>]' boundary normalization.
+    # Audit shows gold disagrees on whether '<num>' or 'heures' or 'à' belongs
+    # in the span. Majority convention: numeral + heures (both in), à excluded.
+    # We only normalize when the phrase is already partially marked time_value
+    # — we don't hallucinate new spans where gold says all O.
+    for i, w in enumerate(lw):
+        if w != "heures":
+            continue
+        prev1 = lw[i-1] if i >= 1 else ""
+        if prev1 not in _FR_NUMERALS:
+            continue
+        # Is there any time_value tag anywhere in positions i-1 or i?
+        partial = tags[i-1] in ("B-time_value", "I-time_value") \
+                  or tags[i] in ("B-time_value", "I-time_value")
+        if not partial:
+            continue
+        # Normalize: force numeral=B-time_value, heures=I-time_value.
+        # Check position i-2: if 'à', push it out.
+        if i >= 2 and lw[i-2] == "à" and tags[i-2] in ("O", "B-time_value", "I-time_value"):
+            tags[i-2] = "O"
+        tags[i-1] = "B-time_value"
+        tags[i] = "I-time_value"
+
+    # Rule 6: multi-day duration tokens default to date_value (gold convention).
+    # '<quantifier> <period>' or '<period>' standalone when time_value predicted.
+    # Find each time_value span that contains a period token and is NOT anchored
+    # by a demonstrative determiner, then retag the whole span as date_value.
+    i = 0
+    while i < len(lw):
+        if tags[i] != "B-time_value":
+            i += 1
+            continue
+        # Walk to span end
+        j = i + 1
+        while j < len(lw) and tags[j] == "I-time_value":
+            j += 1
+        # Does this span contain a period token?
+        span_has_period = any(lw[k] in _PERIOD_TOKENS for k in range(i, j))
+        if not span_has_period:
+            i = j
+            continue
+        # Does the span START with a demonstrative-like determiner?
+        # Examples to PRESERVE as time_value: 'cette semaine', 'le week-end',
+        # 'la semaine', 'toute la semaine'. Check the first 1-2 tokens.
+        first = lw[i]
+        second = lw[i + 1] if i + 1 < j else ""
+        starts_with_det = first in {"ce", "cette", "le", "la", "les"} \
+                          or (first in {"toute", "tout"} and second in {"la", "le", "les"})
+        if starts_with_det:
+            i = j
+            continue
+        # Demote the whole span to date_value
+        tags[i] = "B-date_value"
+        for k in range(i + 1, j):
+            tags[k] = "I-date_value"
+        i = j
+
+    # Rule 7: timezone tokens demoted out of time_value (semantic: they're
+    # locations, not times). Audit Pattern F. Convert B/I-time_value → O.
+    for i, w in enumerate(lw):
+        if w not in _TIMEZONE_TOKENS:
+            continue
+        if tags[i] in ("B-time_value", "I-time_value"):
+            tags[i] = "O"
+
     return tags
 
 
@@ -354,7 +554,9 @@ def write_split(examples, split_dir: Path):
     """Write the 4 files for a split. Applies BIO normalization on the way out."""
     split_dir.mkdir(parents=True, exist_ok=True)
 
-    normalized = 0
+    time_normalized = 0
+    rc_normalized = 0
+    pn_normalized = 0
     with open(split_dir / "seq.in", "w", encoding="utf-8") as f_in, \
          open(split_dir / "seq.out", "w", encoding="utf-8") as f_out, \
          open(split_dir / "speech_act", "w", encoding="utf-8") as f_sa, \
@@ -362,16 +564,27 @@ def write_split(examples, split_dir: Path):
 
         for ex in examples:
             words = ex["text"].split()
-            new_tags = normalize_time_bio(words, ex["bio_tags"])
-            if new_tags != ex["bio_tags"]:
-                normalized += 1
+            original = ex["bio_tags"]
+            after_time = normalize_time_bio(words, original)
+            if after_time != original:
+                time_normalized += 1
+            after_rc = normalize_reminder_content_bio(words, after_time)
+            if after_rc != after_time:
+                rc_normalized += 1
+            after_pn = normalize_person_name_bio(words, after_rc)
+            if after_pn != after_rc:
+                pn_normalized += 1
             f_in.write(ex["text"] + "\n")
-            f_out.write(" ".join(new_tags) + "\n")
+            f_out.write(" ".join(after_pn) + "\n")
             f_sa.write(ex["speech_act"] + "\n")
             f_dom.write(ex["domain"] + "\n")
 
-    if normalized:
-        print(f"  [{split_dir.name}] normalized {normalized} time-BIO sequences")
+    if time_normalized:
+        print(f"  [{split_dir.name}] normalized {time_normalized} time-BIO sequences")
+    if rc_normalized:
+        print(f"  [{split_dir.name}] normalized {rc_normalized} reminder_content-BIO sequences")
+    if pn_normalized:
+        print(f"  [{split_dir.name}] normalized {pn_normalized} person_name-BIO sequences")
 
 
 def print_stats(name, examples):
@@ -484,6 +697,12 @@ def main():
                     annotated_misses += 1
                 else:
                     annotated_hits += 1
+                # Social all-O entries poison the slot head with O-dominance:
+                # 82% of classify_results are all-O, 83% of those are Social.
+                # Mask them out of slot loss (IGNORE→-100 in _align_slot_labels)
+                # while keeping the SA+Domain signal intact.
+                if dom == "Social" and all(t == "O" for t in bio_tags):
+                    bio_tags = ["IGNORE"] * len(words)
                 dialogue_all.append({
                     "text": ex["text"],
                     "bio_tags": bio_tags,
